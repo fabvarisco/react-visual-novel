@@ -1,0 +1,196 @@
+{
+  "novel": [
+    {
+      "id": 0,
+      "background": ["0", "1"],
+      "dialogs": [
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "TOMMY! TOMMY!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "O que foi jarvis?",
+          "nextBackground": true
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "ALGUEM TOCOU NELE!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "ALGUEM TOCOU NELEEEEEEEEEE!!!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Hoje eu fui rodar ele e não tava funcionando!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Eu não alterei nada no código!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Temaki",
+          "characterImage": "/faces/temaki_face.png",
+          "characterDialog": "Do que seu amigo ta falando?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Ah é do jogo que ele ta programando... ",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Sabe como é coisas de robô haha.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Temaki",
+          "characterImage": "/faces/temaki_face.png",
+          "characterDialog": "Ohh! Omoshiroi...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Não ri não Tommy! Eu não sei o que fazer ;_;",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Podia tentar arrumar seu próprio código sabia? haha",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Não da Tommy!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "AQUILO TA UM SPAGHET!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "E você tem certeza que foi alguém que mexeu?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Temaki",
+          "characterImage": "/faces/temaki_face.png",
+          "characterDialog": "...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Temaki",
+          "characterImage": "/faces/temaki_face.png",
+          "characterDialog": "Hehe...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Temaki",
+          "characterImage": "/faces/temaki_face.png",
+          "characterDialog": "Possivelmente... Ontem festa de Jarvis estava lotada...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Temaki",
+          "characterImage": "/faces/temaki_face.png",
+          "characterDialog": "Talvez Jarvis tenha convidado alguém que não goste dele.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "SUSPEITO EM >.>",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Temaki",
+          "characterImage": "/faces/temaki_face.png",
+          "characterDialog": "Hehe"
+        },
+        {
+          "characterName": "Temaki",
+          "characterImage": "/faces/temaki_face.png",
+          "characterDialog": "Temaki apenas inteligente.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "TOMMY ME AJUDA! VAMO DESCOBRIR QUEM FOI!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Ai ai...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Não tenho muita escolha mesmo.",
+          "nextBackground": false
+        }
+      ],
+      "choices": {
+        "choiceId": 0,
+        "choiceDialog": [
+          {
+            "choiceText": "Falar com a Marin",
+            "choiceGoTo": 1
+          },
+          {
+            "choiceText": "Ir para casa do Jarvis investigar a cena do 'crime' ",
+            "choiceGoTo": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "background": ["2"],
+      "dialogs": [],
+      "choices": [
+        {
+          "choiceId": 0,
+          "choiceDialog": [],
+          "goTo": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "background": ["3"],
+      "dialogs": [],
+      "choices": [
+        {
+          "choiceId": 0,
+          "choiceDialog": [],
+          "goTo": 0
+        }
+      ]
+    }
+  ]
+}
