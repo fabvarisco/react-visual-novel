@@ -28,7 +28,6 @@ function Game({ data }) {
   }, [dialog]);
 
   useEffect(() => {
-    console.log(data.dialogs[dialog]?.characterImage);
     loadImage();
   }, [background, id]);
 
@@ -57,12 +56,12 @@ function Game({ data }) {
   }
 
   function resetTypeAnimation() {
-    var e = document.getElementById('typingAnimation');
-    e.getAnimations().forEach(anim => {
+    var e = document.getElementById("typingAnimation");
+    e.getAnimations().forEach((anim) => {
       anim.cancel();
 
       anim.play();
-    })
+    });
   }
 
   function renderButtons() {
@@ -83,9 +82,9 @@ function Game({ data }) {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={"container"}>
       <canvas
-        className={styles.canvas}
+        className={"canvas"}
         ref={ref}
         id="canvasGame"
         width="75"

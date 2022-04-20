@@ -171,6 +171,157 @@
     {
       "id": 1,
       "background": ["2"],
+      "dialogs": [
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "MAAAARIIIIN!!!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Eai Jarvis!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Nossa você ta bem eletrico hoje em.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "É tem um motivo.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "ELES ESTRAGARAM MEU JOGO MARIN! ;-;",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Tadinho...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Eu posso ir la dar uma olhada pra vocês.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Mas teriam que me fazer um favor primeiro. u.u",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Mas Marin ;--;",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Não tem como eu ja disse que aquilo ta um spaghetti",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Tudo bem Jarvis, tudo tem uma solução.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Mas então, o que você ta precisando?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Eu perdi minha chave de fenda.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Queria que vocês dessem uma procurada pra mim.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Fala serio...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "E tem ideia de onde pode estar?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Nenhuma hihi.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Talvez esteja perto do mercado, eu concertei um robo la ontem.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Ok...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Não garanto que vou ir atrás, mas se achar eu trago.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Obrigadinha.",
+          "nextBackground": false
+        }
+      ],
+      "choices": {
+        "choiceId": 1,
+        "choiceDialog": [
+          {
+            "choiceText": "Ir ao mercado",
+            "choiceGoTo": 3
+          },
+          {
+            "choiceText": "Ir para casa do Jarvis investigar a cena do 'crime' ",
+            "choiceGoTo": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "background": ["3"],
       "dialogs": [],
       "choices": [
         {
@@ -181,7 +332,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "background": ["3"],
       "dialogs": [],
       "choices": [
