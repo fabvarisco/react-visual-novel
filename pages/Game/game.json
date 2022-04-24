@@ -322,7 +322,20 @@
     {
       "id": 2,
       "background": ["3"],
-      "dialogs": [],
+      "dialogs": [
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "É finalmente parece que seu quarto ta organizado.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Tommy!",
+          "nextBackground": false
+        }
+      ],
       "choices": [
         {
           "choiceId": 0,
@@ -334,12 +347,163 @@
     {
       "id": 3,
       "background": ["3"],
-      "dialogs": [],
+      "dialogs": [
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Tommy!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Estamos aqui a horas e ainda não encontramos a chave de fenda!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "A Marin nunca vai ajudar a gente assim.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Calma Jarvis, nos vamos encontrar.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Geraldo",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Eai pessoal!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Eai Geraldo",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Geraldo",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "O que estão fazendo por aqui?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "A Marin disse que perdeu uma chave de fenda por aqui",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Sabe de alguma coisa?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Sabe de alguma coisa?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Geraldo",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Hmmm...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Geraldo",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Não vi nada por aqui.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Geraldo",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Aconteceu alguma coisa por acaso?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Ontem na festa do Jarvis.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Parece que estragaram ocodigo do jogo dele",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Geraldo",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "O que?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Geraldo",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Mas porque alguem faria isso?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "É o que estamos tentando descobrir.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Não lembra de nada de suspeito ontem na festa?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Geraldo",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Geraldo",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "To meio atrasado, tenho que ir",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Isso foi muito suspeito.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Poise nunca vi ele agir assim.",
+          "nextBackground": false
+        }
+      ],
       "choices": [
         {
           "choiceId": 0,
-          "choiceDialog": [],
-          "goTo": 0
+          "choiceDialog": [
+            {
+              "choiceText": "Continuar procurando pela chave de fenda",
+              "choiceGoTo": 3
+            },
+            {
+              "choiceText": "Ir atrás de Geraldo.",
+              "choiceGoTo": 2
+            },
+            {
+              "choiceText": "Ir para casa do Jarvis investigar a cena do 'crime' ",
+              "choiceGoTo": 2
+            }
+          ],
         }
       ]
     }
