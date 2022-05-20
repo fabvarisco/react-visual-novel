@@ -1,5 +1,5 @@
 {
-  "novel": [
+  "data": [
     {
       "id": 0,
       "background": ["0", "1"],
@@ -8,13 +8,15 @@
           "characterName": "Jarvis",
           "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "TOMMY! TOMMY!",
-          "nextBackground": false
+          "nextBackground": true,
+          "background": "/images/0.png"
         },
         {
           "characterName": "Tommy",
           "characterImage": "/faces/tommy_face.png",
           "characterDialog": "O que foi jarvis?",
-          "nextBackground": true
+          "nextBackground": true,
+          "background": "/images/1.png"
         },
         {
           "characterName": "Jarvis",
@@ -326,13 +328,43 @@
         {
           "characterName": "Tommy",
           "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "É finalmente parece que seu quarto ta organizado.",
+          "characterDialog": "É realmente...",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
           "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "Tommy!",
+          "characterDialog": "Seu codigo ta uma bagunça",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Nem saberia por onde começar.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Acho que só a Marin poderia te ajudar nisso.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Tommy! ;-;",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "E além disso, seu quarto ta uma bagunça",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "",
           "nextBackground": false
         }
       ],
@@ -394,12 +426,6 @@
           "characterName": "Tommy",
           "characterImage": "/faces/tommy_face.png",
           "characterDialog": "A Marin disse que perdeu uma chave de fenda por aqui",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Tommy",
-          "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "Sabe de alguma coisa?",
           "nextBackground": false
         },
         {
@@ -498,12 +524,187 @@
             {
               "choiceText": "Ir atrás de Geraldo.",
               "choiceGoTo": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name":"Procurando pela chave de fenda",
+      "background": ["3"],
+      "dialogs": [
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Bom deixa pra lá, vamos continuar procurando",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Acho que poderiamos entrar no mercado e dar uma olhada la dentro",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Podemos conversar com o Green Bot.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Green Bot",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Olá Tommy.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Green Bot",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Olá Jarvis.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Green Bot",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Estão procurando algo hoje?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Estamos sim, mas nada pra comprar.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "A Marin disse que perdeu uma chave de fenda por aqui esses dias.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Sabe de algo?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Green Bot",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Sim, ela veio me ajudar com uns probleminhas no meu circuito.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Green Bot",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Podem procurar a vontade, mas não me lembro de nenhuma chave de fenda.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Green Bot",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Agora eu tenho que ir lá nos fundos revisar o estoque, volto em alguns minutos.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Espera um pouco ai!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "A chave de fenda está nas suas costas!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Green Bot",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "O que?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "A Marin devia estar com pressa pra ter esquecido assim.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Bom não tem problema, agora podemos voltar lá e falar com ela.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Bom não tem problema, agora podemos voltar lá e falar com ela.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "YEAH! VAMO LÁ!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Eai pessoal! Encontraram?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "SIM!!!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Ela estava presa atrás do Green Bot no mercado.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Como eu cometi esse erro... -_-",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Acontece, ele nem percebeu.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Bom menos mal, agora que eu tenho minha chave de fenda de volta",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Bom menos mal, agora que eu tenho minha chave de fenda de volta",
+          "nextBackground": false
+        }
+        
+      ],
+      "choices": [
+        {
+          "choiceId": 0,
+          "choiceDialog": [
+            {
+              "choiceText": "Continuar procurando pela chave de fenda",
+              "choiceGoTo": 3
             },
             {
-              "choiceText": "Ir para casa do Jarvis investigar a cena do 'crime' ",
+              "choiceText": "Ir atrás de Geraldo.",
               "choiceGoTo": 2
             }
-          ],
+          ]
         }
       ]
     }
