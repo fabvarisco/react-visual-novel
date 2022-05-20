@@ -8,6 +8,7 @@ export const slice = createSlice({
     showButtons: false,
     playerPos: { x: 0, y: 0 },
     teste: false,
+    id: 0,
   },
   reducers: {
     changeColision(state, { payload }) {
@@ -22,6 +23,10 @@ export const slice = createSlice({
     changeCodeButtons(state, { payload }) {
       return { ...state, showButtons: payload };
     },
+    changeId(state, { payload }) {
+      debugger;
+      return { ...state, id: payload };
+    },
   },
 });
 
@@ -30,6 +35,7 @@ export const {
   changeEnemies,
   changePlayerPos,
   changeCodeButtons,
+  changeId,
 } = slice.actions;
 
 export const selectPhaser = (state) => state.phaserController;

@@ -83,7 +83,7 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
           <p>
             <b>Dica</b>
           </p>
-          <p>{codeChallenge.codeTip}</p>
+          <p>{codeChallenge?.codeTip}</p>
         </div>
       </div>
     );

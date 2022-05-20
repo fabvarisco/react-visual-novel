@@ -3,20 +3,19 @@ import { createSlice } from "@reduxjs/toolkit";
 export const slice = createSlice({
   name: "textGameController",
   initialState: {
-    tempAID: 0,
-    teste: false,
+    a: false,
   },
   reducers: {
-    changeId(state, { payload }) {
-      return { ...state, tempAID: payload };
+    changeA(state, { payload }) {
+      return { ...state, a: payload };
     },
-    changeTeste(state, { payload }) {
-      return { ...state, teste: payload };
-    },
+
   },
 });
 
-export const { changeId } = slice.actions;
+export const {
+  changeA,
+} = slice.actions;
 
 export const selectTextGame = (state) => state.textGameController;
 

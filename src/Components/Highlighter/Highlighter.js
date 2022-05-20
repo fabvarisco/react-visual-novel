@@ -6,15 +6,15 @@ import {
   changeColision,
   changeEnemies,
   changePlayerPos,
+  changeId,
   selectPhaser,
 } from "../../Redux/phaserSlice";
-import { changeId } from "../../Redux/textGameSlice";
 
 export default function Highlighter({ dataCode }) {
   const dispatch = useDispatch();
   const { showButtons } = useSelector(selectPhaser);
   const [preview, setPreview] = useState(true);
-  const [code, setCode] = useState(dataCode);
+  const [code, setCode] = useState(dataCode.code);
   const [win, setWin] = useState(false);
   const [lose, setLose] = useState(false);
 
@@ -31,13 +31,16 @@ export default function Highlighter({ dataCode }) {
   }
 
   function compileCode() {
+    ///TODO - Mostrar modal e redirecionar para pagina devida
+
     const tempCode = code.includes(dataCode.code);
     if (tempCode) {
       if (dataCode.effect === "colision") {
         dispatch(changeColision(true));
-        dispatch(changeId(2))
+        
+        
       } else {
-        dispatch(changeId(1))
+        
       }
       if (dataCode.effect === "playerPos") {
         dispatch(changePlayerPos({ x: 35409, y: 43289432 }));
@@ -48,6 +51,7 @@ export default function Highlighter({ dataCode }) {
       } else {
       }
     }
+    
   }
 
   function renderButtons() {
