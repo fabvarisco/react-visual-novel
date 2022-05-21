@@ -2,11 +2,12 @@ import { Fragment, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { changeDialog } from "../../Redux/dialogBoxSlice";
+import { changeModal } from "../../Redux/modalSlice";
 import {
   changeColision,
   changeEnemies,
   changePlayerPos,
-  changeId,
   selectPhaser,
 } from "../../Redux/phaserSlice";
 
@@ -15,9 +16,6 @@ export default function Highlighter({ dataCode }) {
   const { showButtons } = useSelector(selectPhaser);
   const [preview, setPreview] = useState(true);
   const [code, setCode] = useState(dataCode.code);
-  const [win, setWin] = useState(false);
-  const [lose, setLose] = useState(false);
-
   function renderPreview() {
     return (
       <SyntaxHighlighter
@@ -32,26 +30,45 @@ export default function Highlighter({ dataCode }) {
 
   function compileCode() {
     ///TODO - Mostrar modal e redirecionar para pagina devida
-
-    const tempCode = code.includes(dataCode.code);
+    let modal = {
+      title: "",
+      image: "",
+      text: "",
+      buttonText: "",
+      showModal: false,
+      goTo: 3,
+    };
+    const tempCode = code.includes(dataCode.codeResolve);
     if (tempCode) {
       if (dataCode.effect === "colision") {
         dispatch(changeColision(true));
-        
-        
-      } else {
-        
+        modal = {
+          title: "Compilado!",
+          text: "Yeah! Agora falta só mais dois desafios!",
+          goTo: 3,
+          buttonText: "Proximo",
+          showModal: true,
+        };
       }
+
       if (dataCode.effect === "playerPos") {
         dispatch(changePlayerPos({ x: 35409, y: 43289432 }));
-      } else {
       }
       if (dataCode.effect === "enemies") {
         dispatch(changeEnemies(true));
-      } else {
       }
+    } else {
+      modal = {
+        title: "ERRO!",
+        text: "Droga! Eu errei! Ainda tenho mais duas chances!",
+        goTo: 3,
+        buttonText: "Proximo",
+        showModal: true,
+      };
     }
-    
+
+    dispatch(changeModal(modal));
+
   }
 
   function renderButtons() {

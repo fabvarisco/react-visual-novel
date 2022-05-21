@@ -63,80 +63,187 @@
     },
     {
       "id": 1,
-      "challengeName": "Error 1",
-      "code": "",
-      "codeResolve": "",
-      "next": true,
-      "goTo": 3,
-      "dialogs": [
-        {
-          "characterName": "Marin",
-          "characterImage": "/faces/jarvis_face.png",
-          "characterDialog": "Droga!",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Marin",
-          "characterImage": "/faces/jarvis_face.png",
-          "characterDialog": "Eu errei!",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Marin",
-          "characterImage": "/faces/jarvis_face.png",
-          "characterDialog": "Ainda tenho mais duas chances!",
-          "nextBackground": false
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "challengeName": "Sucesso 1",
-      "code": "",
-      "codeResolve": "",
-      "next": true,
-      "goTo": 3,
-      "dialogs": [
-        {
-          "characterName": "Marin",
-          "characterImage": "/faces/jarvis_face.png",
-          "characterDialog": "Consegui!",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Marin",
-          "characterImage": "/faces/jarvis_face.png",
-          "characterDialog": "A colisão do jogo está consertada!",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Marin",
-          "characterImage": "/faces/jarvis_face.png",
-          "characterDialog": "Ainda falta dois erros!",
-          "nextBackground": false
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "challengeName": "TestTime",
-      "code": "",
-      "codeResolve": "",
+      "challengeName": "tutorial",
+      "code": "const func = () => { \n  for (var i = 0; i < 5; i++) { \n  setTimeout(() => console.log(i)); \n    } \n }",
+      "codeResolve": "for (let i = 0; i < 5; i++)",
+      "effect": "colision",
       "next": false,
       "dialogs": [
         {
           "characterName": "Marin",
           "characterImage": "/faces/jarvis_face.png",
-          "characterDialog": "Ok, Finalmente terminei.",
+          "characterDialog": "sdfsfd",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/jarvis_face.png",
-          "characterDialog": "Hora de testar o jogo!",
+          "characterDialog": "Hmmm... Parece que a linguagem que Jarvis utilizou é JavaScript.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "O botão de 'Vizualizar Codigo' me permite vizualizar o texto como codigo.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "O botão de 'Editar Codigo' me permite editar.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Compilar o codigo é a etapa final, depois de editar o codigo eu posso compilar.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Porém tenho apenas uma chance, preciso dar o meu melhor!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Ok, Vamos começar!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Acho que existe uma diferença entre VAR, LET e CONST, acho que esse deve ser o problema.",
           "nextBackground": false
         }
-      ]
+      ],
+      "codeChallenge": {
+        "codeTip": "Falar com a Marin"
+      }
+    },
+    {
+      "id": 2,
+      "challengeName": "tutorial",
+      "code": "const func = () => { \n  for (var i = 0; i < 5; i++) { \n  setTimeout(() => console.log(i)); \n    } \n }",
+      "codeResolve": "for (let i = 0; i < 5; i++)",
+      "effect": "colision",
+      "next": false,
+      "dialogs": [
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "sdfsfd",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Hmmm... Parece que a linguagem que Jarvis utilizou é JavaScript.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "O botão de 'Vizualizar Codigo' me permite vizualizar o texto como codigo.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "O botão de 'Editar Codigo' me permite editar.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Compilar o codigo é a etapa final, depois de editar o codigo eu posso compilar.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Porém tenho apenas uma chance, preciso dar o meu melhor!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Ok, Vamos começar!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Acho que existe uma diferença entre VAR, LET e CONST, acho que esse deve ser o problema.",
+          "nextBackground": false
+        }
+      ],
+      "codeChallenge": {
+        "codeTip": "Falar com a Marin"
+      }
+    },
+    {
+      "id": 2,
+      "challengeName": "tutorial",
+      "code": "const func = () => { \n  for (var i = 0; i < 5; i++) { \n  setTimeout(() => console.log(i)); \n    } \n }",
+      "codeResolve": "for (let i = 0; i < 5; i++)",
+      "effect": "colision",
+      "next": false,
+      "playGame": true,
+      "dialogs": [
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "sdfsfd",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Hmmm... Parece que a linguagem que Jarvis utilizou é JavaScript.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "O botão de 'Vizualizar Codigo' me permite vizualizar o texto como codigo.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "O botão de 'Editar Codigo' me permite editar.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Compilar o codigo é a etapa final, depois de editar o codigo eu posso compilar.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Porém tenho apenas uma chance, preciso dar o meu melhor!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Ok, Vamos começar!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Acho que existe uma diferença entre VAR, LET e CONST, acho que esse deve ser o problema.",
+          "nextBackground": false
+        }
+      ],
+      "codeChallenge": {
+        "codeTip": "Falar com a Marin"
+      }
     }
   ]
 }

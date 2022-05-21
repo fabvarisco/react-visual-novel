@@ -7,7 +7,9 @@
     border: 1px solid black;
     border-radius: 10px;
     transition: color 0.15s ease, border-color 0.15s ease;
-    width: 420px;
+    width: 520px;
+    margin-right: auto;
+    margin-left: auto;
   }
   
   .card h2 {

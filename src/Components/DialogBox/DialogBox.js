@@ -1,17 +1,24 @@
-import { Fragment, useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
 import "./style.css";
+import { Fragment, useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { changeBackground } from "../../Redux/backgroundSlice";
 import { changeCodeButtons } from "../../Redux/phaserSlice";
+import { changeDialog, selectDialogBox } from "../../Redux/dialogBoxSlice";
 export default function DialogBox({ dialogs, choices, codeChallenge }) {
   const dispatch = useDispatch();
-  const [dialog, setDialog] = useState(0);
+  const { dialog } = useSelector(selectDialogBox);
   const [showChoices, setShowChoices] = useState(false);
   const [tip, setTip] = useState(false);
 
   useEffect(() => {
     dispatch(changeBackground(dialogs[dialog]?.background));
   }, []);
+
+  useEffect(() => {
+    if (dialog === 0) {
+      setTip(false);
+    }
+  }, [dialog]);
 
   function nextDialog() {
     const size = dialogs.length - 1;
@@ -26,13 +33,13 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
       }
       return;
     }
-    setDialog((prev) => prev + 1);
+    dispatch(changeDialog(dialog + 1));
     background();
   }
 
   function backDialog() {
     if (0 === dialog) return;
-    setDialog((prev) => prev - 1);
+    dispatch(changeDialog(dialog - 1));
     background();
   }
 

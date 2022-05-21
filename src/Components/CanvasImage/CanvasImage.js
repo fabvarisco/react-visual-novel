@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
 import { selectBackground } from "../../Redux/backgroundSlice";
 
-export default function CanvasImage({ width, height, gameImage }) {
+export default function CanvasImage({ width, height }) {
   const ref = useRef();
   const { background } = useSelector(selectBackground);
   useEffect(() => {

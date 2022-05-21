@@ -24,7 +24,6 @@ export const slice = createSlice({
       return { ...state, showButtons: payload };
     },
     changeId(state, { payload }) {
-      debugger;
       return { ...state, id: payload };
     },
   },

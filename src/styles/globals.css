@@ -50,13 +50,12 @@ footer {
   border: 3px solid black;
   width: 520px;
   height: 380px;
-  margin-right: 8px;
+  margin-left: 20px;
   image-rendering: pixelated;
 }
 .textGame {
-  border: 3px solid black;
-  width: 520px;
+  width: 518px;
   height: 380px;
-  margin-right: 8px;
-  resize:none ;
+  margin-left: 20px;
+  resize: none;
 }
