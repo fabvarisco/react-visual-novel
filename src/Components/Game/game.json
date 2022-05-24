@@ -2,6 +2,7 @@
   "data": [
     {
       "id": 0,
+      "title": "Start",
       "background": ["0", "1"],
       "dialogs": [
         {
@@ -161,11 +162,7 @@
         "choiceDialog": [
           {
             "choiceText": "Falar com a Marin",
-            "choiceGoTo": 1
-          },
-          {
-            "choiceText": "Ir para casa do Jarvis investigar a cena do 'crime' ",
-            "choiceGoTo": 2
+            "choiceGoTo": "/Game/1"
           }
         ]
       }
@@ -173,6 +170,7 @@
     {
       "id": 1,
       "background": ["2"],
+      "title": "Pedindo ajuda para Marin",
       "dialogs": [
         {
           "characterName": "Jarvis",
@@ -312,11 +310,7 @@
         "choiceDialog": [
           {
             "choiceText": "Ir ao mercado",
-            "choiceGoTo": 3
-          },
-          {
-            "choiceText": "Ir para casa do Jarvis investigar a cena do 'crime' ",
-            "choiceGoTo": 2
+            "choiceGoTo": "/Game/3"
           }
         ]
       }
@@ -324,6 +318,7 @@
     {
       "id": 2,
       "background": ["3"],
+      "title": "Investigando a cena do crime",
       "dialogs": [
         {
           "characterName": "Tommy",
@@ -379,6 +374,7 @@
     {
       "id": 3,
       "background": ["3"],
+      "title": "Mercado",
       "dialogs": [
         {
           "characterName": "Jarvis",
@@ -513,25 +509,19 @@
           "nextBackground": false
         }
       ],
-      "choices": [
-        {
-          "choiceId": 0,
-          "choiceDialog": [
-            {
-              "choiceText": "Continuar procurando pela chave de fenda",
-              "choiceGoTo": 3
-            },
-            {
-              "choiceText": "Ir atrás de Geraldo.",
-              "choiceGoTo": 2
-            }
-          ]
-        }
-      ]
+      "choices": {
+        "choiceId": 0,
+        "choiceDialog": [
+          {
+            "choiceText": "Continuar procurando pela chave de fenda",
+            "choiceGoTo": "/Game/4"
+          }
+        ]
+      }
     },
     {
-      "id": 3,
-      "name":"Procurando pela chave de fenda",
+      "id": 4,
+      "title": "Encontrando chave de fenda",
       "background": ["3"],
       "dialogs": [
         {
@@ -690,23 +680,38 @@
           "characterDialog": "Bom menos mal, agora que eu tenho minha chave de fenda de volta",
           "nextBackground": false
         }
-        
       ],
-      "choices": [
+      "choices": {
+        "choiceId": 0,
+        "choiceDialog": [
+          {
+            "choiceText": "Ir para casa de Jarvis arrumar seu codigo.",
+            "choiceGoTo": "/Game/5"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": "Marin e o codigo de Jarvis",
+      "background": ["3"],
+      "dialogs": [
         {
-          "choiceId": 0,
-          "choiceDialog": [
-            {
-              "choiceText": "Continuar procurando pela chave de fenda",
-              "choiceGoTo": 3
-            },
-            {
-              "choiceText": "Ir atrás de Geraldo.",
-              "choiceGoTo": 2
-            }
-          ]
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Bom deixa pra lá, vamos continuar procurando",
+          "nextBackground": false
         }
-      ]
+      ],
+      "choices": {
+        "choiceId": 0,
+        "choiceDialog": [
+          {
+            "choiceText": "Começar",
+            "choiceGoTo": "/textgame"
+          }
+        ]
+      }
     }
   ]
 }

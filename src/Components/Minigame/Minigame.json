@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "title": "Start",
+      "background": ["0", "1"],
+      "dialogs": [
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "TOMMY! TOMMY!",
+          "nextBackground": true,
+          "background": "/images/0.png"
+        }
+      ],
+      "choices": {
+        "choiceId": 0,
+        "choiceDialog": [
+          {
+            "choiceText": "Recomeçar",
+            "choiceGoTo": "/"
+          },
+          {
+            "choiceText": "Tentar concertar o jogo do jarvis denovo",
+            "choiceGoTo": "/Textgame"
+          }
+        ]
+      }
+    }
+  ]
+}

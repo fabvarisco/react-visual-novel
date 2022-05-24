@@ -21,6 +21,7 @@ export const slice = createSlice({
       return { ...state, playerPos: payload };
     },
     changeCodeButtons(state, { payload }) {
+      ///TODO - Passar isso para o componente de highlighter
       return { ...state, showButtons: payload };
     },
     changeId(state, { payload }) {

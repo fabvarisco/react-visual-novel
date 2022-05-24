@@ -1,14 +1,17 @@
 import "./style.css";
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeBackground } from "../../Redux/backgroundSlice";
 import { changeCodeButtons } from "../../Redux/phaserSlice";
-import { changeDialog, selectDialogBox } from "../../Redux/dialogBoxSlice";
+import {
+  changeDialog,
+  changeTip,
+  selectDialogBox,
+} from "../../Redux/dialogBoxSlice";
 export default function DialogBox({ dialogs, choices, codeChallenge }) {
   const dispatch = useDispatch();
-  const { dialog } = useSelector(selectDialogBox);
+  const { dialog, tip, goToChallengeCode } = useSelector(selectDialogBox);
   const [showChoices, setShowChoices] = useState(false);
-  const [tip, setTip] = useState(false);
 
   useEffect(() => {
     dispatch(changeBackground(dialogs[dialog]?.background));
@@ -16,7 +19,8 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
 
   useEffect(() => {
     if (dialog === 0) {
-      setTip(false);
+      dispatch(changeTip(false));
+      setShowChoices(false);
     }
   }, [dialog]);
 
@@ -28,7 +32,7 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
         setShowChoices(true);
       }
       if (codeChallenge) {
-        setTip(true);
+        dispatch(changeTip(true));
         dispatch(changeCodeButtons(true));
       }
       return;
@@ -52,16 +56,20 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
   function renderBackNextButtons() {
     return (
       <div className={"buttonContainer"}>
-        {!showChoices && (
-          <Fragment>
-            <div>
-              {dialog > 0 && <button onClick={() => backDialog()}>Back</button>}
-            </div>
-            <div>
-              <button onClick={() => nextDialog()}>Next</button>
-            </div>
-          </Fragment>
-        )}
+        <div>
+          {dialog > 0 && <button onClick={() => backDialog()}>Voltar</button>}
+        </div>
+        <div>
+          <button onClick={() => nextDialog()}>Próximo</button>
+        </div>
+      </div>
+    );
+  }
+
+  function renderGoToChallengeCodeButton() {
+    return (
+      <div className={"buttonContainer"}>
+        <button onClick={() => {}}>Ver codigo do Jarvis</button>
       </div>
     );
   }
@@ -76,7 +84,7 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
         </div>
         {choices.choiceDialog?.map(({ choiceText, choiceGoTo }) => (
           <div key={choiceGoTo}>
-            <a href={`/Game/${choiceGoTo}`}>{choiceText}</a>
+            <a href={choiceGoTo}>{choiceText}</a>
           </div>
         ))}
       </div>
@@ -119,7 +127,8 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
       {showChoices && renderChoices()}
       {!showChoices && renderDialog()}
       {tip && renderTip()}
-      {!tip && renderBackNextButtons()}
+      {!tip && !showChoices && renderBackNextButtons()}
+      {goToChallengeCode && renderGoToChallengeCodeButton()}
     </div>
   );
 }

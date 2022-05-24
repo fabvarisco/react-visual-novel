@@ -28,18 +28,18 @@ export default function Player(props) {
     () => [
       {
         key: "left",
-        frames: scene.anims.generateFrameNumbers("dude", { start: 0, end: 3 }),
+        frames: scene.anims.generateFrameNumbers("jarvis", { start: 0, end: 3 }),
         frameRate: 10,
         repeat: -1,
       },
       {
         key: "turn",
-        frames: [{ key: "dude", frame: 4 }],
+        frames: [{ key: "jarvis", frame: 4 }],
         frameRate: 20,
       },
       {
         key: "right",
-        frames: scene.anims.generateFrameNumbers("dude", { start: 5, end: 8 }),
+        frames: scene.anims.generateFrameNumbers("jarvis", { start: 5, end: 8 }),
         frameRate: 10,
         repeat: -1,
       },
@@ -81,7 +81,7 @@ export default function Player(props) {
       name="player"
       animations={animations}
       animation={animation}
-      texture="dude"
+      texture="jarvis"
       collideWorldBounds
       velocityX={velocityX}
       velocityY={velocityY}

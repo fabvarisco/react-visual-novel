@@ -1,19 +1,17 @@
-import PhaserComponent from "./Components/Phaser/PhaserComponent";
+import { Route, Routes } from "react-router-dom";
 import TextGame from "./Components/TextGame/TextGame";
 import TitleScreen from "./Components/TitleScreen/TitleScreen";
 import Game from "./Components/Game/Game";
-import { Route, Routes } from "react-router-dom";
+import Minigame from "./Components/Minigame/Minigame";
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<TitleScreen />} />
-        <Route path="/game/:id" element={<Game />} />
-        <Route path="/textgame" element={<TextGame />} />
-        <Route path="/phaser" element={<PhaserComponent />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<TitleScreen />} />
+      <Route path="/game/:id" element={<Game />} />
+      <Route path="/textgame" element={<TextGame />} />
+      <Route path="/minigame" element={<Minigame />} />
+    </Routes>
   );
 }
 
