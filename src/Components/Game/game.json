@@ -374,14 +374,14 @@
     },
     {
       "id": 3,
-      "background": ["3"],
       "title": "Mercado",
       "dialogs": [
         {
           "characterName": "Jarvis",
           "characterImage": "/faces/tommy_face.png",
           "characterDialog": "Tommy!",
-          "nextBackground": false
+          "nextBackground": true,
+          "background": "/images/Mercado/mercado.png"
         },
         {
           "characterName": "Jarvis",
