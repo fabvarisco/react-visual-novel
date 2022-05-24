@@ -3,21 +3,20 @@
     {
       "id": 0,
       "title": "Start",
-      "background": ["0", "1"],
       "dialogs": [
         {
           "characterName": "Jarvis",
           "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "TOMMY! TOMMY!",
           "nextBackground": true,
-          "background": "/images/0.png"
+          "background": "/images/start/0.png"
         },
         {
           "characterName": "Tommy",
           "characterImage": "/faces/tommy_face.png",
           "characterDialog": "O que foi jarvis?",
           "nextBackground": true,
-          "background": "/images/1.png"
+          "background": "/images/start/1.png"
         },
         {
           "characterName": "Jarvis",
@@ -169,26 +168,28 @@
     },
     {
       "id": 1,
-      "background": ["2"],
       "title": "Pedindo ajuda para Marin",
       "dialogs": [
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "MAAAARIIIIN!!!",
-          "nextBackground": false
+          "nextBackground": true,
+          "background": "/images/Pedindo ajuda para Marin/maring_part_1.png"
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Eai Jarvis!",
-          "nextBackground": false
+          "nextBackground": true,
+          "background": "/images/Pedindo ajuda para Marin/maring_part_2.png"
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/tommy_face.png",
           "characterDialog": "Nossa você ta bem eletrico hoje em.",
-          "nextBackground": false
+          "nextBackground": true,
+          "background": "/images/Pedindo ajuda para Marin/maring_part_3.png"
         },
         {
           "characterName": "Tommy",

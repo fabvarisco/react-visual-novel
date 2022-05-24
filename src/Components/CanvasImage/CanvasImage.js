@@ -9,7 +9,7 @@ export default function CanvasImage({ width, height }) {
     const ctx = ref.current.getContext("2d");
     const image = new window.Image();
     image.src = background;
-
+    debugger;
     image.onload = () => {
       ctx.drawImage(image, 0, 0);
     };

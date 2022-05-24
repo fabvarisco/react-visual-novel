@@ -22,6 +22,7 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
       dispatch(changeTip(false));
       setShowChoices(false);
     }
+    background();
   }, [dialog]);
 
   function nextDialog() {
@@ -38,18 +39,18 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
       return;
     }
     dispatch(changeDialog(dialog + 1));
-    background();
   }
 
   function backDialog() {
     if (0 === dialog) return;
+
     dispatch(changeDialog(dialog - 1));
-    background();
   }
 
   function background() {
     if (dialogs[dialog]?.nextBackground) {
       dispatch(changeBackground(dialogs[dialog]?.background));
+      debugger;
     }
   }
 

@@ -1,5 +1,4 @@
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
 import { changeBackground } from "../../Redux/backgroundSlice";
 import CanvasImage from "../CanvasImage/CanvasImage";
 
@@ -10,12 +9,12 @@ export default function TitleScreen() {
     <div className={"container"}>
       <CanvasImage width={121} height={80} />
       <div>
-        <Link
-          to={`/Game/0`}
-          onClick={() => dispatch(changeBackground("/images/0.png"))}
+        <a
+          href={`/Game/0`}
+          onClick={() => dispatch(changeBackground("/startgame/startscreen.png"))}
         >
           <button>Start Game</button>
-        </Link>
+        </a>
       </div>
     </div>
   );
