@@ -2,14 +2,15 @@ import { Fragment, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { changeDialog } from "../../Redux/dialogBoxSlice";
 import { changeModal } from "../../Redux/modalSlice";
 import {
-  changeColision,
+  changeCenter,
   changeEnemies,
   changePlayerPos,
   selectPhaser,
 } from "../../Redux/phaserSlice";
+
+import { compareTwoStrings } from "string-similarity";
 
 export default function Highlighter({ dataCode }) {
   const dispatch = useDispatch();
@@ -28,6 +29,20 @@ export default function Highlighter({ dataCode }) {
     );
   }
 
+  function similar(a, b) {
+    var equivalency = 0;
+    var minLength = a.length > b.length ? b.length : a.length;
+    var maxLength = a.length < b.length ? b.length : a.length;
+    for (var i = 0; i < minLength; i++) {
+      if (a[i] == b[i]) {
+        equivalency++;
+      }
+    }
+
+    var weight = equivalency / maxLength;
+    return weight * 100 + "%";
+  }
+
   function compileCode() {
     ///TODO - Mostrar modal e redirecionar para pagina devida
     let modal = {
@@ -38,10 +53,12 @@ export default function Highlighter({ dataCode }) {
       showModal: false,
       goTo: 3,
     };
-    const tempCode = code.includes(dataCode.codeResolve);
-    if (tempCode) {
-      if (dataCode.effect === "colision") {
-        dispatch(changeColision(true));
+
+    const percentage = compareTwoStrings(code, dataCode.codeResolve);
+
+    if (percentage > 0.9) {
+      if (dataCode.challengeName === "center") {
+        dispatch(changeCenter(true));
         modal = {
           title: "Compilado!",
           text: "Yeah! Agora falta só mais dois desafios!",
@@ -60,15 +77,13 @@ export default function Highlighter({ dataCode }) {
     } else {
       modal = {
         title: "ERRO!",
-        text: "Droga! Eu errei! Ainda tenho mais duas chances!",
+        text: "Droga! Não era isso!",
         goTo: 3,
         buttonText: "Proximo",
         showModal: true,
       };
     }
-
     dispatch(changeModal(modal));
-
   }
 
   function renderButtons() {

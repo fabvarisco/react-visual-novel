@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const slice = createSlice({
   name: "phaserController",
   initialState: {
-    colision: false,
+    center: false,
     enemies: false,
     showButtons: false,
     playerPos: { x: 0, y: 0 },
@@ -11,8 +11,8 @@ export const slice = createSlice({
     id: 0,
   },
   reducers: {
-    changeColision(state, { payload }) {
-      return { ...state, colision: payload };
+    changeCenter(state, { payload }) {
+      return { ...state, center: payload };
     },
     changeEnemies(state, { payload }) {
       return { ...state, enemies: payload };
@@ -31,7 +31,7 @@ export const slice = createSlice({
 });
 
 export const {
-  changeColision,
+  changeCenter,
   changeEnemies,
   changePlayerPos,
   changeCodeButtons,

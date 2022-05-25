@@ -186,7 +186,7 @@
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Nossa você ta bem eletrico hoje em.",
           "nextBackground": true,
           "background": "/images/Pedindo ajuda para Marin/maring_part_3.png"
@@ -199,43 +199,43 @@
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "ELES ESTRAGARAM MEU JOGO MARIN! ;-;",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Tadinho...",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Eu posso ir la dar uma olhada pra vocês.",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Mas teriam que me fazer um favor primeiro. u.u",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "Mas Marin ;--;",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "Não tem como eu ja disse que aquilo ta um spaghetti",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Tudo bem Jarvis, tudo tem uma solução.",
           "nextBackground": false
         },
@@ -247,13 +247,13 @@
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Eu perdi minha chave de fenda.",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Queria que vocês dessem uma procurada pra mim.",
           "nextBackground": false
         },
@@ -271,7 +271,7 @@
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Nenhuma hihi.",
           "nextBackground": false
         },
@@ -283,7 +283,7 @@
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Talvez esteja perto do mercado, eu concertei um robo la ontem.",
           "nextBackground": false
         },
@@ -301,7 +301,7 @@
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Obrigadinha.",
           "nextBackground": false
         }
@@ -347,7 +347,7 @@
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "Tommy! ;-;",
           "nextBackground": false
         },
@@ -359,7 +359,7 @@
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "",
           "nextBackground": false
         }
@@ -378,20 +378,20 @@
       "dialogs": [
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "Tommy!",
           "nextBackground": true,
           "background": "/images/Mercado/mercado.png"
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "Estamos aqui a horas e ainda não encontramos a chave de fenda!",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "A Marin nunca vai ajudar a gente assim.",
           "nextBackground": false
         },
@@ -403,7 +403,7 @@
         },
         {
           "characterName": "Geraldo",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/geraldo_face.png",
           "characterDialog": "Eai pessoal!",
           "nextBackground": false
         },
@@ -415,7 +415,7 @@
         },
         {
           "characterName": "Geraldo",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/geraldo_face.png",
           "characterDialog": "O que estão fazendo por aqui?",
           "nextBackground": false
         },
@@ -433,19 +433,19 @@
         },
         {
           "characterName": "Geraldo",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/geraldo_face.png",
           "characterDialog": "Hmmm...",
           "nextBackground": false
         },
         {
           "characterName": "Geraldo",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/geraldo_face.png",
           "characterDialog": "Não vi nada por aqui.",
           "nextBackground": false
         },
         {
           "characterName": "Geraldo",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/geraldo_face.png",
           "characterDialog": "Aconteceu alguma coisa por acaso?",
           "nextBackground": false
         },
@@ -463,13 +463,13 @@
         },
         {
           "characterName": "Geraldo",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/geraldo_face.png",
           "characterDialog": "O que?",
           "nextBackground": false
         },
         {
           "characterName": "Geraldo",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/geraldo_face.png",
           "characterDialog": "Mas porque alguem faria isso?",
           "nextBackground": false
         },
@@ -487,13 +487,13 @@
         },
         {
           "characterName": "Geraldo",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/geraldo_face.png",
           "characterDialog": "...",
           "nextBackground": false
         },
         {
           "characterName": "Geraldo",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/geraldo_face.png",
           "characterDialog": "To meio atrasado, tenho que ir",
           "nextBackground": false
         },
@@ -505,7 +505,7 @@
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "Poise nunca vi ele agir assim.",
           "nextBackground": false
         }
@@ -545,19 +545,19 @@
         },
         {
           "characterName": "Green Bot",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/greenbot_face.png",
           "characterDialog": "Olá Tommy.",
           "nextBackground": false
         },
         {
           "characterName": "Green Bot",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/greenbot_face.png",
           "characterDialog": "Olá Jarvis.",
           "nextBackground": false
         },
         {
           "characterName": "Green Bot",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/greenbot_face.png",
           "characterDialog": "Estão procurando algo hoje?",
           "nextBackground": false
         },
@@ -581,19 +581,19 @@
         },
         {
           "characterName": "Green Bot",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/greenbot_face.png",
           "characterDialog": "Sim, ela veio me ajudar com uns probleminhas no meu circuito.",
           "nextBackground": false
         },
         {
           "characterName": "Green Bot",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/greenbot_face.png",
           "characterDialog": "Podem procurar a vontade, mas não me lembro de nenhuma chave de fenda.",
           "nextBackground": false
         },
         {
           "characterName": "Green Bot",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/greenbot_face.png",
           "characterDialog": "Agora eu tenho que ir lá nos fundos revisar o estoque, volto em alguns minutos.",
           "nextBackground": false
         },
@@ -605,13 +605,13 @@
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "A chave de fenda está nas suas costas!",
           "nextBackground": false
         },
         {
           "characterName": "Green Bot",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/greenbot_face.png",
           "characterDialog": "O que?",
           "nextBackground": false
         },
@@ -635,31 +635,31 @@
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "YEAH! VAMO LÁ!",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Eai pessoal! Encontraram?",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "SIM!!!",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "Ela estava presa atrás do Green Bot no mercado.",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Como eu cometi esse erro... -_-",
           "nextBackground": false
         },
@@ -671,13 +671,13 @@
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Bom menos mal, agora que eu tenho minha chave de fenda de volta",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Bom menos mal, agora que eu tenho minha chave de fenda de volta",
           "nextBackground": false
         }
@@ -698,9 +698,57 @@
       "background": ["3"],
       "dialogs": [
         {
-          "characterName": "Tommy",
-          "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "Bom deixa pra lá, vamos continuar procurando",
+          "characterName": "Marin",
+          "characterImage": "/faces/marin_face.png",
+          "characterDialog": "Vamos ver...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/marin_face.png",
+          "characterDialog": "Vamos ver...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/marin_face.png",
+          "characterDialog": "Hmmm... Parece que a linguagem que Jarvis utilizou é JavaScript.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/marin_face.png",
+          "characterDialog": "React e CSS também foi utilizado.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/marin_face.png",
+          "characterDialog": "Parece que o jogo tem pequenos problemas, mas são bem simples de resolver",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/marin_face.png",
+          "characterDialog": "Falta centralizar a tela.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/marin_face.png",
+          "characterDialog": "Ajustar o surgimento dos inimigos",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/marin_face.png",
+          "characterDialog": "Ajustar o surgimento dos inimigos",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/marin_face.png",
+          "characterDialog": "Bom... Por enquanto é isso",
           "nextBackground": false
         }
       ],

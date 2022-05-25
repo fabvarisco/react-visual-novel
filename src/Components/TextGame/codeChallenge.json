@@ -2,22 +2,16 @@
   "data": [
     {
       "id": 0,
-      "challengeName": "tutorial",
-      "code": "const func = () => { \n  for (var i = 0; i < 5; i++) { \n  setTimeout(() => console.log(i)); \n    } \n }",
-      "codeResolve": "for (let i = 0; i < 5; i++)",
-      "effect": "colision",
+      "challengeName": "center",
+      "code": ".game { \n display: flex; \n }",
+      "codeResolve": ".game { display: flex; justify-content: center; align-items: center; }",
+      "effect": "center",
       "next": false,
       "dialogs": [
         {
           "characterName": "Marin",
           "characterImage": "/faces/jarvis_face.png",
-          "characterDialog": "Ok, Vamos ver como essa IDE funciona.",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Marin",
-          "characterImage": "/faces/jarvis_face.png",
-          "characterDialog": "Hmmm... Parece que a linguagem que Jarvis utilizou é JavaScript.",
+          "characterDialog": "Agora, Vamos ver como essa IDE funciona.",
           "nextBackground": false
         },
         {
@@ -53,12 +47,12 @@
         {
           "characterName": "Marin",
           "characterImage": "/faces/jarvis_face.png",
-          "characterDialog": "Acho que existe uma diferença entre VAR, LET e CONST, acho que esse deve ser o problema.",
+          "characterDialog": "Esse primeiro problema está relacionado com a tela, ela parece não estar centralizada.",
           "nextBackground": false
         }
       ],
       "codeChallenge": {
-        "codeTip": "Falar com a Marin"
+        "codeTip": "É melhor centralizar com flexbox"
       }
     },
     {

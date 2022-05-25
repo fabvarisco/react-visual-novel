@@ -7,14 +7,10 @@ import Star from "./Star";
 import Phaser from "phaser";
 import { selectPhaser } from "../../Redux/phaserSlice";
 import { useSelector } from "react-redux";
-import Spike from "./Spike";
+
 import SpikeSpawner from "./SpikeSpawner";
 export default function PhaserComponent() {
-  const { colision } = useSelector(selectPhaser);
-
-  useEffect(() => {
-    console.log(colision);
-  }, [colision]);
+  const { center, enemy } = useSelector(selectPhaser);
 
   return (
     <Game
@@ -31,8 +27,7 @@ export default function PhaserComponent() {
         },
       }}
       scale={{
-
-        autoCenter: Phaser.Scale.CENTER_BOTH,
+        autoCenter: center ? Phaser.Scale.CENTER_BOTH : Phaser.Scale.NO_CENTER,
       }}
     >
       <Scene
@@ -62,13 +57,9 @@ export default function PhaserComponent() {
           <Platform x={0} y={413} scale={3} physicsType="static" />
         </Group>
         <Group name="stars">
-          {colision && (
-            <>
-              {Array.from({ length: 11 }).map((_, index) => (
-                <Star key={index} x={12 + index * 70} y={200} />
-              ))}
-            </>
-          )}
+          {Array.from({ length: 11 }).map((_, index) => (
+            <Star key={index} x={12 + index * 70} y={200} />
+          ))}
         </Group>
 
         <Spawner>
