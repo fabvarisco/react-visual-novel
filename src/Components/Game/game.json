@@ -750,6 +750,42 @@
           "characterImage": "/faces/marin_face.png",
           "characterDialog": "Bom... Por enquanto é isso",
           "nextBackground": false
+        }, 
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Agora, Vamos ver como essa IDE funciona.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "O botão de 'Vizualizar Codigo' me permite vizualizar o texto como codigo.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "O botão de 'Editar Codigo' me permite editar.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Compilar o codigo é a etapa final, depois de editar o codigo eu posso compilar.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Porém tenho apenas uma chance, preciso dar o meu melhor!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Ok, Vamos começar!",
+          "nextBackground": false
         }
       ],
       "choices": {

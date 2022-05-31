@@ -1,10 +1,10 @@
 import Highlighter from "../Highlighter/Highlighter";
 import DialogBox from "../DialogBox/DialogBox";
 import CodeChallenge from "./codeChallenge.json";
-import { useSelector } from "react-redux";
-import { Fragment } from "react";
-import { selectPhaser } from "../../Redux/phaserSlice";
 import Modal from "../Modal/Modal";
+import { useSelector } from "react-redux";
+import { selectPhaser } from "../../Redux/phaserSlice";
+import { Fragment } from "react";
 import { selectModal } from "../../Redux/modalSlice";
 import { Link } from "react-router-dom";
 
