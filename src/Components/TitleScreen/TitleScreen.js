@@ -11,7 +11,9 @@ export default function TitleScreen() {
       <div>
         <a
           href={`/Game/0`}
-          onClick={() => dispatch(changeBackground("/startgame/startscreen.png"))}
+          onClick={() =>
+            dispatch(changeBackground("/startgame/startscreen.png"))
+          }
         >
           <button>Start Game</button>
         </a>

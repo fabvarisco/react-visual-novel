@@ -108,16 +108,22 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
   function renderDialog() {
     return (
       <div>
-        <p>
-          <img
-            width={80}
-            height={80}
-            alt={dialogs[dialog]?.characterName}
-            src={dialogs[dialog]?.characterImage}
-            style={{ imageRendering: "pixelated" }}
-          />
-          <b>{dialogs[dialog]?.characterName}</b>
-        </p>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <div>
+            <img
+              width={80}
+              height={80}
+              alt={dialogs[dialog]?.characterName}
+              src={dialogs[dialog]?.characterImage}
+              style={{ imageRendering: "pixelated" }}
+            />
+          </div>
+          <div style={{paddingLeft:"8px"}}>
+            <p>
+              <b>{dialogs[dialog]?.characterName}</b>
+            </p>
+          </div>
+        </div>
         <p>{dialogs[dialog]?.characterDialog}</p>
       </div>
     );
