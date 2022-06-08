@@ -91,12 +91,12 @@ export default function Highlighter({ dataCode }) {
       <Fragment>
         {showButtons && (
           <div className={"buttonContainer"}>
-            <div>
+            <div className="buttonItem">
               <button onClick={() => setPreview(true)}>
                 Visualizar como codigo
               </button>
             </div>
-            <div>
+            <div className="buttonItem">
               <button onClick={() => setPreview(false)}>Editar codigo</button>
             </div>
             <div>
