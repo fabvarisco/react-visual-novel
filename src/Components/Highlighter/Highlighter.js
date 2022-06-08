@@ -16,7 +16,7 @@ export default function Highlighter({ dataCode }) {
   const dispatch = useDispatch();
   const { showButtons } = useSelector(selectPhaser);
   const [preview, setPreview] = useState(true);
-  const [code, setCode] = useState(dataCode.code);
+  const [code, setCode] = useState(dataCode?.code || "");
   function renderPreview() {
     return (
       <SyntaxHighlighter
@@ -56,7 +56,7 @@ export default function Highlighter({ dataCode }) {
 
     const percentage = compareTwoStrings(code, dataCode.codeResolve);
 
-    if (percentage > 0.9) {
+    if (percentage > 0.99) {
       if (dataCode.challengeName === "center") {
         dispatch(changeCenter(true));
         modal = {

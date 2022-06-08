@@ -1,5 +1,5 @@
 import "./style.css";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeBackground } from "../../Redux/backgroundSlice";
 import { changeCodeButtons } from "../../Redux/phaserSlice";
@@ -57,11 +57,11 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
   function renderBackNextButtons() {
     return (
       <div className={"buttonContainer"}>
-        <div>
+        <div className="buttonItem">
           {dialog > 0 && <button onClick={() => backDialog()}>Voltar</button>}
         </div>
         <div>
-          <button onClick={() => nextDialog()}>Próximo</button>
+          <button onClick={() => nextDialog()} >Próximo</button>
         </div>
       </div>
     );
@@ -118,7 +118,7 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
               style={{ imageRendering: "pixelated" }}
             />
           </div>
-          <div style={{paddingLeft:"8px"}}>
+          <div style={{ paddingLeft: "8px" }}>
             <p>
               <b>{dialogs[dialog]?.characterName}</b>
             </p>
@@ -130,12 +130,14 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
   }
 
   return (
-    <div className={"card"}>
-      {showChoices && renderChoices()}
-      {!showChoices && renderDialog()}
-      {tip && renderTip()}
+    <Fragment>
+      <div className={"card"}>
+        {showChoices && renderChoices()}
+        {!showChoices && renderDialog()}
+        {tip && renderTip()}
+      </div>
       {!tip && !showChoices && renderBackNextButtons()}
       {goToChallengeCode && renderGoToChallengeCodeButton()}
-    </div>
+    </Fragment>
   );
 }

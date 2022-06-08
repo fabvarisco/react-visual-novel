@@ -10,10 +10,21 @@ import { Link } from "react-router-dom";
 
 export default function TextGame() {
   ///TODO - descobrir pq ta vindo undefined
+  const { data } = CodeChallenge;
   const { id } = useSelector(selectPhaser);
   const { modal } = useSelector(selectModal);
 
-  const { data } = CodeChallenge;
+  const Minigame = () => <Link to="/minigame">Teste o Jogo!</Link>;
+
+  const Textgame = () => (
+    <Fragment>
+      <Highlighter dataCode={data[id]} />
+      <DialogBox
+        dialogs={data[id]?.dialogs}
+        codeChallenge={data[id]?.codeChallenge}
+      />
+    </Fragment>
+  );
 
   return (
     <Fragment>
@@ -21,18 +32,10 @@ export default function TextGame() {
         className={"container"}
         style={{ opacity: modal.showModal ? 0.3 : 1 }}
       >
-        {!data[id].playGame && (
-          <Fragment>
-            <Highlighter dataCode={data[id]} />
-            <DialogBox
-              dialogs={data[id].dialogs}
-              codeChallenge={data[id].codeChallenge}
-            />
-          </Fragment>
-        )}
+        {data[id] ? Textgame() : Minigame()}
+        
       </div>
       <Modal modal={modal} />
-      {data[id].playGame && <Link to="/minigame">Teste o Jogo!</Link>}
     </Fragment>
   );
 }
