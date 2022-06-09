@@ -653,7 +653,7 @@
         "choiceDialog": [
           {
             "choiceText": "Continuar procurando pela chave de fenda",
-            "choiceGoTo": "/Game/4"
+            "choiceGoTo": "/Game/6"
           }
         ]
       }
