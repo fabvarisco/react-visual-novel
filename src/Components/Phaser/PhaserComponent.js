@@ -12,6 +12,9 @@ import SpikeSpawner from "./SpikeSpawner";
 export default function PhaserComponent() {
   const { center, enemy } = useSelector(selectPhaser);
 
+
+
+  
   return (
     <Game
       width={520}
@@ -30,13 +33,19 @@ export default function PhaserComponent() {
         autoCenter: center ? Phaser.Scale.CENTER_BOTH : Phaser.Scale.NO_CENTER,
       }}
     >
+
+    
+
       <Scene
         sceneKey="main"
         onPreload={(scene) => {
           scene.load.image("background", "background_phaser_game.png");
           scene.load.image("ground", "platform.png");
           scene.load.image("star", "star.png");
-          scene.load.image("spike", "enemy-phaser.png");
+          scene.load.image("spike", "enemy-phaser.png", {
+            frameWidth: 20,
+            frameHeight: 16,
+          });
           scene.load.spritesheet("jarvis", "jarvis-phaser.png", {
             frameWidth: 20,
             frameHeight: 16,

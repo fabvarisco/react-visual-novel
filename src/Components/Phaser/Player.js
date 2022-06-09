@@ -19,10 +19,12 @@ export default function Player(props) {
     }),
     [scene.input.keyboard]
   );
+  
 
   const [velocityX, setVelocityX] = useState(0);
   const [velocityY, setVelocityY] = useState(0);
   const [animation, setAnimation] = useState("turn");
+  const [destroyed, setDestroyed] = useState(false);
 
   const animations = useMemo(
     () => [
@@ -74,6 +76,10 @@ export default function Player(props) {
     }
   });
 
+  if (destroyed) {
+      scene.restart();
+  }
+
   return (
     <ArcadeSprite
       {...props}
@@ -86,6 +92,7 @@ export default function Player(props) {
       velocityX={velocityX}
       velocityY={velocityY}
     >
+      
       <ArcadeCollider with="platform" />
     </ArcadeSprite>
   );

@@ -5,6 +5,7 @@ import Phaser from "phaser";
 export default function Star(props) {
   const ref = useRef(null);
   const [destroyed, setDestroyed] = useState(false);
+  
   const bounceY = useMemo(() => Phaser.Math.FloatBetween(0.4, 0.8), []);
 
   if (destroyed) {
@@ -25,6 +26,7 @@ export default function Star(props) {
         overlapOnly
         onCollide={() => {
           setDestroyed(true);
+          
         }}
       />
     </ArcadeImage>

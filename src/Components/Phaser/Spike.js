@@ -1,28 +1,37 @@
-import React, { useRef, useState } from "react";
-import { ArcadeImage, useGameLoop } from "react-phaser-fiber";
+import Phaser from "phaser";
+import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { ArcadeCollider, ArcadeSprite, useScene } from "react-phaser-fiber";
 
 function Spike(props) {
+  const scene = useScene("main");
+
   const ref = useRef(null);
   const [destroyed, setDestroyed] = useState(false);
-  const [x, setX] = useState(props.x);
-  const [y, setY] = useState(props.y);
 
-  useGameLoop(() => {
 
-  });
-
-  if (destroyed) {
-    return null;
-  }
+  useEffect(() => {
+    if (destroyed === true) {
+      //dispatch
+    }
+  }, [destroyed,scene]);
 
   return (
-    <ArcadeImage
-      x={x}
-      y={y}
+    <ArcadeSprite
+      x={props.x}
+      y={props.y}
       ref={ref}
       name="enemy"
       texture="spike"
-    />
+    >
+      <ArcadeCollider with="platform" />
+      <ArcadeCollider
+        with="player"
+        overlapOnly
+        onCollide={() => {
+          setDestroyed(true);
+        }}
+      />
+    </ArcadeSprite>
   );
 }
 export default Spike;
