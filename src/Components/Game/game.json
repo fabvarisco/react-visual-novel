@@ -157,17 +157,196 @@
         }
       ],
       "choices": {
-        "choiceId": 0,
         "choiceDialog": [
           {
-            "choiceText": "Falar com a Marin",
+            "choiceText": "Continuar conversando com Temaki",
             "choiceGoTo": "/Game/1"
+          },
+          {
+            "choiceText": "Ir ver o codigo de Jarvis",
+            "choiceGoTo": "/Game/2"
+          },
+          {
+            "choiceText": "Falar com a Marin",
+            "choiceGoTo": "/Game/3"
           }
         ]
       }
     },
     {
       "id": 1,
+      "title": "Continuar conversando com Temaki",
+      "dialogs": [
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Então...",
+          "nextBackground": false,
+          "background": ""
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Me fala mais sobre o que você viu ontem.",
+          "nextBackground": false,
+          "background": ""
+        },
+        {
+          "characterName": "Temaki",
+          "characterImage": "/faces/temaki_face.png",
+          "characterDialog": "Hmmm...",
+          "nextBackground": false,
+          "background": ""
+        },
+        {
+          "characterName": "Temaki",
+          "characterImage": "/faces/temaki_face.png",
+          "characterDialog": "Nada de mais...",
+          "nextBackground": false,
+          "background": ""
+        },
+        {
+          "characterName": "Temaki",
+          "characterImage": "/faces/temaki_face.png",
+          "characterDialog": "Quer dizer...",
+          "nextBackground": false,
+          "background": ""
+        },
+        {
+          "characterName": "Temaki",
+          "characterImage": "/faces/temaki_face.png",
+          "characterDialog": "Geraldo, um pouco estranho ele estava.",
+          "nextBackground": false,
+          "background": ""
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Mas Geraldo é meu amigo.",
+          "nextBackground": false,
+          "background": ""
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Poisé, e ele ainda foi programado pela Marin.",
+          "nextBackground": false,
+          "background": ""
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Ele não seria capaz de fazer algo assim.",
+          "nextBackground": false,
+          "background": ""
+        },
+        {
+          "characterName": "Temaki",
+          "characterImage": "/faces/temaki_face.png",
+          "characterDialog": "Apenas contando o que vi.",
+          "nextBackground": false,
+          "background": ""
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Tudo bem, talvez a gente vai atrás dele.",
+          "nextBackground": false,
+          "background": ""
+        }
+      ],
+      "choices": {
+        "choiceDialog": [
+          {
+            "choiceText": "Ir atrás de Geraldo (Não foi escrito Ainda)",
+            "choiceGoTo": "/Game/1"
+          },
+          {
+            "choiceText": "Ver codigo de Jarvis",
+            "choiceGoTo": "/Game/2"
+          },
+          {
+            "choiceText": "Falar com a Marin",
+            "choiceGoTo": "/Game/3"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Analisando Codigo de jarvis",
+      "dialogs": [
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "É realmente...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Seu codigo ta uma bagunça",
+          "nextBackground": true,
+          "background": "/images/codigo/codigobugado.png"
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Nem saberia por onde começar.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Acho que só a Marin poderia te ajudar nisso.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Tommy! ;-;",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Bom...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Eu posso tentar arrumar",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Não garanto que vou conseguir",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "O que você acha?",
+          "nextBackground": false
+        }
+      ],
+      "choices": {
+        "choiceDialog": [
+          {
+            "choiceText": "Tentar arrumar codigo (ainda não finalizado, mas vai te levar para um minigame de texto)",
+            "choiceGoTo": "/Textgame"
+          },
+          {
+            "choiceText": "Desistir e ir pedir ajuda para Marin",
+            "choiceGoTo": "/Game/1"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
       "title": "Pedindo ajuda para Marin",
       "dialogs": [
         {
@@ -307,73 +486,32 @@
         }
       ],
       "choices": {
-        "choiceId": 1,
         "choiceDialog": [
           {
             "choiceText": "Ir ao mercado",
-            "choiceGoTo": "/Game/3"
+            "choiceGoTo": "/Game/5"
           }
         ]
       }
     },
     {
-      "id": 2,
-      "background": ["3"],
-      "title": "Investigando a cena do crime",
+      "id": 4,
+      "title": "Falar com Geraldo",
       "dialogs": [
         {
-          "characterName": "Tommy",
-          "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "É realmente...",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Tommy",
-          "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "Seu codigo ta uma bagunça",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Tommy",
-          "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "Nem saberia por onde começar.",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Tommy",
-          "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "Acho que só a Marin poderia te ajudar nisso.",
-          "nextBackground": false
-        },
-        {
           "characterName": "Jarvis",
           "characterImage": "/faces/jarvis_face.png",
-          "characterDialog": "Tommy! ;-;",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Tommy",
-          "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "E além disso, seu quarto ta uma bagunça",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Jarvis",
-          "characterImage": "/faces/jarvis_face.png",
-          "characterDialog": "",
-          "nextBackground": false
+          "characterDialog": "MAAAARIIIIN!!!",
+          "nextBackground": true,
+          "background": "/images/Pedindo ajuda para Marin/maring_part_1.png"
         }
       ],
-      "choices": [
-        {
-          "choiceId": 0,
-          "choiceDialog": [],
-          "goTo": 0
-        }
-      ]
+      "choices": {
+        "choiceDialog": []
+      }
     },
     {
-      "id": 3,
+      "id": 5,
       "title": "Mercado",
       "dialogs": [
         {
@@ -521,9 +659,8 @@
       }
     },
     {
-      "id": 4,
+      "id": 6,
       "title": "Encontrando chave de fenda",
-      "background": ["3"],
       "dialogs": [
         {
           "characterName": "Tommy",
@@ -683,19 +820,17 @@
         }
       ],
       "choices": {
-        "choiceId": 0,
         "choiceDialog": [
           {
             "choiceText": "Ir para casa de Jarvis arrumar seu codigo.",
-            "choiceGoTo": "/Game/5"
+            "choiceGoTo": "/Game/7"
           }
         ]
       }
     },
     {
-      "id": 5,
+      "id": 7,
       "title": "Marin e o codigo de Jarvis",
-      "background": ["3"],
       "dialogs": [
         {
           "characterName": "Marin",
@@ -750,46 +885,45 @@
           "characterImage": "/faces/marin_face.png",
           "characterDialog": "Bom... Por enquanto é isso",
           "nextBackground": false
-        }, 
+        },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/jarvis_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Agora, Vamos ver como essa IDE funciona.",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/jarvis_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "O botão de 'Vizualizar Codigo' me permite vizualizar o texto como codigo.",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/jarvis_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "O botão de 'Editar Codigo' me permite editar.",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/jarvis_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Compilar o codigo é a etapa final, depois de editar o codigo eu posso compilar.",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/jarvis_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Porém tenho apenas uma chance, preciso dar o meu melhor!",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
-          "characterImage": "/faces/jarvis_face.png",
+          "characterImage": "/faces/marin_face.png",
           "characterDialog": "Ok, Vamos começar!",
           "nextBackground": false
         }
       ],
       "choices": {
-        "choiceId": 0,
         "choiceDialog": [
           {
             "choiceText": "Começar",

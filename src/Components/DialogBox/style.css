@@ -1,3 +1,12 @@
+
+:root {
+  --marin_color: rgb(180 227 87);
+  --jarvis_color: rgb(241 186 55); 
+  --tommy_color: rgb(164 35 54); 
+  --temaki_color: rgb(166 159 150); 
+  --geraldo_color: rgb(43 173 150); 
+}
+
 .card {
   margin: 1rem;
   padding: 1.5rem;
@@ -39,5 +48,7 @@
 
 .card img {
   border: solid;
-  background: rgb(7, 219, 219);
+  background: var(--jarvis_color);
 }
+
+

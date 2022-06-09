@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -27,20 +27,6 @@ export default function Highlighter({ dataCode }) {
         {code}
       </SyntaxHighlighter>
     );
-  }
-
-  function similar(a, b) {
-    var equivalency = 0;
-    var minLength = a.length > b.length ? b.length : a.length;
-    var maxLength = a.length < b.length ? b.length : a.length;
-    for (var i = 0; i < minLength; i++) {
-      if (a[i] == b[i]) {
-        equivalency++;
-      }
-    }
-
-    var weight = equivalency / maxLength;
-    return weight * 100 + "%";
   }
 
   function compileCode() {
