@@ -7,7 +7,7 @@ export default function Modal({
   modal: { showModal, choices, modalConfig },
 }) {
   const dispatch = useDispatch();
-
+  
 
   return (
     <Fragment>

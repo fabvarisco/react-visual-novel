@@ -13,8 +13,6 @@ export default function TextGame() {
   const { id } = useParams();
   const { modal } = useSelector(selectModal);
 
-  const Minigame = () => <Link to="/minigame">Teste o Jogo!</Link>;
-
   const Textgame = () => (
     <Fragment>
       <Highlighter dataCode={data[id]} />
@@ -31,7 +29,7 @@ export default function TextGame() {
         className={"container"}
         style={{ opacity: modal.showModal ? 0.3 : 1 }}
       >
-        {data[id] ? Textgame() : Minigame()}
+        {data[id] && Textgame()}
         
       </div>
       <Modal modal={modal} />

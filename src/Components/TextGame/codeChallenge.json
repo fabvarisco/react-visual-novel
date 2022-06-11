@@ -23,6 +23,10 @@
         {
           "choiceText": "Pedir ajuda para Marin",
           "choiceGoTo": "/Game/3"
+        },
+        {
+          "choiceText": "Ir para o proximo erro",
+          "choiceGoTo": "/Textgame/1"
         }
       ],
       "successChoices": [

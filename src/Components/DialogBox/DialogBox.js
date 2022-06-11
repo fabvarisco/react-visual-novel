@@ -124,7 +124,6 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
         <div style={{ display: "flex", alignItems: "center" }}>
           <div>
             <img
-
               width={80}
               height={80}
               alt={dialogs[dialog]?.characterName}

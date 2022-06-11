@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom";
-import DialogBox from "../DialogBox/DialogBox";
+import { useDispatch, useSelector } from "react-redux";
 import PhaserComponent from "../Phaser/PhaserComponent";
+import { selectGame } from "../../Redux/gameSlice";
 
 export default function Minigame() {
+  const { continueFrom } = useSelector(selectGame);
+
   return (
     <div>
       <PhaserComponent />
@@ -14,6 +16,11 @@ export default function Minigame() {
       <div>
         <a href={"/textgame"}>
           <button>Tentar arrumar o codigo de jarvis novamente</button>
+        </a>
+      </div>
+      <div>
+        <a href={continueFrom}>
+          <button>Continuar (Ainda não implementado)</button>
         </a>
       </div>
     </div>

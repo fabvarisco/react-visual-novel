@@ -987,7 +987,7 @@
         "choiceDialog": [
           {
             "choiceText": "Começar",
-            "choiceGoTo": "/textgame/1"
+            "choiceGoTo": "/textgame/2"
           }
         ]
       }

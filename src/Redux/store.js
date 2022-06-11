@@ -5,6 +5,9 @@ import backgroundReducer from "./backgroundSlice";
 import gameTextReducer from "./textGameSlice";
 import modalReducer from "./modalSlice";
 import dialogBoxReducer from "./dialogBoxSlice";
+import gameReducer from "./gameSlice";
+
+
 
 export default configureStore({
   reducer: {
@@ -13,5 +16,6 @@ export default configureStore({
     gameTextController: gameTextReducer,
     modal: modalReducer,
     dialogBox: dialogBoxReducer,
+    game: gameReducer
   },
 });
