@@ -32,13 +32,9 @@ export default function Highlighter({ dataCode }) {
   function compileCode() {
     ///TODO - Mostrar modal e redirecionar para pagina devida
     let modal = {
-      title: "",
-      image: "",
-      text: "",
-      buttonText: "",
+      choices: [],
       showModal: false,
-      goTo: dataCode?.goTo,
-      choices: dataCode?.choices
+      modalConfig:{}
     };
 
     const percentage = compareTwoStrings(code, dataCode.codeResolve);
@@ -47,12 +43,9 @@ export default function Highlighter({ dataCode }) {
       if (dataCode.challengeName === "center") {
         dispatch(changeCenter(true));
         modal = {
-          title: "Compilado!",
-          text: "Yeah! Agora falta só mais dois desafios!",
-          buttonText: "Proximo",
           showModal: true,
-          goTo: dataCode?.goTo,
-          choices: dataCode?.choices
+          choices: dataCode?.successChoices,
+          modalConfig: dataCode.modalConfigOnSuccess
         };
       }
 
@@ -64,12 +57,9 @@ export default function Highlighter({ dataCode }) {
       }
     } else {
       modal = {
-        title: "ERRO!",
-        text: "Droga! Não era isso!",
-        buttonText: "Proximo",
         showModal: true,
-        goTo: dataCode?.goTo,
-        choices: dataCode?.choices
+        choices: dataCode?.errorChoices,
+        modalConfig: dataCode.modalConfigOnError
       };
     }
     dispatch(changeModal(modal));

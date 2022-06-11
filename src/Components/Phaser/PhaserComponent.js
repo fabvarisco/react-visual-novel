@@ -9,12 +9,10 @@ import { selectPhaser } from "../../Redux/phaserSlice";
 import { useSelector } from "react-redux";
 
 import SpikeSpawner from "./SpikeSpawner";
+import Spike from "./Spike";
 export default function PhaserComponent() {
   const { center, enemy } = useSelector(selectPhaser);
 
-
-
-  
   return (
     <Game
       width={520}
@@ -33,9 +31,6 @@ export default function PhaserComponent() {
         autoCenter: center ? Phaser.Scale.CENTER_BOTH : Phaser.Scale.NO_CENTER,
       }}
     >
-
-    
-
       <Scene
         sceneKey="main"
         onPreload={(scene) => {
@@ -66,13 +61,21 @@ export default function PhaserComponent() {
           <Platform x={0} y={413} scale={3} physicsType="static" />
         </Group>
         <Group name="stars">
-          {Array.from({ length: 11 }).map((_, index) => (
+          {Array.from({ length: 23 }).map((_, index) => (
             <Star key={index} x={12 + index * 70} y={200} />
           ))}
         </Group>
 
+        {/* {<Group name="spike">
+          {Array.from({ length: 11 }).map((_, index) => (
+            <Spike key={index} x={12 + index * 70} y={200} />
+          ))}
+        </Group> } */}
+
         <Spawner>
-          <SpikeSpawner />
+          <Group name="spike">
+            <SpikeSpawner />
+          </Group>
         </Spawner>
       </Scene>
     </Game>

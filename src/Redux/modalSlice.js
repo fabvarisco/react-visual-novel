@@ -4,12 +4,9 @@ export const slice = createSlice({
   name: "modal",
   initialState: {
     modal: {
-      title: "",
-      image: "",
-      text: "",
-      buttonText: "",
+      choices: [],
       showModal: false,
-      goTo: 0,
+      modalConfig:{}
     },
   },
   reducers: {

@@ -19,7 +19,46 @@
       "codeChallenge": {
         "codeTip": "O ideal é utilizar flexbox."
       },
-      "choices": [
+      "errorChoices": [
+        {
+          "choiceText": "Pedir ajuda para Marin",
+          "choiceGoTo": "/Game/3"
+        }
+      ],
+      "successChoices": [
+        {
+          "choiceText": "Proximo (não foi escrito ainda)",
+          "choiceGoTo": "/Textgame/1"
+        }
+      ],
+      "modalConfigOnError": {
+        "modalTitle" : "ERRO!",
+        "modalText": "Sabia que isso ia acontecer..."
+      },
+      "modalConfigOnSuccess": {
+        "modalTitle" : "Compilado!",
+        "modalText": "Uhuuuuul! Consegui!"
+      }
+    },
+    {
+      "id": 1,
+      "challengeName": "center",
+      "code": ".center_game_screen { \n display: flex; \n }",
+      "codeResolve": ".center_game_screen { display: flex; justify-content: center; align-items: center; }",
+      "effect": "center",
+      "playGame": false,
+      "dialogs": [
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "É melhor pedir ajuda pra Marin, mas vamos ver se eu consigo resolver.",
+          "nextBackground": false
+        }
+      ],
+      "codeChallenge": {
+        "codeTip": "O ideal é utilizar flexbox."
+      },
+      "errorChoices": [
         {
           "choiceText": "Pedir ajuda para Marin",
           "choiceGoTo": "/Game/3"
@@ -28,17 +67,29 @@
           "choiceText": "Testar jogo.",
           "choiceGoTo": "/Minigame"
         }
-      ]
+      ],
+      "successChoices": [
+        {
+          "choiceText": "Testar jogo!",
+          "choiceGoTo": "/Minigame"
+        }
+      ],
+      "modalConfigOnError": {
+        "modalTitle" : "ERRO!",
+        "modalText": "Sabia que isso ia acontecer..."
+      },
+      "modalConfigOnSuccess": {
+        "modalTitle" : "Você concluiu o desafio!",
+        "modalText": "CONSEGUIMOS! ARRUMAMOS SEU JOGO JARVIS!"
+      }
     },
-
     {
-      "id": 1,
+      "id": 2,
       "challengeName": "center",
       "code": ".center_game_screen { \n display: flex; \n justify-content: centerrer; \n align-items: center; \n }",
       "codeResolve": ".center_game_screen { display: flex; justify-content: center; align-items: center; }",
       "effect": "center",
       "playGame": false,
-      "goTo": "/Textgame/3",
       "dialogs": [
         {
           "characterName": "Marin",
@@ -50,32 +101,64 @@
       "codeChallenge": {
         "codeTip": "Acho que aqui é apenas um erro de escrita."
       },
-      "choices": [
-
+      "modalConfigOnError": {
+        "modalTitle" : "ERROR!",
+        "modalText": "Droga! Eu errei!"
+      },
+      "modalConfigOnSuccess": {
+        "modalTitle" : "Compilado!",
+        "modalText": "Yeah! Agora falta só mais um!"
+      },
+      "errorChoices": [
+        {
+          "choiceText": "Proximo!",
+          "choiceGoTo": "/Textgame/3"
+        }
+      ],
+      "successChoices": [
+        {
+          "choiceText": "Proximo!",
+          "choiceGoTo": "/Textgame/3"
+        }
       ]
     },
-
     {
       "id": 3,
-      "challengeName": "",
-      "code": "",
-      "codeResolve": "",
-      "effect": "",
-      "playGame": true,
-      "goTo": 0,
+      "challengeName": "center",
+      "code": ".center_game_screen { \n display: flex; \n justify-content: centerrer; \n align-items: center; \n }",
+      "codeResolve": ".center_game_screen { display: flex; justify-content: center; align-items: center; }",
+      "effect": "center",
+      "playGame": false,
       "dialogs": [
         {
-          "characterName": "",
+          "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "",
+          "characterDialog": "Esse primeiro problema está relacionado com a tela, ela parece não estar centralizada.",
           "nextBackground": false
         }
       ],
       "codeChallenge": {
-        "codeTip": "É melhor centralizar com flexbox"
+        "codeTip": "Acho que aqui é apenas um erro de escrita."
       },
-      "choices": [
-
+      "modalConfigOnError": {
+        "modalTitle" : "ERROR!",
+        "modalText": "Droga! Eu errei!"
+      },
+      "modalConfigOnSuccess": {
+        "modalTitle" : "Compilado!",
+        "modalText": "YEAH! CONSEGUIMOS! ARRUMAMOS SEU JOGUINHO JARVIS!"
+      },
+      "errorChoices": [
+        {
+          "choiceText": "Testar jogo.",
+          "choiceGoTo": "/Minigame"
+        }
+      ],
+      "successChoices": [
+        {
+          "choiceText": "Testar jogo.",
+          "choiceGoTo": "/Minigame"
+        }
       ]
     }
   ]

@@ -21,6 +21,8 @@ export default function Player(props) {
   );
   
 
+  const [x, setX] = useState(props.x);
+  const [y, setY] = useState(props.y);
   const [velocityX, setVelocityX] = useState(0);
   const [velocityY, setVelocityY] = useState(0);
   const [animation, setAnimation] = useState("turn");
@@ -77,7 +79,7 @@ export default function Player(props) {
   });
 
   if (destroyed) {
-      scene.restart();
+    return null
   }
 
   return (
@@ -91,8 +93,19 @@ export default function Player(props) {
       collideWorldBounds
       velocityX={velocityX}
       velocityY={velocityY}
+      x={x}
+      y={y}
     >
-      
+
+      <ArcadeCollider
+        with="spike"
+        overlapOnly
+
+        onCollide={(event) => {
+          console.log(event)
+          setDestroyed(true);
+        }}
+      />
       <ArcadeCollider with="platform" />
     </ArcadeSprite>
   );
