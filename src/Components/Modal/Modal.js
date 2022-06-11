@@ -5,9 +5,60 @@ import { changeModal } from "../../Redux/modalSlice";
 import { changeId } from "../../Redux/phaserSlice";
 import "./style.css";
 export default function Modal({
-  modal: { title, text, buttonText, goTo, showModal },
+  modal: { title, text, showModal, choices, buttonText, goTo },
 }) {
   const dispatch = useDispatch();
+
+  const MarinGame = () => (
+    <a href={goTo}>
+      <button
+        className="toggle-button"
+        onClick={() => {
+          dispatch(changeDialog(0));
+          dispatch(
+            changeModal({
+              title: "",
+              image: "",
+              text: "",
+              buttonText: "",
+              showModal: false,
+              goTo: 0,
+            })
+          );
+        }}
+      >
+        {buttonText}
+      </button>
+    </a>
+  );
+
+  const TommyGame = () => (
+    <>
+      {choices.map(({ choiceText, choiceGoTo }) => (
+        <a href={choiceGoTo}>
+          <button
+            className="toggle-button"
+            onClick={() => {
+              dispatch(changeDialog(0));
+              dispatch(
+                changeModal({
+                  title: "",
+                  image: "",
+                  text: "",
+                  buttonText: "",
+                  showModal: false,
+                  goTo: 0,
+                })
+              );
+            }}
+          >
+            {choiceText}
+          </button>
+        </a>
+      ))}
+    </>
+  );
+
   return (
     <Fragment>
       {showModal && (
@@ -16,25 +67,7 @@ export default function Modal({
             <h2>{title}</h2>
             <div className="content">{text}</div>
             <div className="actions">
-              <button
-                className="toggle-button"
-                onClick={() => {
-                  dispatch(changeId(goTo));
-                  dispatch(changeDialog(0));
-                  dispatch(
-                    changeModal({
-                      title: "",
-                      image: "",
-                      text: "",
-                      buttonText: "",
-                      showModal: false,
-                      goTo: 0,
-                    })
-                  );
-                }}
-              >
-                {buttonText}
-              </button>
+              {goTo === "no" ? TommyGame() : MarinGame()}
             </div>
           </div>
         </div>

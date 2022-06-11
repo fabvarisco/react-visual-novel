@@ -3,15 +3,14 @@ import DialogBox from "../DialogBox/DialogBox";
 import CodeChallenge from "./codeChallenge.json";
 import Modal from "../Modal/Modal";
 import { useSelector } from "react-redux";
-import { selectPhaser } from "../../Redux/phaserSlice";
 import { Fragment } from "react";
 import { selectModal } from "../../Redux/modalSlice";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function TextGame() {
   ///TODO - descobrir pq ta vindo undefined
   const { data } = CodeChallenge;
-  const { id } = useSelector(selectPhaser);
+  const { id } = useParams();
   const { modal } = useSelector(selectModal);
 
   const Minigame = () => <Link to="/minigame">Teste o Jogo!</Link>;

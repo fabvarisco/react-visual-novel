@@ -37,7 +37,8 @@ export default function Highlighter({ dataCode }) {
       text: "",
       buttonText: "",
       showModal: false,
-      goTo: 3,
+      goTo: dataCode?.goTo,
+      choices: dataCode?.choices
     };
 
     const percentage = compareTwoStrings(code, dataCode.codeResolve);
@@ -48,9 +49,10 @@ export default function Highlighter({ dataCode }) {
         modal = {
           title: "Compilado!",
           text: "Yeah! Agora falta só mais dois desafios!",
-          goTo: 3,
           buttonText: "Proximo",
           showModal: true,
+          goTo: dataCode?.goTo,
+          choices: dataCode?.choices
         };
       }
 
@@ -64,9 +66,10 @@ export default function Highlighter({ dataCode }) {
       modal = {
         title: "ERRO!",
         text: "Droga! Não era isso!",
-        goTo: 3,
         buttonText: "Proximo",
         showModal: true,
+        goTo: dataCode?.goTo,
+        choices: dataCode?.choices
       };
     }
     dispatch(changeModal(modal));

@@ -3,42 +3,66 @@
     {
       "id": 0,
       "challengeName": "center",
-      "code": ".game { \n display: flex; \n justify-content: centerrer; \n align-items: center; \n }",
-      "codeResolve": ".game { display: flex; justify-content: center; align-items: center; }",
+      "code": ".center_game_screen { \n display: flex; \n }",
+      "codeResolve": ".center_game_screen { display: flex; justify-content: center; align-items: center; }",
       "effect": "center",
-      "playGame":false,
+      "playGame": false,
+      "goTo": "no",
       "dialogs": [
         {
-          "characterName": "Marin",
-          "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Ok, Vamos começar!",
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "É melhor pedir ajuda pra Marin, mas vamos ver se eu consigo resolver.",
           "nextBackground": false
+        }
+      ],
+      "codeChallenge": {
+        "codeTip": "O ideal é utilizar flexbox."
+      },
+      "choices": [
+        {
+          "choiceText": "Pedir ajuda para Marin",
+          "choiceGoTo": "/Game/3"
         },
+        {
+          "choiceText": "Testar jogo.",
+          "choiceGoTo": "/Minigame"
+        }
+      ]
+    },
+
+    {
+      "id": 1,
+      "challengeName": "center",
+      "code": ".center_game_screen { \n display: flex; \n justify-content: centerrer; \n align-items: center; \n }",
+      "codeResolve": ".center_game_screen { display: flex; justify-content: center; align-items: center; }",
+      "effect": "center",
+      "playGame": false,
+      "goTo": "/Textgame/3",
+      "dialogs": [
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
           "characterDialog": "Esse primeiro problema está relacionado com a tela, ela parece não estar centralizada.",
           "nextBackground": false
-        },
-        {
-          "characterName": "Marin",
-          "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Creio que seja apenas um erro bobo.",
-          "nextBackground": false
         }
       ],
       "codeChallenge": {
-        "codeTip": "É melhor centralizar com flexbox"
-      }
+        "codeTip": "Acho que aqui é apenas um erro de escrita."
+      },
+      "choices": [
+
+      ]
     },
- 
+
     {
       "id": 3,
       "challengeName": "",
       "code": "",
       "codeResolve": "",
       "effect": "",
-      "playGame":true,
+      "playGame": true,
+      "goTo": 0,
       "dialogs": [
         {
           "characterName": "",
@@ -49,7 +73,10 @@
       ],
       "codeChallenge": {
         "codeTip": "É melhor centralizar com flexbox"
-      }
+      },
+      "choices": [
+
+      ]
     }
   ]
 }

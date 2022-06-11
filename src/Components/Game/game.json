@@ -316,13 +316,61 @@
         {
           "characterName": "Tommy",
           "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "Eu posso tentar arrumar",
+          "characterDialog": "Pelo jeito esse primeiro erro é relacionado a um css, certo?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Poisé, o jogo não fica mais centralizado ;-;",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
           "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "Não garanto que vou conseguir",
+          "characterDialog": "hmmm...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Você utilizou flexbox pra tudo né? Nada de Grids ou gambiarras certo? ",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Exatamente, nada de gambiarras, apenas flexbox",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Não usei grids porque acho muito complicado.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Bom menos mal...",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "É porque você não viu o resto.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Não consigo nem imaginar",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Tommy",
+          "characterImage": "/faces/tommy_face.png",
+          "characterDialog": "Eu posso tentar arrumar, mas não garanto nada.",
           "nextBackground": false
         },
         {
@@ -335,8 +383,8 @@
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Tentar arrumar codigo (ainda não finalizado, mas vai te levar para um minigame de texto)",
-            "choiceGoTo": "/Textgame"
+            "choiceText": "Tentar arrumar codigo",
+            "choiceGoTo": "/Textgame/0"
           },
           {
             "choiceText": "Desistir e ir pedir ajuda para Marin",
@@ -877,13 +925,31 @@
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Ajustar o surgimento dos inimigos",
+          "characterDialog": "Bom... Por enquanto é isso.",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Bom... Por enquanto é isso",
+          "characterDialog": "Seu codigo ta bem bagunçado.",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/marin_face.png",
+          "characterDialog": "Você salvou seu codigo no git?",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Jarvis",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Positivo!",
+          "nextBackground": false
+        },
+        {
+          "characterName": "Marin",
+          "characterImage": "/faces/marin_face.png",
+          "characterDialog": "Ah tem uma versão anterior aqui mas ainda não ta completa.",
           "nextBackground": false
         },
         {
@@ -913,13 +979,7 @@
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Porém tenho apenas uma chance, preciso dar o meu melhor!",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Marin",
-          "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Ok, Vamos começar!",
+          "characterDialog": "Ok! Vamos começar!",
           "nextBackground": false
         }
       ],
@@ -927,7 +987,7 @@
         "choiceDialog": [
           {
             "choiceText": "Começar",
-            "choiceGoTo": "/textgame"
+            "choiceGoTo": "/textgame/1"
           }
         ]
       }
