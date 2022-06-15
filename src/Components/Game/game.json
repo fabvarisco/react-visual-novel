@@ -388,7 +388,7 @@
           },
           {
             "choiceText": "Desistir e ir pedir ajuda para Marin",
-            "choiceGoTo": "/Game/1"
+            "choiceGoTo": "/Game/3"
           }
         ]
       }

@@ -19,10 +19,6 @@
           {
             "choiceText": "Recomeçar",
             "choiceGoTo": "/"
-          },
-          {
-            "choiceText": "Tentar concertar o jogo do jarvis denovo",
-            "choiceGoTo": "/Textgame"
           }
         ]
       }

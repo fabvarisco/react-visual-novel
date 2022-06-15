@@ -1,8 +1,11 @@
 import { Fragment, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+
 import { changeModal } from "../../Redux/modalSlice";
+import js from "react-syntax-highlighter/dist/esm/languages/hljs/javascript";
+
 import {
   changeCenter,
   changeEnemies,
@@ -20,8 +23,11 @@ export default function Highlighter({ dataCode }) {
   function renderPreview() {
     return (
       <SyntaxHighlighter
+        registerLanguage={js}
+        showLineNumbers={true}
+        wrapLongLines={true}
         language="javascript"
-        style={dark}
+        style={vscDarkPlus}
         className="textGame"
       >
         {code}
@@ -34,7 +40,7 @@ export default function Highlighter({ dataCode }) {
     let modal = {
       choices: [],
       showModal: false,
-      modalConfig:{}
+      modalConfig: {},
     };
 
     const percentage = compareTwoStrings(code, dataCode.codeResolve);
@@ -45,7 +51,7 @@ export default function Highlighter({ dataCode }) {
         modal = {
           showModal: true,
           choices: dataCode?.successChoices,
-          modalConfig: dataCode.modalConfigOnSuccess
+          modalConfig: dataCode.modalConfigOnSuccess,
         };
       }
 
@@ -59,7 +65,7 @@ export default function Highlighter({ dataCode }) {
       modal = {
         showModal: true,
         choices: dataCode?.errorChoices,
-        modalConfig: dataCode.modalConfigOnError
+        modalConfig: dataCode.modalConfigOnError,
       };
     }
     dispatch(changeModal(modal));

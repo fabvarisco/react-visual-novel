@@ -14,13 +14,8 @@ export default function Minigame() {
         </a>
       </div>
       <div>
-        <a href={"/textgame"}>
-          <button>Tentar arrumar o codigo de jarvis novamente</button>
-        </a>
-      </div>
-      <div>
         <a href={continueFrom}>
-          <button>Continuar (Ainda não implementado)</button>
+          <button>Continuar de onde parou (Ainda não implementado)</button>
         </a>
       </div>
     </div>
