@@ -1,10 +1,11 @@
 import { Fragment } from "react";
 import { useDispatch } from "react-redux";
 import { changeDialog } from "../../Redux/dialogBoxSlice";
+import { changeContinueFrom } from "../../Redux/gameSlice";
 import { changeModal } from "../../Redux/modalSlice";
 import "./style.css";
 export default function Modal({
-  modal: { showModal, choices, modalConfig },
+  modal: { showModal, choices, modalConfig,continueFrom },
 }) {
   const dispatch = useDispatch();
   
@@ -22,6 +23,7 @@ export default function Modal({
                   <button
                     className="toggle-button"
                     onClick={() => {
+                      dispatch(changeContinueFrom(continueFrom))
                       dispatch(changeDialog(0));
                       dispatch(
                         changeModal({

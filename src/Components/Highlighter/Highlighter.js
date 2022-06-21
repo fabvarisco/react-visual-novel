@@ -2,9 +2,7 @@ import { Fragment, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
-
 import { changeModal } from "../../Redux/modalSlice";
-import js from "react-syntax-highlighter/dist/esm/languages/hljs/javascript";
 
 import {
   changeCenter,
@@ -23,7 +21,6 @@ export default function Highlighter({ dataCode }) {
   function renderPreview() {
     return (
       <SyntaxHighlighter
-        registerLanguage={js}
         showLineNumbers={true}
         wrapLongLines={true}
         language="javascript"
@@ -41,17 +38,19 @@ export default function Highlighter({ dataCode }) {
       choices: [],
       showModal: false,
       modalConfig: {},
+      continueFrom: "",
     };
 
     const percentage = compareTwoStrings(code, dataCode.codeResolve);
-
-    if (percentage > 0.99) {
+    console.log(percentage);
+    if (percentage >= 0.99) {
       if (dataCode.challengeName === "center") {
         dispatch(changeCenter(true));
         modal = {
           showModal: true,
           choices: dataCode?.successChoices,
           modalConfig: dataCode.modalConfigOnSuccess,
+          continueFrom: dataCode?.continueFrom,
         };
       }
 
@@ -65,7 +64,8 @@ export default function Highlighter({ dataCode }) {
       modal = {
         showModal: true,
         choices: dataCode?.errorChoices,
-        modalConfig: dataCode.modalConfigOnError,
+        modalConfig: dataCode?.modalConfigOnError,
+        continueFrom: dataCode?.continueFrom,
       };
     }
     dispatch(changeModal(modal));

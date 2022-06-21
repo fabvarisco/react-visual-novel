@@ -5,7 +5,7 @@ import Modal from "../Modal/Modal";
 import { useSelector } from "react-redux";
 import { Fragment } from "react";
 import { selectModal } from "../../Redux/modalSlice";
-import { Link, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 
 export default function TextGame() {
   ///TODO - descobrir pq ta vindo undefined

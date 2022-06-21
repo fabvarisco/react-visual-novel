@@ -3,8 +3,8 @@
     {
       "id": 0,
       "challengeName": "center",
-      "code": ".center_game_screen { \n display: flex; \n }",
-      "codeResolve": ".center_game_screen { display: flex; justify-content: center; align-items: center; }",
+      "code": ".center_game_screen {\nposition:absolute;\ntop:30%\nbottom:50%;\nleft:0;\nright:0;\nmargin:auto;\nwidth50vw;\nheight:50vh;\n}",
+      "codeResolve": ".center_game_screen {\nposition:absolute;\ntop:30%;\nbottom:50%;\nleft:0;\nright:0;\nmargin:auto;\nwidth:50vw;\nheight:50vh;\n}",
       "effect": "center",
       "playGame": false,
       "goTo": "no",
@@ -21,18 +21,16 @@
       },
       "errorChoices": [
         {
-          "choiceText": "Pedir ajuda para Marin",
-          "choiceGoTo": "/Game/3"
-        },
-        {
           "choiceText": "Ir para o proximo erro",
-          "choiceGoTo": "/Textgame/1"
+          "choiceGoTo": "/Textgame/1",
+          "continueFrom": ""
         }
       ],
       "successChoices": [
         {
-          "choiceText": "Proximo (não foi escrito ainda)",
-          "choiceGoTo": "/Textgame/1"
+          "choiceText": "Ir para o proximo erro",
+          "choiceGoTo": "/Textgame/1",
+          "continueFrom": ""
         }
       ],
       "modalConfigOnError": {
@@ -65,11 +63,13 @@
       "errorChoices": [
         {
           "choiceText": "Pedir ajuda para Marin",
-          "choiceGoTo": "/Game/3"
+          "choiceGoTo": "/Game/3",
+          "continueFrom": ""
         },
         {
           "choiceText": "Testar jogo.",
-          "choiceGoTo": "/Minigame"
+          "choiceGoTo": "/Minigame",
+          "continueFrom": ""
         }
       ],
       "successChoices": [
@@ -90,8 +90,8 @@
     {
       "id": 2,
       "challengeName": "center",
-      "code": ".center_game_screen { \n display: flex; \n justify-content: centerrer; \n align-items: center; \n }",
-      "codeResolve": ".center_game_screen { display: flex; justify-content: center; align-items: center; }",
+      "code": ".center_game_screen {\nposition:absolute;\ntop:30%\nbottom:50%;\nleft:0;\nright:0;\nmargin:auto;\nwidth50vw;\nheight:50vh;\n}",
+      "codeResolve": ".center_game_screen {\nposition:absolute;\ntop:30%;\nbottom:50%;\nleft:0;\nright:0;\nmargin:auto;\nwidth:50vw;\nheight:50vh;\n}",
       "effect": "center",
       "playGame": false,
       "dialogs": [
@@ -116,13 +116,15 @@
       "errorChoices": [
         {
           "choiceText": "Proximo!",
-          "choiceGoTo": "/Textgame/3"
+          "choiceGoTo": "/Textgame/3",
+          "continueFrom": ""
         }
       ],
       "successChoices": [
         {
           "choiceText": "Proximo!",
-          "choiceGoTo": "/Textgame/3"
+          "choiceGoTo": "/Textgame/3",
+          "continueFrom": ""
         }
       ]
     },
@@ -155,13 +157,15 @@
       "errorChoices": [
         {
           "choiceText": "Testar jogo.",
-          "choiceGoTo": "/Minigame"
+          "choiceGoTo": "/Minigame",
+          "continueFrom": ""
         }
       ],
       "successChoices": [
         {
           "choiceText": "Testar jogo.",
-          "choiceGoTo": "/Minigame"
+          "choiceGoTo": "/Minigame",
+          "continueFrom": ""
         }
       ]
     }

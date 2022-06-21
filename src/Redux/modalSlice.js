@@ -6,7 +6,8 @@ export const slice = createSlice({
     modal: {
       choices: [],
       showModal: false,
-      modalConfig:{}
+      modalConfig:{},
+      continueFrom:""
     },
   },
   reducers: {
