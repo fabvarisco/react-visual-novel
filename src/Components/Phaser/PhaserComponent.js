@@ -10,8 +10,8 @@ import { useSelector } from "react-redux";
 
 import SpikeSpawner from "./SpikeSpawner";
 export default function PhaserComponent() {
-  const { center, enemy } = useSelector(selectPhaser);
-
+  const { center, enemies } = useSelector(selectPhaser);
+  debugger
   return (
     <Game
       width={520}
@@ -71,7 +71,7 @@ export default function PhaserComponent() {
           ))}
         </Group> } */}
 
-        {enemy && <Spawner>
+        {enemies && <Spawner>
           <Group name="spike">
             <SpikeSpawner />
           </Group>

@@ -3,14 +3,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { changeModal } from "../../Redux/modalSlice";
-
 import {
-  changeCenter,
+  changeCenter, 
   changeEnemies,
-  changePlayerPos,
   selectPhaser,
 } from "../../Redux/phaserSlice";
-
 import { compareTwoStrings } from "string-similarity";
 
 export default function Highlighter({ dataCode }) {
@@ -42,24 +39,22 @@ export default function Highlighter({ dataCode }) {
     };
 
     const percentage = compareTwoStrings(code, dataCode.codeResolve);
-    console.log(percentage);
     if (percentage >= 0.99) {
-      if (dataCode.challengeName === "center") {
+      if (dataCode.effect === "center") {
         dispatch(changeCenter(true));
-        modal = {
-          showModal: true,
-          choices: dataCode?.successChoices,
-          modalConfig: dataCode.modalConfigOnSuccess,
-          continueFrom: dataCode?.continueFrom,
-        };
       }
-
-      if (dataCode.effect === "playerPos") {
-        dispatch(changePlayerPos({ x: 35409, y: 43289432 }));
-      }
+      debugger
       if (dataCode.effect === "enemies") {
+        debugger
         dispatch(changeEnemies(true));
       }
+
+      modal = {
+        showModal: true,
+        choices: dataCode?.successChoices,
+        modalConfig: dataCode.modalConfigOnSuccess,
+        continueFrom: dataCode?.continueFrom,
+      };
     } else {
       modal = {
         showModal: true,

@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { changeDialog } from "../../Redux/dialogBoxSlice";
 import { changeContinueFrom } from "../../Redux/gameSlice";
 import { changeModal } from "../../Redux/modalSlice";
@@ -19,7 +20,7 @@ export default function Modal({
             <div className="content">{modalConfig?.modalText}</div>
             <div className="actions">
               {choices.map(({ choiceText, choiceGoTo }) => (
-                <a href={choiceGoTo}>
+                <Link to={choiceGoTo}>
                   <button
                     className="toggle-button"
                     onClick={() => {
@@ -36,7 +37,7 @@ export default function Modal({
                   >
                     {choiceText}
                   </button>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
