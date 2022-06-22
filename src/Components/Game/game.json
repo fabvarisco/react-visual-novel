@@ -906,24 +906,20 @@
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
           "characterDialog": "Vamos ver...",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Marin",
-          "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Vamos ver...",
-          "nextBackground": false
+          "nextBackground": true,
+          "background":"/images/JarvisHouse/jarvis_house_marin.png"
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
           "characterDialog": "Hmmm... Parece que a linguagem que Jarvis utilizou é JavaScript.",
-          "nextBackground": false
+          "nextBackground": false,
+          "background":""
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "React e CSS também foi utilizado.",
+          "characterDialog": "CSS também foi utilizado.",
           "nextBackground": false
         },
         {

@@ -16,8 +16,8 @@
   border: 1px solid black;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 520px;
-  max-width: 520px;
+  width: 516px;
+  max-width: 516px;
   max-height: 200px;
   min-height: 200px;
   margin-right: auto;
@@ -39,7 +39,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 544px;
+  width: 570px;
 }
 
 .buttonItem {
