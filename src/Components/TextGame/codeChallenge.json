@@ -12,12 +12,12 @@
         {
           "characterName": "Tommy",
           "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "É melhor pedir ajuda pra Marin, mas vamos ver se eu consigo resolver.",
+          "characterDialog": "Credo jarvis! Foi assim que você fez pra centralizar a tela?",
           "nextBackground": false
         }
       ],
       "codeChallenge": {
-        "codeTip": "O ideal é utilizar flexbox."
+        "codeTip": "É melhor pedir ajuda pra Marin, mas vamos ver se eu consigo resolver."
       },
       "errorChoices": [
         {
@@ -103,7 +103,7 @@
         }
       ],
       "codeChallenge": {
-        "codeTip": "Acho que aqui é apenas um erro de escrita."
+        "codeTip": "Acho que aqui é apenas um erro de pontuação."
       },
       "modalConfigOnError": {
         "modalTitle": "ERROR!",
@@ -139,7 +139,7 @@
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Esse primeiro problema está relacionado com a tela, ela parece não estar centralizada.",
+          "characterDialog": "Agora esse esta relacionado com o timer do spawn dos inimigos.",
           "nextBackground": false
         }
       ],
