@@ -6,10 +6,9 @@ import { changeContinueFrom } from "../../Redux/gameSlice";
 import { changeModal } from "../../Redux/modalSlice";
 import "./style.css";
 export default function Modal({
-  modal: { showModal, choices, modalConfig,continueFrom },
+  modal: { showModal, choices, modalConfig, continueFrom },
 }) {
   const dispatch = useDispatch();
-  
 
   return (
     <Fragment>
@@ -19,26 +18,28 @@ export default function Modal({
             <h2>{modalConfig?.modalTitle}</h2>
             <div className="content">{modalConfig?.modalText}</div>
             <div className="actions">
-              {choices.map(({ choiceText, choiceGoTo }) => (
-                <Link to={choiceGoTo}>
-                  <button
-                    className="toggle-button"
+              {choices.map(({ choiceText, choiceGoTo }) => {
+                debugger
+                return (
+                  <Link
+                    to={choiceGoTo}
+                    key={choiceText}
                     onClick={() => {
-                      dispatch(changeContinueFrom(continueFrom))
+                      dispatch(changeContinueFrom(continueFrom));
                       dispatch(changeDialog(0));
                       dispatch(
                         changeModal({
                           choices: [],
-                          modalConfig:{},
+                          modalConfig: {},
                           showModal: false,
                         })
                       );
                     }}
                   >
-                    {choiceText}
-                  </button>
-                </Link>
-              ))}
+                    <button className="toggle-button">{choiceText}</button>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -15,6 +15,11 @@ export default function Highlighter({ dataCode }) {
   const { showButtons } = useSelector(selectPhaser);
   const [preview, setPreview] = useState(true);
   const [code, setCode] = useState(dataCode?.code || "");
+
+  useEffect(()=>{
+    console.log(dataCode)
+  },[])
+
   function renderPreview() {
     return (
       <SyntaxHighlighter
@@ -43,16 +48,15 @@ export default function Highlighter({ dataCode }) {
       if (dataCode.effect === "center") {
         dispatch(changeCenter(true));
       }
-      debugger
+
       if (dataCode.effect === "enemies") {
-        debugger
         dispatch(changeEnemies(true));
       }
 
       modal = {
         showModal: true,
         choices: dataCode?.successChoices,
-        modalConfig: dataCode.modalConfigOnSuccess,
+        modalConfig: dataCode?.modalConfigOnSuccess,
         continueFrom: dataCode?.continueFrom,
       };
     } else {

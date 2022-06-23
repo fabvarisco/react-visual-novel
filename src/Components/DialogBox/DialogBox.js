@@ -8,7 +8,7 @@ import {
   changeTip,
   selectDialogBox,
 } from "../../Redux/dialogBoxSlice";
-
+import { Link } from "react-router-dom";
 
 const getCharacterColor = {
   Marin: "rgb(180 227 87)",
@@ -18,7 +18,6 @@ const getCharacterColor = {
   Geraldo: "rgb(43 173 150)", 
 }
 
-
 export default function DialogBox({ dialogs, choices, codeChallenge }) {
   const dispatch = useDispatch();
   const { dialog, tip, goToChallengeCode } = useSelector(selectDialogBox);
@@ -26,7 +25,6 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
 
   useEffect(() => {
     dispatch(changeBackground(dialogs[dialog]?.background));
-
   }, []);
 
   useEffect(() => {
@@ -97,7 +95,7 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
         {choices.choiceDialog?.map(({ choiceText, choiceGoTo }) => (
           <div key={choiceGoTo}>
             <li>
-              <a href={choiceGoTo}>{choiceText}</a>
+              <Link onClick={()=> dispatch(changeDialog(0)) } to={choiceGoTo}>{choiceText}</Link>
             </li>
           </div>
         ))}

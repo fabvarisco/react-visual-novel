@@ -8,9 +8,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<TitleScreen />} />
-      <Route path="/game/:id" element={<Game />} />
-      <Route path="/textgame/:id" element={<TextGame />} />
-      <Route path="/minigame" element={<Minigame />} />
+      <Route path="/Game/:id" element={<Game />} />
+      <Route path="/Textgame/:id" element={<TextGame />} />
+      <Route path="/Minigame" element={<Minigame />} />
     </Routes>
   );
 }

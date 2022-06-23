@@ -3,18 +3,18 @@ import DialogBox from "../DialogBox/DialogBox";
 import CodeChallenge from "./codeChallenge.json";
 import Modal from "../Modal/Modal";
 import { useSelector } from "react-redux";
-import { Fragment } from "react";
+import {  Fragment } from "react";
 import { selectModal } from "../../Redux/modalSlice";
 import {  useParams } from "react-router-dom";
 
 export default function TextGame() {
-  ///TODO - descobrir pq ta vindo undefined
   const { data } = CodeChallenge;
   const { id } = useParams();
   const { modal } = useSelector(selectModal);
+  
 
   const Textgame = () => (
-    <Fragment>
+    <Fragment >
       <Highlighter dataCode={data[id]} />
       <DialogBox
         dialogs={data[id]?.dialogs}

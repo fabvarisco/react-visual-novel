@@ -60,11 +60,6 @@
       },
       "errorChoices": [
         {
-          "choiceText": "Pedir ajuda para Marin",
-          "choiceGoTo": "/Game/3",
-          "continueFrom": ""
-        },
-        {
           "choiceText": "Testar jogo.",
           "choiceGoTo": "/Minigame",
           "continueFrom": ""

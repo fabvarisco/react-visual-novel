@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import { Game, Scene, Spawner, Text } from "react-phaser-fiber";
 import { Group, Image } from "react-phaser-fiber";
 import Platform from "./Platform";
@@ -11,7 +11,6 @@ import { useSelector } from "react-redux";
 import SpikeSpawner from "./SpikeSpawner";
 export default function PhaserComponent() {
   const { center, enemies } = useSelector(selectPhaser);
-  debugger
   return (
     <Game
       width={520}
@@ -71,11 +70,13 @@ export default function PhaserComponent() {
           ))}
         </Group> } */}
 
-        {enemies && <Spawner>
-          <Group name="spike">
-            <SpikeSpawner />
-          </Group>
-        </Spawner>}
+        {enemies && (
+          <Spawner>
+            <Group name="spike">
+              <SpikeSpawner />
+            </Group>
+          </Spawner>
+        )}
       </Scene>
     </Game>
   );

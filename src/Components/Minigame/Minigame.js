@@ -1,24 +1,23 @@
 import {  useSelector } from "react-redux";
 import PhaserComponent from "../Phaser/PhaserComponent";
 import { selectGame } from "../../Redux/gameSlice";
-import { selectPhaser } from "../../Redux/phaserSlice";
+import { Link } from "react-router-dom";
 
 export default function Minigame() {
   const { continueFrom } = useSelector(selectGame);
-  const { center, enemies } = useSelector(selectPhaser);
   debugger
   return (
     <div className={"container"}>
       <PhaserComponent />
       <div>
-        <a href={"/"}>
+        <Link to={"/"}>
           <button>Voltar para o inicio</button>
-        </a>
+        </Link>
       </div>
       <div>
-        <a href={continueFrom}>
+        <Link to={"/"}>
           <button>Continuar de onde parou (Ainda não implementado)</button>
-        </a>
+        </Link>
       </div>
 
     </div>
