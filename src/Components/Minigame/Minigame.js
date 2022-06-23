@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 export default function Minigame() {
   const { continueFrom } = useSelector(selectGame);
-  debugger
   return (
     <div className={"container"}>
       <PhaserComponent />

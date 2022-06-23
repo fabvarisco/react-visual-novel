@@ -385,7 +385,7 @@
         "choiceDialog": [
           {
             "choiceText": "Tentar arrumar codigo",
-            "choiceGoTo": "/Textgame/0"
+            "choiceGoTo": "/textgame/0"
           },
           {
             "choiceText": "Desistir e ir pedir ajuda para Marin",

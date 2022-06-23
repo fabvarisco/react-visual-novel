@@ -21,14 +21,14 @@
       "errorChoices": [
         {
           "choiceText": "Ir para o proximo erro",
-          "choiceGoTo": "/Textgame/1",
+          "choiceGoTo": "/textgame/1",
           "continueFrom": ""
         }
       ],
       "successChoices": [
         {
           "choiceText": "Ir para o proximo erro",
-          "choiceGoTo": "/Textgame/1",
+          "choiceGoTo": "/textgame/1",
           "continueFrom": ""
         }
       ],
@@ -108,14 +108,14 @@
       "errorChoices": [
         {
           "choiceText": "Proximo!",
-          "choiceGoTo": "/Textgame/3",
+          "choiceGoTo": "/textgame/3",
           "continueFrom": ""
         }
       ],
       "successChoices": [
         {
           "choiceText": "Proximo!",
-          "choiceGoTo": "/Textgame/3",
+          "choiceGoTo": "/textgame/3",
           "continueFrom": ""
         }
       ]

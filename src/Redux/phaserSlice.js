@@ -9,11 +9,9 @@ export const slice = createSlice({
   },
   reducers: {
     changeCenter(state, { payload }) {
-      debugger
       return { ...state, center: payload };
     },
     changeEnemies(state, { payload }) {
-      debugger
       return { ...state, enemies: payload };
     },
     changeCodeButtons(state, { payload }) {

@@ -19,7 +19,6 @@ export default function Modal({
             <div className="content">{modalConfig?.modalText}</div>
             <div className="actions">
               {choices.map(({ choiceText, choiceGoTo }) => {
-                debugger
                 return (
                   <Link
                     to={choiceGoTo}

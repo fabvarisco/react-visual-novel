@@ -3,25 +3,30 @@ import DialogBox from "../DialogBox/DialogBox";
 import CodeChallenge from "./codeChallenge.json";
 import Modal from "../Modal/Modal";
 import { useSelector } from "react-redux";
-import {  Fragment } from "react";
+import { Fragment, useLayoutEffect } from "react";
 import { selectModal } from "../../Redux/modalSlice";
-import {  useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export default function TextGame() {
   const { data } = CodeChallenge;
   const { id } = useParams();
   const { modal } = useSelector(selectModal);
-  
 
-  const Textgame = () => (
-    <Fragment >
-      <Highlighter dataCode={data[id]} />
-      <DialogBox
-        dialogs={data[id]?.dialogs}
-        codeChallenge={data[id]?.codeChallenge}
-      />
-    </Fragment>
-  );
+  useLayoutEffect(() => {
+    console.log(id);
+  }, [id]);
+
+  function Textgame() {
+    return (
+      <Fragment>
+        <Highlighter dataCode={data} id={id} />
+        <DialogBox
+          dialogs={data[id]?.dialogs}
+          codeChallenge={data[id]?.codeChallenge}
+        />
+      </Fragment>
+    );
+  }
 
   return (
     <Fragment>
@@ -30,7 +35,6 @@ export default function TextGame() {
         style={{ opacity: modal.showModal ? 0.3 : 1 }}
       >
         {data[id] && Textgame()}
-        
       </div>
       <Modal modal={modal} />
     </Fragment>

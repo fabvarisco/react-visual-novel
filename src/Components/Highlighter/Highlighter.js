@@ -4,21 +4,23 @@ import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { changeModal } from "../../Redux/modalSlice";
 import {
-  changeCenter, 
+  changeCenter,
   changeEnemies,
   selectPhaser,
 } from "../../Redux/phaserSlice";
 import { compareTwoStrings } from "string-similarity";
 
-export default function Highlighter({ dataCode }) {
+export default function Highlighter(props) {
+  debugger
+  const { dataCode, id } = props;
   const dispatch = useDispatch();
   const { showButtons } = useSelector(selectPhaser);
   const [preview, setPreview] = useState(true);
-  const [code, setCode] = useState(dataCode?.code || "");
+  const [code, setCode] = useState(dataCode[id]?.code || "");
 
-  useEffect(()=>{
-    console.log(dataCode)
-  },[])
+  useEffect(() => {
+    setCode(dataCode[id]?.code || "");
+  }, [id, dataCode]);
 
   function renderPreview() {
     return (
@@ -43,28 +45,28 @@ export default function Highlighter({ dataCode }) {
       continueFrom: "",
     };
 
-    const percentage = compareTwoStrings(code, dataCode.codeResolve);
+    const percentage = compareTwoStrings(code, dataCode[id].codeResolve);
     if (percentage >= 0.99) {
-      if (dataCode.effect === "center") {
+      if (dataCode[id].effect === "center") {
         dispatch(changeCenter(true));
       }
 
-      if (dataCode.effect === "enemies") {
+      if (dataCode[id].effect === "enemies") {
         dispatch(changeEnemies(true));
       }
 
       modal = {
         showModal: true,
-        choices: dataCode?.successChoices,
-        modalConfig: dataCode?.modalConfigOnSuccess,
-        continueFrom: dataCode?.continueFrom,
+        choices: dataCode[id]?.successChoices,
+        modalConfig: dataCode[id]?.modalConfigOnSuccess,
+        continueFrom: dataCode[id]?.continueFrom,
       };
     } else {
       modal = {
         showModal: true,
-        choices: dataCode?.errorChoices,
-        modalConfig: dataCode?.modalConfigOnError,
-        continueFrom: dataCode?.continueFrom,
+        choices: dataCode[id]?.errorChoices,
+        modalConfig: dataCode[id]?.modalConfigOnError,
+        continueFrom: dataCode[id]?.continueFrom,
       };
     }
     dispatch(changeModal(modal));
