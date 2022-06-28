@@ -37,7 +37,6 @@ export default function Highlighter(props) {
   }
 
   function compileCode() {
-    ///TODO - Mostrar modal e redirecionar para pagina devida
     let modal = {
       choices: [],
       showModal: false,

@@ -10,13 +10,14 @@ import {
 } from "../../Redux/dialogBoxSlice";
 import { Link } from "react-router-dom";
 
-const getCharacterColor = {
-  Marin: "rgb(180 227 87)",
-  Jarvis: "rgb(241 186 55)", 
-  Tommy: "rgb(164 35 54)", 
-  Temaki: "rgb(166 159 150)", 
-  Geraldo: "rgb(43 173 150)", 
-}
+const getCharacterProps = {
+  Marin: { color: "rgb(180 227 87)", face: "marin_face.png" },
+  Jarvis: { color: "rgb(241 186 55)", face: "jarvis_face.png" },
+  Tommy: { color: "rgb(164 35 54)", face: "tommy_face.png" },
+  Temaki: { color: "rgb(166 159 150)", face: "temaki_face.png" },
+  Geraldo: { color: "rgb(43 173 150)", face: "geraldo_face.png" },
+  "Green Bot": { color: "rgb(43 173 150)", face: "greenbot_face.png" },
+};
 
 export default function DialogBox({ dialogs, choices, codeChallenge }) {
   const dispatch = useDispatch();
@@ -95,7 +96,9 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
         {choices.choiceDialog?.map(({ choiceText, choiceGoTo }) => (
           <div key={choiceGoTo}>
             <li>
-              <Link onClick={()=> dispatch(changeDialog(0)) } to={choiceGoTo}>{choiceText}</Link>
+              <Link onClick={() => dispatch(changeDialog(0))} to={choiceGoTo}>
+                {choiceText}
+              </Link>
             </li>
           </div>
         ))}
@@ -105,14 +108,12 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
 
   function renderTip() {
     return (
-      <div>
         <div>
           <p>
             <b>Dica</b>
           </p>
           <p>{codeChallenge?.codeTip}</p>
         </div>
-      </div>
     );
   }
 
@@ -125,8 +126,11 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
               width={80}
               height={80}
               alt={dialogs[dialog]?.characterName}
-              src={dialogs[dialog]?.characterImage}
-              style={{ imageRendering: "pixelated", background:getCharacterColor[dialogs[dialog]?.characterName] }}
+              src={`/faces/${getCharacterProps[dialogs[dialog]?.characterName].face}`}
+              style={{
+                imageRendering: "pixelated",
+                background: getCharacterProps[dialogs[dialog]?.characterName].color,
+              }}
             />
           </div>
           <div style={{ paddingLeft: "8px" }}>

@@ -4,7 +4,7 @@ import {
   ArcadeCollider,
   useScene,
   useGameEvent,
-  useGameLoop,
+  useGameLoop
 } from "react-phaser-fiber";
 
 export default function Player(props) {
@@ -19,7 +19,6 @@ export default function Player(props) {
     }),
     [scene.input.keyboard]
   );
-  
 
   const [x, setX] = useState(props.x);
   const [y, setY] = useState(props.y);
@@ -32,7 +31,10 @@ export default function Player(props) {
     () => [
       {
         key: "left",
-        frames: scene.anims.generateFrameNumbers("jarvis", { start: 0, end: 3 }),
+        frames: scene.anims.generateFrameNumbers("jarvis", {
+          start: 0,
+          end: 3,
+        }),
         frameRate: 10,
         repeat: -1,
       },
@@ -43,7 +45,10 @@ export default function Player(props) {
       },
       {
         key: "right",
-        frames: scene.anims.generateFrameNumbers("jarvis", { start: 5, end: 8 }),
+        frames: scene.anims.generateFrameNumbers("jarvis", {
+          start: 5,
+          end: 8,
+        }),
         frameRate: 10,
         repeat: -1,
       },
@@ -53,6 +58,7 @@ export default function Player(props) {
 
   // keep our velocityX state in sync with the current velocityX of the instance
   useGameEvent("prestep", () => {
+    if(destroyed) return null
     if (ref.current?.body) {
       setVelocityX(ref.current.body.velocity.x);
       setVelocityY(ref.current.body.velocity.y);
@@ -60,6 +66,7 @@ export default function Player(props) {
   });
 
   useGameLoop(() => {
+    if(destroyed) return null
     // horizontal movement
     if (keys.left.isDown) {
       setVelocityX(-160);
@@ -79,7 +86,7 @@ export default function Player(props) {
   });
 
   if (destroyed) {
-    return null
+    return null;
   }
 
   return (
@@ -96,16 +103,6 @@ export default function Player(props) {
       x={x}
       y={y}
     >
-
-      <ArcadeCollider
-        with="spike"
-        overlapOnly
-
-        onCollide={(event) => {
-          console.log(event)
-          setDestroyed(true);
-        }}
-      />
       <ArcadeCollider with="platform" />
     </ArcadeSprite>
   );

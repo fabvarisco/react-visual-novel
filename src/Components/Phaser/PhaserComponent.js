@@ -1,10 +1,17 @@
 import React from "react";
-import { Game, Scene, Spawner, Text } from "react-phaser-fiber";
-import { Group, Image } from "react-phaser-fiber";
 import Platform from "./Platform";
 import Player from "./Player";
 import Star from "./Star";
 import Phaser from "phaser";
+import {
+  Game,
+  Scene,
+  Spawner,
+  Text,
+  Group,
+  Image,
+  useGroup,
+} from "react-phaser-fiber";
 import { selectPhaser } from "../../Redux/phaserSlice";
 import { useSelector } from "react-redux";
 
@@ -54,7 +61,9 @@ export default function PhaserComponent() {
         )}
       >
         <Image x={260} y={190} texture="background" />
+
         <Player x={40} y={300} />
+
         <Group name="platforms">
           <Platform x={0} y={413} scale={3} physicsType="static" />
         </Group>
@@ -64,19 +73,11 @@ export default function PhaserComponent() {
           ))}
         </Group>
 
-        {/* {<Group name="spike">
-          {Array.from({ length: 11 }).map((_, index) => (
-            <Spike key={index} x={12 + index * 70} y={200} />
-          ))}
-        </Group> } */}
-
-        {enemies && (
+        
           <Spawner>
-            <Group name="spike">
               <SpikeSpawner />
-            </Group>
           </Spawner>
-        )}
+        
       </Scene>
     </Game>
   );

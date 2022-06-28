@@ -3,6 +3,7 @@ import PhaserComponent from "../Phaser/PhaserComponent";
 import { selectGame } from "../../Redux/gameSlice";
 import { Link } from "react-router-dom";
 
+
 export default function Minigame() {
   const { continueFrom } = useSelector(selectGame);
   return (
