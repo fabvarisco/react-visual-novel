@@ -577,7 +577,7 @@
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "A Marin disse que perdeu uma chave de fenda por aqui",
+          "characterDialog": "A Marin disse que perdeu uma chave de fenda por aqui.",
           "background": "",
           "nextBackground": false
         },
@@ -616,7 +616,7 @@
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Parece que estragaram ocodigo do jogo dele",
+          "characterDialog": "Parece que estragaram o código do jogo dele.",
           "background": "",
           "nextBackground": false
         },
@@ -650,15 +650,15 @@
           "characterName": "Geraldo",
           "characterImage": "/faces/geraldo_face.png",
           "characterDialog": "...",
-          "background": "",
-          "nextBackground": false
+          "background": "/images/Mercado/mercado_part_3.png",
+          "nextBackground": true
         },
         {
           "characterName": "Geraldo",
           "characterImage": "/faces/geraldo_face.png",
           "characterDialog": "To meio atrasado, tenho que ir",
-          "background": "",
-          "nextBackground": false
+          "background": "/images/Mercado/mercado_part_4.png",
+          "nextBackground": true
         },
         {
           "characterName": "Tommy",
