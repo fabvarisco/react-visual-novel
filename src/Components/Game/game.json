@@ -340,20 +340,20 @@
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "Exatamente, nada de gambiarras, apenas flexbox",
+          "characterImage": "/faces/jarvis_face.png",
+          "characterDialog": "Flexbox?",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-          "characterImage": "/faces/tommy_face.png",
+          "characterImage": "/faces/jarvis_face.png",
           "characterDialog": "Não usei grids porque acho muito complicado.",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
           "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "Bom menos mal...",
+          "characterDialog": "Assim não tem como te ajudar...",
           "nextBackground": false
         },
         {

@@ -95,7 +95,7 @@
         }
       ],
       "codeChallenge": {
-        "codeTip": "Acho que aqui é apenas um erro de pontuação."
+        "codeTip": "Acho que aqui é apenas um erro de pontuação na linha 3 e 8."
       },
       "modalConfigOnError": {
         "modalTitle": "ERROR!",
@@ -135,7 +135,7 @@
         }
       ],
       "codeChallenge": {
-        "codeTip": "Acho que aqui é apenas um erro de escrita."
+        "codeTip": "Acho que aqui é apenas um erro de pontuação na linha 2,3,5 e 6."
       },
       "modalConfigOnError": {
         "modalTitle": "ERROR!",
