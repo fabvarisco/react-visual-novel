@@ -4,12 +4,12 @@ import {
   ArcadeCollider,
   useScene,
   useGameEvent,
-  useGameLoop
+  useGameLoop,
 } from "react-phaser-fiber";
 
-export default function Player(props) {
+export default function Player(props, ref) {
   const scene = useScene();
-  const ref = useRef(null);
+  const playerRef = useRef(null);
 
   const keys = useMemo(
     () => ({
@@ -58,15 +58,15 @@ export default function Player(props) {
 
   // keep our velocityX state in sync with the current velocityX of the instance
   useGameEvent("prestep", () => {
-    if(destroyed) return null
-    if (ref.current?.body) {
-      setVelocityX(ref.current.body.velocity.x);
-      setVelocityY(ref.current.body.velocity.y);
+    if (destroyed) return null;
+    if (playerRef.current?.body) {
+      setVelocityX(playerRef.current.body.velocity.x);
+      setVelocityY(playerRef.current.body.velocity.y);
     }
   });
 
   useGameLoop(() => {
-    if(destroyed) return null
+    if (destroyed) return null;
     // horizontal movement
     if (keys.left.isDown) {
       setVelocityX(-160);
@@ -80,7 +80,7 @@ export default function Player(props) {
     }
 
     // jump if on ground
-    if (keys.up.isDown && ref.current?.body.touching.down) {
+    if (keys.up.isDown && playerRef.current?.body.touching.down) {
       setVelocityY(-330);
     }
   });
@@ -92,7 +92,7 @@ export default function Player(props) {
   return (
     <ArcadeSprite
       {...props}
-      ref={ref}
+      ref={playerRef}
       name="player"
       animations={animations}
       animation={animation}

@@ -6,8 +6,12 @@ export const slice = createSlice({
     center: false,
     enemies: false,
     showButtons: false,
+    gameState: true,
   },
   reducers: {
+    changeGameState(state, { payload }) {
+      return { ...state, center: payload };
+    },
     changeCenter(state, { payload }) {
       return { ...state, center: payload };
     },
@@ -15,7 +19,6 @@ export const slice = createSlice({
       return { ...state, enemies: payload };
     },
     changeCodeButtons(state, { payload }) {
-      ///TODO - Passar isso para o componente de highlighter
       return { ...state, showButtons: payload };
     },
   },
@@ -25,6 +28,7 @@ export const {
   changeCenter,
   changeEnemies,
   changeCodeButtons,
+  changeGameState,
 } = slice.actions;
 
 export const selectPhaser = (state) => state.phaserController;

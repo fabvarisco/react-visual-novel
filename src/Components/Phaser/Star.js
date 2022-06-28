@@ -22,12 +22,10 @@ export default function Star(props) {
     >
       <ArcadeCollider with="platform" />
       <ArcadeCollider
-        with="spike"
+        with="player"
         overlapOnly
-        onCollide={(event) => {
-          console.log(event)
+        onCollide={() => {
           setDestroyed(true);
-          
         }}
       />
     </ArcadeImage>

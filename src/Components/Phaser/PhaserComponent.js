@@ -3,21 +3,15 @@ import Platform from "./Platform";
 import Player from "./Player";
 import Star from "./Star";
 import Phaser from "phaser";
-import {
-  Game,
-  Scene,
-  Spawner,
-  Text,
-  Group,
-  Image,
-  useGroup,
-} from "react-phaser-fiber";
+import Spike from "./Spike";
+import SpawnController from "./SpawnController";
+import { Game, Scene, Spawner, Text, Group, Image } from "react-phaser-fiber";
 import { selectPhaser } from "../../Redux/phaserSlice";
 import { useSelector } from "react-redux";
 
-import SpikeSpawner from "./SpikeSpawner";
 export default function PhaserComponent() {
   const { center, enemies } = useSelector(selectPhaser);
+
   return (
     <Game
       width={520}
@@ -60,6 +54,13 @@ export default function PhaserComponent() {
           />
         )}
       >
+        <Text
+          x={0}
+          y={0}
+          text={`Restart`}
+          style={{ color: "white" }}
+          
+        />
         <Image x={260} y={190} texture="background" />
 
         <Player x={40} y={300} />
@@ -67,17 +68,15 @@ export default function PhaserComponent() {
         <Group name="platforms">
           <Platform x={0} y={413} scale={3} physicsType="static" />
         </Group>
-        <Group name="stars">
-          {Array.from({ length: 23 }).map((_, index) => (
-            <Star key={index} x={12 + index * 70} y={200} />
-          ))}
-        </Group>
+        <Spawner key={"stars"}>
+          <SpawnController gameObject={Star} timer={5000} />
+        </Spawner>
 
-        
-          <Spawner>
-              <SpikeSpawner />
+        {enemies && (
+          <Spawner key={"spikes"}>
+            <SpawnController gameObject={Spike} timer={2500} />
           </Spawner>
-        
+        )}
       </Scene>
     </Game>
   );
