@@ -11,7 +11,6 @@ import {
 import { compareTwoStrings } from "string-similarity";
 
 export default function Highlighter(props) {
-  debugger
   const { dataCode, id } = props;
   const dispatch = useDispatch();
   const { showButtons } = useSelector(selectPhaser);

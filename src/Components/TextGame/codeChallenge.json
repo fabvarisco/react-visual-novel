@@ -6,7 +6,6 @@
       "codeResolve": ".center_game_screen {\nposition:absolute;\ntop:30%;\nbottom:50%;\nleft:0;\nright:0;\nmargin:auto;\nwidth:50vw;\nheight:50vh;\n}",
       "effect": "center",
       "playGame": false,
-      "goTo": "no",
       "dialogs": [
         {
           "characterName": "Tommy",

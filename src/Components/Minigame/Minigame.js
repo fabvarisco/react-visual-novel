@@ -10,9 +10,9 @@ export default function Minigame() {
     <div className={"container"}>
       <PhaserComponent />
       <div>
-        <Link to={"/"}>
+        <a href={"/"}>
           <button>Voltar para o inicio</button>
-        </Link>
+        </a>
       </div>
       <div>
         <Link to={"/"}>

@@ -515,7 +515,7 @@
         {
           "characterName": "Jarvis",
 
-          "characterDialog": "MAAAARIIIIN!!!",
+          "characterDialog": "",
           "nextBackground": true,
           "background": "/images/Pedindo ajuda para Marin/maring_part_1.png"
         }
@@ -656,7 +656,7 @@
         {
           "characterName": "Geraldo",
           "characterImage": "/faces/geraldo_face.png",
-          "characterDialog": "To meio atrasado, tenho que ir",
+          "characterDialog": "To meio atrasado, tenho que ir.",
           "background": "/images/Mercado/mercado_part_4.png",
           "nextBackground": true
         },
@@ -691,7 +691,8 @@
         {
           "characterName": "Tommy",
           "characterDialog": "Bom deixa pra lá, vamos continuar procurando",
-          "background": ""
+          "background": "/images/Mercado/mercado_part_4.png",
+          "nextBackground": true
         },
         {
           "characterName": "Tommy",
@@ -707,7 +708,8 @@
           "characterName": "Green Bot",
           "characterImage": "/faces/greenbot_face.png",
           "characterDialog": "Olá Tommy.",
-          "nextBackground": false
+          "nextBackground": true,
+          "background": "/images/Mercado/mercado_dentro.png"
         },
         {
           "characterName": "Green Bot",
@@ -745,58 +747,175 @@
         {
           "characterName": "Green Bot",
           "characterImage": "/faces/greenbot_face.png",
-          "characterDialog": "Podem procurar a vontade, mas não me lembro de nenhuma chave de fenda.",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Green Bot",
-          "characterImage": "/faces/greenbot_face.png",
-          "characterDialog": "Agora eu tenho que ir lá nos fundos revisar o estoque, volto em alguns minutos.",
+          "characterDialog": "Podem procurar a vontade, mas estou fechando daqui a pouco.",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Espera um pouco ai!",
+          "characterImage": "/faces/greenbot_face.png",
+          "characterDialog": "Tudo bem, prometo que seremos rápidos.",
           "nextBackground": false
+        }
+      ],
+      "choices": {
+        "choiceDialog": [
+          {
+            "choiceText": "Procurar nas prateleiras.",
+            "choiceGoTo": "/Game/7"
+          },
+          {
+            "choiceText": "Procurar nos game arcade.",
+            "choiceGoTo": "/Game/8"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "title": "Procurando nas Prateleiras",
+      "dialogs": [
+        {
+          "characterName": "Tommy",
+          "characterDialog": "Será que esta por aqui?",
+          "nextBackground": true,
+          "background": "/images/Mercado/mercado_p.png"
+        },
+        {
+          "characterName": "Tommy",
+          "characterDialog": "É bom eu olhar com cuidado."
+        }
+      ],
+      "choices": {
+        "choiceDialog": [
+          {
+            "choiceText": "Procurar nos game arcade.",
+            "choiceGoTo": "/Game/8"
+          },
+          {
+            "choiceText": "Procurar Aqui",
+            "choiceGoTo": "/Game/9"
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "title": "Procurando perto dos Game Arcade",
+      "dialogs": [
+        {
+          "characterName": "Tommy",
+          "characterDialog": "Será que esta por aqui?",
+          "nextBackground": true,
+          "background": "/images/Mercado/mercado_game_arcade.png"
+        },
+        {
+          "characterName": "Tommy",
+          "characterDialog": "É bom eu olhar com cuidado."
+        }
+      ],
+      "choices": {
+        "choiceDialog": [
+          {
+            "choiceText": "Procurar nas prateleiras.",
+            "choiceGoTo": "/Game/7"
+          },
+          {
+            "choiceText": "Procurar Aqui",
+            "choiceGoTo": "/Game/10"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "title": "Chave de fenda encontrada",
+      "dialogs": [
+        {
+          "characterName": "Tommy",
+          "characterDialog": "Ela está aqui em cima!",
+          "nextBackground": true,
+          "background": "/images/Mercado/mercado_p_encontrada.png"
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "A chave de fenda está nas suas costas!",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Green Bot",
-          "characterImage": "/faces/greenbot_face.png",
-          "characterDialog": "O que?",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Tommy",
-          "characterDialog": "A Marin devia estar com pressa pra ter esquecido assim.",
-          "nextBackground": false
-        },
-        {
-          "characterName": "Tommy",
-          "characterDialog": "Bom não tem problema, agora podemos voltar lá e falar com ela.",
-          "nextBackground": false
-        },
+          "characterDialog": "YEAH! Agora temos a ajuda da Marin!",
+          "background": ""
+        }
+      ],
+      "choices": {
+        "choiceDialog": [
+          {
+            "choiceText": "Falar com Marin",
+            "choiceGoTo": "/Game/11"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "title": "Chave de fenda não encontrada",
+      "dialogs": [
         {
           "characterName": "Tommy",
-          "characterDialog": "Bom não tem problema, agora podemos voltar lá e falar com ela.",
-          "nextBackground": false
+          "characterDialog": "Onde será que ela ta?",
+          "nextBackground": true,
+          "background": "/images/Mercado/mercado_game_arcade.png"
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "YEAH! VAMO LÁ!",
-          "nextBackground": false
+          "characterDialog": "Estou perdendo as esperanças ;-;",
+          "background": ""
         },
+        {
+          "characterName": "Tommy",
+          "characterDialog": "Calma Jarvis, vai dar tudo certo.",
+          "background": ""
+        },
+        {
+          "characterName": "Green Bot",
+          "characterDialog": "Pessoal!",
+          "background": ""
+        },
+        {
+          "characterName": "Green Bot",
+          "characterDialog": "Estou fechando a loja, vocês precisam ir agora.",
+          "background": ""
+        },
+        {
+          "characterName": "Jarvis",
+          "characterDialog": "E agora Tommy! ;-;",
+          "background": ""
+        },
+        {
+          "characterName": "Tommy",
+          "characterDialog": "Tudo bem, a gente ainda pode ir atrás do Geraldo.",
+          "background": ""
+        }
+      ],
+      "choices": {
+        "choiceDialog": [
+          {
+            "choiceText": "Ir atrás do Geraldo (ainda não escrito)",
+            "choiceGoTo": "/Game/0"
+          },
+          {
+            "choiceText": "Procurar nas prateleiras. (Temporario)",
+            "choiceGoTo": "/Game/7"
+          }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "title": "Entregando a chave para Marin",
+      "dialogs": [
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
           "characterDialog": "Eai pessoal! Encontraram?",
-          "nextBackground": false
+          "nextBackground": true,
+          "background": "/images/Pedindo ajuda para Marin/maring_part_3.png"
+          
         },
         {
           "characterName": "Jarvis",
@@ -807,7 +926,7 @@
         {
           "characterName": "Jarvis",
 
-          "characterDialog": "Ela estava presa atrás do Green Bot no mercado.",
+          "characterDialog": "Ela estava em uma das prateleiras do mercado.",
           "nextBackground": false
         },
         {
@@ -818,33 +937,33 @@
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Acontece, ele nem percebeu.",
+          "characterDialog": "Acontece, parece que ninguém tinha visto.",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Bom menos mal, agora que eu tenho minha chave de fenda de volta",
+          "characterDialog": "Bom menos mal, agora que eu tenho minha chave de fenda de volta.",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Bom menos mal, agora que eu tenho minha chave de fenda de volta",
+          "characterDialog": "Estou livre para ajudar vocês.",
           "nextBackground": false
         }
       ],
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Ir para casa de Jarvis arrumar seu codigo.",
-            "choiceGoTo": "/Game/7"
+            "choiceText": "Ir para casa de Jarvis",
+            "choiceGoTo": "/Game/12"
           }
         ]
       }
     },
     {
-      "id": 7,
+      "id": 12,
       "title": "Marin e o codigo de Jarvis",
       "dialogs": [
         {
@@ -955,5 +1074,6 @@
         ]
       }
     }
+
   ]
 }

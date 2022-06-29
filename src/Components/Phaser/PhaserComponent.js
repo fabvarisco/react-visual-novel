@@ -54,24 +54,12 @@ export default function PhaserComponent() {
           />
         )}
       >
-        <Text
-          x={0}
-          y={0}
-          text={`Restart`}
-          style={{ color: "white" }}
-          
-        />
         <Image x={260} y={190} texture="background" />
-
         <Player x={40} y={300} />
-
-        <Group name="platforms">
-          <Platform x={0} y={413} scale={3} physicsType="static" />
-        </Group>
+        <Platform x={0} y={413} scale={3} physicsType="static" />
         <Spawner key={"stars"}>
           <SpawnController gameObject={Star} timer={5000} />
         </Spawner>
-
         {enemies && (
           <Spawner key={"spikes"}>
             <SpawnController gameObject={Spike} timer={2500} />

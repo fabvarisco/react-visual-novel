@@ -9,6 +9,7 @@ import {
   selectDialogBox,
 } from "../../Redux/dialogBoxSlice";
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const getCharacterProps = {
   Marin: { color: "rgb(180 227 87)", face: "marin_face.png" },
@@ -21,14 +22,21 @@ const getCharacterProps = {
 
 export default function DialogBox({ dialogs, choices, codeChallenge }) {
   const dispatch = useDispatch();
+  const { id } = useParams();
   const { dialog, tip, goToChallengeCode } = useSelector(selectDialogBox);
   const [showChoices, setShowChoices] = useState(false);
 
   useEffect(() => {
     dispatch(changeBackground(dialogs[dialog]?.background));
-  }, []);
+  }, [dialog]);
 
   useEffect(() => {
+    dispatch(changeDialog(0));
+    dispatch(changeBackground(dialogs[dialog]?.background));
+  }, [id]);
+
+  useEffect(() => {
+    console.log(dialog)
     if (dialog === 0) {
       dispatch(changeTip(false));
       setShowChoices(false);
@@ -108,12 +116,12 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
 
   function renderTip() {
     return (
-        <div>
-          <p>
-            <b>Dica</b>
-          </p>
-          <p>{codeChallenge?.codeTip}</p>
-        </div>
+      <div>
+        <p>
+          <b>Dica</b>
+        </p>
+        <p>{codeChallenge?.codeTip}</p>
+      </div>
     );
   }
 
@@ -126,10 +134,13 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
               width={80}
               height={80}
               alt={dialogs[dialog]?.characterName}
-              src={`/faces/${getCharacterProps[dialogs[dialog]?.characterName].face}`}
+              src={`/faces/${
+                getCharacterProps[dialogs[dialog]?.characterName].face
+              }`}
               style={{
                 imageRendering: "pixelated",
-                background: getCharacterProps[dialogs[dialog]?.characterName].color,
+                background:
+                  getCharacterProps[dialogs[dialog]?.characterName].color,
               }}
             />
           </div>
