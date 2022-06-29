@@ -12,7 +12,6 @@ export default function CanvasImage({ width, height }) {
     image.onload = () => {
       ctx.drawImage(image, 0, 0);
     };
-    console.log(background);
   }, [background]);
 
   return (

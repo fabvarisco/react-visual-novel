@@ -12,10 +12,6 @@ export default function TextGame() {
   const { id } = useParams();
   const { modal } = useSelector(selectModal);
 
-  useLayoutEffect(() => {
-    console.log(id);
-  }, [id]);
-
   function Textgame() {
     return (
       <Fragment>

@@ -764,8 +764,12 @@
             "choiceGoTo": "/Game/7"
           },
           {
-            "choiceText": "Procurar nos game arcade.",
+            "choiceText": "Procurar nas caixas",
             "choiceGoTo": "/Game/8"
+          },
+          {
+            "choiceText": "Procurar nos game arcade.",
+            "choiceGoTo": "/Game/9"
           }
         ]
       }
@@ -788,18 +792,54 @@
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Procurar nos game arcade.",
+            "choiceText": "Procurar nas caixas",
             "choiceGoTo": "/Game/8"
           },
           {
-            "choiceText": "Procurar Aqui",
+            "choiceText": "Procurar nos game arcade.",
             "choiceGoTo": "/Game/9"
+          },
+          {
+            "choiceText": "Procurar Aqui",
+            "choiceGoTo": "/Game/10"
           }
         ]
       }
     },
     {
       "id": 8,
+      "title": "Procurando nas Caixas",
+      "dialogs": [
+        {
+          "characterName": "Tommy",
+          "characterDialog": "Será que esta por aqui?",
+          "nextBackground": true,
+          "background": "/images/Mercado/mercado_caixas.png"
+        },
+        {
+          "characterName": "Tommy",
+          "characterDialog": "É bom eu olhar com cuidado."
+        }
+      ],
+      "choices": {
+        "choiceDialog": [
+          {
+            "choiceText": "Procurar nos game arcade.",
+            "choiceGoTo": "/Game/9"
+          },
+          {
+            "choiceText": "Procurar nas prateleiras.",
+            "choiceGoTo": "/Game/7"
+          },
+          {
+            "choiceText": "Procurar Aqui",
+            "choiceGoTo": "/Game/11"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
       "title": "Procurando perto dos Game Arcade",
       "dialogs": [
         {
@@ -820,14 +860,18 @@
             "choiceGoTo": "/Game/7"
           },
           {
+            "choiceText": "Procurar nas caixas.",
+            "choiceGoTo": "/Game/8"
+          },
+          {
             "choiceText": "Procurar Aqui",
-            "choiceGoTo": "/Game/10"
+            "choiceGoTo": "/Game/11"
           }
         ]
       }
     },
     {
-      "id": 9,
+      "id": 10,
       "title": "Chave de fenda encontrada",
       "dialogs": [
         {
@@ -846,20 +890,18 @@
         "choiceDialog": [
           {
             "choiceText": "Falar com Marin",
-            "choiceGoTo": "/Game/11"
+            "choiceGoTo": "/Game/12"
           }
         ]
       }
     },
     {
-      "id": 10,
+      "id": 11,
       "title": "Chave de fenda não encontrada",
       "dialogs": [
         {
           "characterName": "Tommy",
-          "characterDialog": "Onde será que ela ta?",
-          "nextBackground": true,
-          "background": "/images/Mercado/mercado_game_arcade.png"
+          "characterDialog": "Onde será que ela ta?"
         },
         {
           "characterName": "Jarvis",
@@ -899,6 +941,10 @@
             "choiceGoTo": "/Game/0"
           },
           {
+            "choiceText": "Procurar nas Caixas. (Temporario)",
+            "choiceGoTo": "/Game/8"
+          },
+          {
             "choiceText": "Procurar nas prateleiras. (Temporario)",
             "choiceGoTo": "/Game/7"
           }
@@ -906,7 +952,7 @@
       }
     },
     {
-      "id": 11,
+      "id": 12,
       "title": "Entregando a chave para Marin",
       "dialogs": [
         {
@@ -957,13 +1003,13 @@
         "choiceDialog": [
           {
             "choiceText": "Ir para casa de Jarvis",
-            "choiceGoTo": "/Game/12"
+            "choiceGoTo": "/Game/13"
           }
         ]
       }
     },
     {
-      "id": 12,
+      "id": 13,
       "title": "Marin e o codigo de Jarvis",
       "dialogs": [
         {

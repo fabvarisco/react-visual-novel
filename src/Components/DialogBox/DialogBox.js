@@ -36,7 +36,6 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
   }, [id]);
 
   useEffect(() => {
-    console.log(dialog)
     if (dialog === 0) {
       dispatch(changeTip(false));
       setShowChoices(false);
