@@ -17,7 +17,6 @@ export default function SpawnController({gameObject, timer}) {
         {
         x: Math.random() * (380 - 1) + 1,
         y: 0,
-        key:`game-object-${Math.random()}`
       });
     }
   });
