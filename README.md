@@ -12,8 +12,6 @@ Jarvis uma criança robô estava desenvolvendo um jogo até que um dia, após da
 ## Game
 * [Link](https://react-phaser-visual-novel.vercel.app/)
 
-[Mais informações sobre o Create React App](./Create%20React%20App.md)
-
 ## Credits
 
 - [Fabricio Varisco Oliveira](https://github.com/fabriciovo)
