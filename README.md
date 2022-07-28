@@ -1,4 +1,4 @@
-# React Phaser Visual Novel (In Development)
+# React Visual Novel (In Development)
 
 ![prints](./public/images/main.png)
 
