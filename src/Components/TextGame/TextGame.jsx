@@ -19,7 +19,7 @@ export default function TextGame() {
 
   useLayoutEffect(() => {
     if (elRef.current) {
-      elRef.current.firstElementChild.style.cssText = center_game_screen;
+      elRef.current.style.cssText = center_game_screen;
     }
   });
 
@@ -39,7 +39,8 @@ export default function TextGame() {
   return (
     <main
       ref={elRef}
-      style={{ opacity: modal.showModal ? 0.3 : 1 }}    >    <section className="container">
+      style={{ opacity: modal.showModal ? 0.3 : 1 }}>
+      <section className="container">
         {data[id] && Textgame()}
         <Modal modal={modal} />
       </section>
