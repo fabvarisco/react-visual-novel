@@ -73,7 +73,7 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
 
   function renderBackNextButtons() {
     return (
-      <div className={"buttonContainer"}>
+      <div className="buttonContainer">
         <div className="buttonItem">
           {dialog > 0 && <button onClick={() => backDialog()}>Voltar</button>}
         </div>
@@ -86,7 +86,7 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
 
   function renderGoToChallengeCodeButton() {
     return (
-      <div className={"buttonContainer"}>
+      <div className="buttonContainer">
         <button onClick={() => {}}>Ver codigo do Jarvis</button>
       </div>
     );

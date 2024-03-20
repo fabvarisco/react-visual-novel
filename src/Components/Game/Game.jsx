@@ -8,10 +8,12 @@ function Game() {
   const { data } = GameConfig;
 
   return (
-    <div className={"container"}>
-      <CanvasImage width={75} height={61} />
-      <DialogBox dialogs={data[id]?.dialogs} choices={data[id]?.choices} />
-    </div>
+    <main>
+      <section className="container">
+        <CanvasImage width={75} height={61} />
+        <DialogBox dialogs={data[id]?.dialogs} choices={data[id]?.choices} />
+      </section>
+    </main>
   );
 }
 export default Game;

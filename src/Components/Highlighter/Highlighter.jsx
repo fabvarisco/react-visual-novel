@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -9,6 +9,7 @@ import {
   selectPhaser,
 } from "../../Redux/phaserSlice";
 import { compareTwoStrings } from "string-similarity";
+import { changeCenterGame } from "../../Redux/compilationSlice";
 
 export default function Highlighter(props) {
   const { dataCode, id } = props;
@@ -26,7 +27,7 @@ export default function Highlighter(props) {
       <SyntaxHighlighter
         showLineNumbers={true}
         wrapLongLines={true}
-        language="javascript"
+        language="css"
         style={vscDarkPlus}
         className="textGame"
       >
@@ -36,45 +37,48 @@ export default function Highlighter(props) {
   }
 
   function compileCode() {
-    let modal = {
-      choices: [],
-      showModal: false,
-      modalConfig: {},
-      continueFrom: "",
-    };
+    console.log(code)
+    dispatch(changeCenterGame(code));
+    // let modal = {
+    //   choices: [],
+    //   showModal: false,
+    //   modalConfig: {},
+    //   continueFrom: "",
+    // };
 
-    const percentage = compareTwoStrings(code, dataCode[id].codeResolve);
-    if (percentage >= 0.99) {
-      if (dataCode[id].effect === "center") {
-        dispatch(changeCenter(true));
-      }
+    // const percentage = compareTwoStrings(code, dataCode[id].codeResolve);
+    // if (percentage >= 0.99) {
+    //   if (dataCode[id].effect === "center") {
+    //     dispatch(changeCenter(true));
+    //   }
 
-      if (dataCode[id].effect === "enemies") {
-        dispatch(changeEnemies(true));
-      }
+    //   if (dataCode[id].effect === "enemies") {
+    //     dispatch(changeEnemies(true));
+    //   }
 
-      modal = {
-        showModal: true,
-        choices: dataCode[id]?.successChoices,
-        modalConfig: dataCode[id]?.modalConfigOnSuccess,
-        continueFrom: dataCode[id]?.continueFrom,
-      };
-    } else {
-      modal = {
-        showModal: true,
-        choices: dataCode[id]?.errorChoices,
-        modalConfig: dataCode[id]?.modalConfigOnError,
-        continueFrom: dataCode[id]?.continueFrom,
-      };
-    }
-    dispatch(changeModal(modal));
+    //   modal = {
+    //     showModal: true,
+    //     choices: dataCode[id]?.successChoices,
+    //     modalConfig: dataCode[id]?.modalConfigOnSuccess,
+    //     continueFrom: dataCode[id]?.continueFrom,
+    //   };
+    // } else {
+    //   modal = {
+    //     showModal: true,
+    //     choices: dataCode[id]?.errorChoices,
+    //     modalConfig: dataCode[id]?.modalConfigOnError,
+    //     continueFrom: dataCode[id]?.continueFrom,
+    //   };
+    // }
+    // dispatch(changeModal(modal));
+
   }
 
   function renderButtons() {
     return (
-      <Fragment>
-        {showButtons && (
-          <div className={"buttonContainer"}>
+      <>
+        {showButtons ? (
+          <div className="buttonContainer">
             <div className="buttonItem">
               <button onClick={() => setPreview(true)}>
                 Visualizar como codigo
@@ -87,8 +91,8 @@ export default function Highlighter(props) {
               <button onClick={() => compileCode()}>Compilar</button>
             </div>
           </div>
-        )}
-      </Fragment>
+        ) : null}
+      </>
     );
   }
 
@@ -104,8 +108,7 @@ export default function Highlighter(props) {
 
   return (
     <div>
-      {preview && renderPreview()}
-      {!preview && renderEdit()}
+      {preview ? renderPreview() : renderEdit()}
       {renderButtons()}
     </div>
   );

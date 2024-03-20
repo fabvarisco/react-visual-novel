@@ -1,10 +1,9 @@
-
 :root {
   --marin_color: rgb(180 227 87);
-  --jarvis_color: rgb(241 186 55); 
-  --tommy_color: rgb(164 35 54); 
-  --temaki_color: rgb(166 159 150); 
-  --geraldo_color: rgb(43 173 150); 
+  --jarvis_color: rgb(241 186 55);
+  --tommy_color: rgb(164 35 54);
+  --temaki_color: rgb(166 159 150);
+  --geraldo_color: rgb(43 173 150);
 }
 
 .card {
@@ -12,6 +11,7 @@
   padding: 1.5rem;
   text-align: left;
   color: inherit;
+  background-color: whitesmoke;
   text-decoration: none;
   border: 1px solid black;
   border-radius: 10px;
@@ -34,12 +34,7 @@
   line-height: 1.5;
 }
 
-.buttonContainer {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 570px;
-}
+.buttonContainer {}
 
 .buttonItem {
   flex: 1;
@@ -49,5 +44,3 @@
   border: solid;
   background: var(--jarvis_color);
 }
-
-

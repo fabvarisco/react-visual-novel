@@ -2,8 +2,7 @@
   "data": [
     {
       "id": 0,
-      "code": ".center_game_screen {\nposition:absolute;\ntop:30%\nbottom:50%;\nleft:0;\nright:0;\nmargin:auto;\nwidth50vw;\nheight:50vh;\n}",
-      "codeResolve": ".center_game_screen {\nposition:absolute;\ntop:30%;\nbottom:50%;\nleft:0;\nright:0;\nmargin:auto;\nwidth:50vw;\nheight:50vh;\n}",
+      "code": "display: flex;",
       "effect": "center",
       "playGame": false,
       "dialogs": [
@@ -42,8 +41,7 @@
     },
     {
       "id": 1,
-      "code": "function spawnEnemy(time) { \n var current_time = time \n if (current_time - lastSpawnTime > time_til_spawn \n time_til_spawn = Math.random() * 3000; \n setLastSpawnTime(current_time) \n spawn(Enemy, { x: Math.randon() * (380 - 1) + 1, y: 0 }); \n    } \n }",
-      "codeResolve": "function spawnEnemy(time) \n { \n var current_time = time; \n if (current_time - lastSpawnTime > time_til_spawn) { \n time_til_spawn = Math.random() * 3000; \n setLastSpawnTime(current_time); \n spawn(Enemy, { x: Math.randon() * (380 - 1) + 1, y: 0 }); \n } \n }",
+      "code": "body {\nbackground: #f2f2f2;\ncolor: #333;\nfont-family: 'Nunito';\n}",
       "effect": "enemies",
       "playGame": false,
       "dialogs": [
@@ -56,33 +54,11 @@
       ],
       "codeChallenge": {
         "codeTip": "Parece que ta faltando alguma coisa aqui"
-      },
-      "errorChoices": [
-        {
-          "choiceText": "Testar jogo.",
-          "choiceGoTo": "/Minigame",
-          "continueFrom": ""
-        }
-      ],
-      "successChoices": [
-        {
-          "choiceText": "Testar jogo!",
-          "choiceGoTo": "/Minigame"
-        }
-      ],
-      "modalConfigOnError": {
-        "modalTitle": "ERRO!",
-        "modalText": "Sabia que isso ia acontecer..."
-      },
-      "modalConfigOnSuccess": {
-        "modalTitle": "Você concluiu o desafio!",
-        "modalText": "CONSEGUIMOS! ARRUMAMOS SEU JOGO JARVIS!"
       }
     },
     {
       "id": 2,
       "code": ".center_game_screen {\nposition:absolute;\ntop:30%\nbottom:50%;\nleft:0;\nright:0;\nmargin:auto;\nwidth50vw;\nheight:50vh;\n}",
-      "codeResolve": ".center_game_screen {\nposition:absolute;\ntop:30%;\nbottom:50%;\nleft:0;\nright:0;\nmargin:auto;\nwidth:50vw;\nheight:50vh;\n}",
       "effect": "center",
       "playGame": false,
       "dialogs": [
@@ -122,7 +98,6 @@
     {
       "id": 3,
       "code": "function spawnEnemy(time) { \n var current_time = time \n if (current_time - lastSpawnTime > time_til_spawn \n time_til_spawn = Math.random() * 3000; \n setLastSpawnTime(current_time) \n spawn(Enemy, { x: Math.randon() * (380 - 1) + 1, y: 0 }); \n    } \n }",
-      "codeResolve": "function spawnEnemy(time) \n { \n var current_time = time; \n if (current_time - lastSpawnTime > time_til_spawn) { \n time_til_spawn = Math.random() * 3000; \n setLastSpawnTime(current_time); \n spawn(Enemy, { x: Math.randon() * (380 - 1) + 1, y: 0 }); \n } \n }",
       "effect": "enemies",
       "playGame": false,
       "dialogs": [

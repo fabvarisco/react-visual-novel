@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 
 export default function Minigame() {
   return (
-    <div className={"container"}>
+    <div className="container">
       JOGO
       <div>
-        <Link href={"/"}>
+        <Link href="/">
           <button>Voltar para o inicio</button>
         </Link>
       </div>
       <div>
-        <Link to={"/"}>
+        <Link to="/">
           <button>Continuar de onde parou (Ainda não implementado)</button>
         </Link>
       </div>
