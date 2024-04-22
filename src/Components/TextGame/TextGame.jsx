@@ -7,7 +7,7 @@ import { selectModal } from "../../Redux/modalSlice";
 import { useParams } from "react-router-dom";
 import { selectCompilation } from "../../Redux/compilationSlice";
 import { useLayoutEffect, useRef } from "react";
-import JarvisComputer from "../JarvisComputer";
+import JarvisVisualCode from "../JarvisVisualCode";
 
 export default function TextGame() {
   const { data } = CodeChallenge;
@@ -26,7 +26,7 @@ export default function TextGame() {
   function Textgame() {
     return (
       <>
-        <JarvisComputer dataCode={data} id={id}/>
+        <JarvisVisualCode dataCode={data} id={id} />
         {/* <Highlighter dataCode={data} id={id} /> */}
         <DialogBox
           dialogs={data[id]?.dialogs}

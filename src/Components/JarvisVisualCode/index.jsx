@@ -4,8 +4,9 @@ import folderIcon from '/public/images/Others/css.svg'
 import Highlighter from '../Highlighter/Highlighter';
 import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { Editor } from '@monaco-editor/react';
 
-export default function JarvisComputer(props) {
+export default function JarvisVisualCode(props) {
     console.log(props)
     const [selectedFolder, setSelectedFolder] = useState(null);
 
@@ -43,8 +44,12 @@ export default function JarvisComputer(props) {
                         <div>
                             <h2>{folders.find(folder => folder.id === selectedFolder).name}</h2>
                             {folders.find(folder => folder.id === selectedFolder).files.map((file, index) => (
-                                <div key={index}>
-                                    <Highlighter dataCode={props.dataCode} id={props.id} key={index} />
+                                <div key={index} style={{ overflow: 'hidden', height:'300px' }}>
+                                    <Editor
+                                        
+                                        defaultLanguage="css"
+                                        theme='vs-dark'
+                                    />
                                 </div>
                             ))}
                         </div>

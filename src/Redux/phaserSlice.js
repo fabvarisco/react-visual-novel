@@ -5,7 +5,7 @@ export const slice = createSlice({
   initialState: {
     center: false,
     enemies: false,
-    showButtons: false,
+    showButtons: true,
     gameState: true,
   },
   reducers: {
