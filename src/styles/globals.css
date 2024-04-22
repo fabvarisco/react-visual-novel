@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 
 body {
+  margin: 0;
+  padding: 0;
   background: #f2f2f2;
   color: #333;
   font-family: "Nunito";
+  background-image: url("/images/background.png");
+  background-repeat: repeat;
+
 }
 a {
   color: #333;
@@ -50,20 +55,17 @@ footer {
   margin-left: 20px;
   image-rendering: pixelated;
 }
+
 .textGame {
-  width: 544px;
-  height: 380px;
   margin-left: 20px;
   resize: none;
 }
 
 
 main {
-  background-image: url("/images/background.png");
-  background-color: red;
   width: 100vw;
   height: 100vh;
-  background-repeat: repeat;
+  background-image: url("/images/background.png");
   animation: parallaxx 180s linear infinite;
 }
 

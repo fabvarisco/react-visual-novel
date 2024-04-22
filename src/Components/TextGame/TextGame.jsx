@@ -7,6 +7,7 @@ import { selectModal } from "../../Redux/modalSlice";
 import { useParams } from "react-router-dom";
 import { selectCompilation } from "../../Redux/compilationSlice";
 import { useLayoutEffect, useRef } from "react";
+import JarvisComputer from "../JarvisComputer";
 
 export default function TextGame() {
   const { data } = CodeChallenge;
@@ -18,16 +19,15 @@ export default function TextGame() {
   const elRef = useRef();
 
   useLayoutEffect(() => {
-    if (elRef.current) {
-      elRef.current.style.cssText = center_game_screen;
-    }
+    if (elRef.current) elRef.current.style.cssText = center_game_screen;
   });
 
 
   function Textgame() {
     return (
       <>
-        <Highlighter dataCode={data} id={id} />
+        <JarvisComputer dataCode={data} id={id}/>
+        {/* <Highlighter dataCode={data} id={id} /> */}
         <DialogBox
           dialogs={data[id]?.dialogs}
           codeChallenge={data[id]?.codeChallenge}

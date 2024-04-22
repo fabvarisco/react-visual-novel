@@ -11,6 +11,7 @@ import {
 import { compareTwoStrings } from "string-similarity";
 import { changeCenterGame } from "../../Redux/compilationSlice";
 
+
 export default function Highlighter(props) {
   const { dataCode, id } = props;
   const dispatch = useDispatch();
