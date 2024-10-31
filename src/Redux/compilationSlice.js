@@ -7,7 +7,6 @@ export const slice = createSlice({
   },
   reducers: {
     changeCenterGame(state, { payload }) {
-      console.log(payload)
       return { ...state, center_game_screen: payload };
     },
 

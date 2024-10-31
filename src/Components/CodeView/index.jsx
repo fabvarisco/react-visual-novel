@@ -1,21 +1,27 @@
 import { Editor } from "@monaco-editor/react";
 import "./style.css";
+import { useDispatch } from "react-redux";
+import { useState } from "react";
 export default function CodeView({ selectedFolder }) {
+  const [code, setCode] = useState("");
+  const dispatch = useDispatch();
   console.log(selectedFolder);
+
   const execute = () => {
-    dispatch(changeCenterGame("display: flex; justify-content:center;"));
+    dispatch(selectedFolder.saveCode(code));
   };
 
   const renderEditor = () => (
     <>
       <button onClick={() => execute()}>Play</button>
-      <button onClick={() => selectedFolder = null}>Home</button>
+      <button>Home</button>
       <h2>{selectedFolder.name}</h2>
       <div className="code-view">
         <Editor
           value={selectedFolder.code}
           defaultLanguage="css"
           theme="vs-dark"
+          onChange={(e) => setCode(e)}
         />
       </div>
     </>

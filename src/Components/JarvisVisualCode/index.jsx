@@ -1,19 +1,36 @@
 import { useState } from "react";
 import "./style.css";
 import folderIcon from "/public/images/Others/css.svg";
-import { selectCompilation } from "../../Redux/compilationSlice";
+import {
+  changeCenterGame,
+  selectCompilation,
+} from "../../Redux/compilationSlice";
 import { useSelector } from "react-redux";
 import CodeView from "../CodeView";
 
 export default function JarvisVisualCode(props) {
   const { center_game_screen } = useSelector(selectCompilation);
-
   const [selectedFolder, setSelectedFolder] = useState(null);
 
   const files = [
-    { id: 1, name: "Game.css", code: center_game_screen },
-    { id: 2, name: "Styles.css", code: "sadasdsdsda" },
-    { id: 3, name: "MoreStylis.css", code: "dasdasdas" },
+    {
+      id: 1,
+      name: "Game.css",
+      code: center_game_screen,
+      saveCode: changeCenterGame,
+    },
+    {
+      id: 2,
+      name: "Styles.css",
+      code: "sadasdsdsda",
+      saveCode: changeCenterGame,
+    },
+    {
+      id: 3,
+      name: "MoreStylis.css",
+      code: "dasdasdas",
+      saveCode: changeCenterGame,
+    },
   ];
 
   const handleFolderSelection = (file) => {
