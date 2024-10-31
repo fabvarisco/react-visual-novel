@@ -3,11 +3,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: #f2f2f2;
+  background: #242424;
   color: #333;
   font-family: "Nunito";
-  background-image: url("/images/background.png");
-  background-repeat: repeat;
 
 }
 a {
@@ -65,8 +63,6 @@ footer {
 main {
   width: 100vw;
   height: 100vh;
-  background-image: url("/images/background.png");
-  animation: parallaxx 180s linear infinite;
 }
 
 @keyframes parallax {

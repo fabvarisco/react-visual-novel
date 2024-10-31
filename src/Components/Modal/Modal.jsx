@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { changeDialog } from "../../Redux/dialogBoxSlice";
@@ -11,7 +10,7 @@ export default function Modal({
   const dispatch = useDispatch();
 
   return (
-    <Fragment>
+    <>
       {showModal && (
         <div className="container">
           <div className="modal" id="modal">
@@ -43,6 +42,6 @@ export default function Modal({
           </div>
         </div>
       )}
-    </Fragment>
+    </>
   );
 }

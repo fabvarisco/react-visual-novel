@@ -1,4 +1,3 @@
-import Highlighter from "../Highlighter/Highlighter";
 import DialogBox from "../DialogBox/DialogBox";
 import CodeChallenge from "./codeChallenge.json";
 import Modal from "../Modal/Modal";
@@ -20,14 +19,13 @@ export default function TextGame() {
 
   useLayoutEffect(() => {
     if (elRef.current) elRef.current.style.cssText = center_game_screen;
-  });
+  },[center_game_screen]);
 
 
   function Textgame() {
     return (
       <>
         <JarvisVisualCode dataCode={data} id={id} />
-        {/* <Highlighter dataCode={data} id={id} /> */}
         <DialogBox
           dialogs={data[id]?.dialogs}
           codeChallenge={data[id]?.codeChallenge}

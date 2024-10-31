@@ -1,61 +1,58 @@
-import { Fragment, useState } from 'react';
-import './style.css';
-import folderIcon from '/public/images/Others/css.svg'
-import Highlighter from '../Highlighter/Highlighter';
-import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { Editor } from '@monaco-editor/react';
+import { useState } from "react";
+import "./style.css";
+import folderIcon from "/public/images/Others/css.svg";
+import { selectCompilation } from "../../Redux/compilationSlice";
+import { useSelector } from "react-redux";
+import CodeView from "../CodeView";
 
 export default function JarvisVisualCode(props) {
-    console.log(props)
-    const [selectedFolder, setSelectedFolder] = useState(null);
+  const { center_game_screen } = useSelector(selectCompilation);
 
-    // Sample folders and files data
-    const folders = [
-        { id: 1, name: 'Game.css', files: ['File 1'] },
-        { id: 2, name: 'Styles.css', files: ['File 3'] },
-        { id: 3, name: 'MoreStylis.css', files: ['File 5'] }
-    ];
+  const [selectedFolder, setSelectedFolder] = useState(null);
 
-    // Function to handle folder selection
-    const handleFolderSelection = (folderId) => {
-        setSelectedFolder(folderId);
-    };
-    return (
-        <div className='jvc-container'>
-            <div className="header">
-                <div className="title">JVCode</div>
-            </div>
-            <div className="file-window">
-                <div className="sidebar">
-                    <h2>Styles</h2>
-                    <ul>
-                        {/* Render list of folders */}
-                        {folders.map(folder => (
-                            <li key={folder.id} className={`${selectedFolder === folder.id ? 'active' : ''} folder-list-item`} onClick={() => handleFolderSelection(folder.id)}>
-                                <img src={folderIcon} alt="Folder Icon" className="icon" width={64} />
-                                {folder.name}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div className="main-content">
-                    {selectedFolder && (
-                        <div>
-                            <h2>{folders.find(folder => folder.id === selectedFolder).name}</h2>
-                            {folders.find(folder => folder.id === selectedFolder).files.map((file, index) => (
-                                <div key={index} style={{ overflow: 'hidden', height:'300px' }}>
-                                    <Editor
-                                        
-                                        defaultLanguage="css"
-                                        theme='vs-dark'
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </div>
-            </div>
+  const files = [
+    { id: 1, name: "Game.css", code: center_game_screen },
+    { id: 2, name: "Styles.css", code: "sadasdsdsda" },
+    { id: 3, name: "MoreStylis.css", code: "dasdasdas" },
+  ];
+
+  const handleFolderSelection = (file) => {
+    setSelectedFolder(file);
+  };
+
+  return (
+    <div className="jvc-container">
+      <div className="header">
+        <div className="title">JVCode</div>
+      </div>
+      <div className="file-window">
+        <div className="sidebar">
+          <h2>Styles</h2>
+          <ul>
+            {/* Render list of folders */}
+            {files.map((file) => (
+              <li
+                key={file.id}
+                className={`${
+                  selectedFolder === file.id ? "active" : ""
+                } folder-list-item`}
+                onClick={() => handleFolderSelection(file)}
+              >
+                <img
+                  src={folderIcon}
+                  alt="Folder Icon"
+                  className="icon"
+                  width={64}
+                />
+                {file.name}
+              </li>
+            ))}
+          </ul>
         </div>
-    );
+        <div className="main-content">
+          <CodeView selectedFolder={selectedFolder} />
+        </div>
+      </div>
+    </div>
+  );
 }
