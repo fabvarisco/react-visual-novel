@@ -8,8 +8,10 @@ body {
   font-family: "Nunito";
 
 }
+
 a {
   color: #333;
+  text-decoration: none;
 }
 .content {
   max-width: 960px;
@@ -29,6 +31,22 @@ nav a {
 nav .logo {
   margin-right: auto;
 }
+
+button {
+  display: flex;
+  justify-content: center;
+  border: 0;
+  color: #000000;
+  cursor: pointer;
+  font-size: 0.8rem;
+  line-height: 1;
+  background-color: #78f89f;
+}
+
+button:hover {
+  background-color: #0e6b2a;
+}
+
 footer {
   display: block;
   text-align: center;

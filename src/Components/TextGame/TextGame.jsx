@@ -24,8 +24,8 @@ export default function TextGame() {
         styleElement.id = 'dynamic-styles';
         document.head.appendChild(styleElement);
       }
-  
-      styleElement.textContent = center_game_screen;
+      styleElement.textContent = "";
+      styleElement.textContent += center_game_screen;
     }
   }, [center_game_screen]);
 

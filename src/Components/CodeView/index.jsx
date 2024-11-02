@@ -8,13 +8,18 @@ export default function CodeView({ selectedFolder }) {
   console.log(selectedFolder);
 
   const execute = () => {
+      
+  };
+
+  const save = () => {
     dispatch(selectedFolder.saveCode(code));
   };
 
   const renderEditor = () => (
     <>
       <div className="code-view-top-buttons">
-        <button onClick={() => execute()}>Play</button>
+      <button onClick={() => save()}>Save</button>
+        <button onClick={() => execute()}>Run</button>
         <button>Home</button>
       </div>
       <h2>{selectedFolder.name}</h2>

@@ -21,18 +21,6 @@
     font-size: 16px;
 }
 
-.buttons button {
-    background: none;
-    border: none;
-    color: #abb2bf;
-    font-size: 14px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.buttons button:hover {
-    color: #fff;
-}
 
 .sidebar {
     background-color: #282c34;
