@@ -13,8 +13,10 @@ export default function CodeView({ selectedFolder }) {
 
   const renderEditor = () => (
     <>
-      <button onClick={() => execute()}>Play</button>
-      <button>Home</button>
+      <div className="code-view-top-buttons">
+        <button onClick={() => execute()}>Play</button>
+        <button>Home</button>
+      </div>
       <h2>{selectedFolder.name}</h2>
       <div className="code-view">
         <Editor

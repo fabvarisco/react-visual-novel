@@ -2,3 +2,8 @@
   overflow: hidden;
   height: 240px;
 }
+.code-view-top-buttons{
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}

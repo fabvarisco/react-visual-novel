@@ -43,7 +43,12 @@ footer {
   height: 380px;
   padding-left: 0;
   padding-right: 0;
-  display: block;
+  display: centerblock;
+  transform: translate(-0%, -0%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
 }
 
 .canvas {

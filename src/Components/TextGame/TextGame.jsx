@@ -16,11 +16,18 @@ export default function TextGame() {
 
 
   const elRef = useRef();
-
   useLayoutEffect(() => {
-    if (elRef.current) elRef.current.style.cssText = center_game_screen;
-  },[center_game_screen]);
-
+    if (elRef.current) {
+      let styleElement = document.getElementById('dynamic-styles');
+      if (!styleElement) {
+        styleElement = document.createElement('style');
+        styleElement.id = 'dynamic-styles';
+        document.head.appendChild(styleElement);
+      }
+  
+      styleElement.textContent = center_game_screen;
+    }
+  }, [center_game_screen]);
 
   function Textgame() {
     return (
