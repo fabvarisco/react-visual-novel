@@ -2,8 +2,25 @@
   overflow: hidden;
   height: 240px;
 }
+
 .code-view-top-buttons{
   display: flex;
-  justify-content: end;
-  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:12px; 
+  padding-right: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+.play-icon {
+  cursor: pointer;
+  transition: all;
+  background-color: #ccc;
+  border: solid 1px #ababab;
+  
+}
+
+.play-icon:hover {
+  background-color: #282c34;
+  border: solid #ccc;
 }

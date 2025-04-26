@@ -10,7 +10,6 @@ function App() {
       <Route path="/" element={<TitleScreen />} />
       <Route path="/game/:id" element={<Game />} />
       <Route exact path="/textgame/:id" element={<TextGame />} />
-      <Route path="/minigame" element={<Minigame />} />
     </Routes>
   );
 }

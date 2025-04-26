@@ -5,8 +5,8 @@ export const slice = createSlice({
   initialState: {
     center_game_screen: `
   .container {
-  width: 520px;
-  height: 380px;
+  width: 100%;
+  height: 100%;
   padding-left: 0;
   padding-right: 0;
   display: centerblock;

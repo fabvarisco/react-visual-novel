@@ -8,9 +8,11 @@ import {
 import { useSelector } from "react-redux";
 import CodeView from "../CodeView";
 
+
+
+
 export default function JarvisVisualCode(props) {
   const { center_game_screen } = useSelector(selectCompilation);
-  const [selectedFolder, setSelectedFolder] = useState(null);
 
   const files = [
     {
@@ -33,6 +35,9 @@ export default function JarvisVisualCode(props) {
     },
   ];
 
+  const [selectedFolder, setSelectedFolder] = useState(files[0]);
+
+
   const handleFolderSelection = (file) => {
     setSelectedFolder(file);
   };
@@ -44,15 +49,13 @@ export default function JarvisVisualCode(props) {
       </div>
       <div className="file-window">
         <div className="sidebar">
-          <h2>Styles</h2>
+          <h2>Files</h2>
           <ul>
-            {/* Render list of folders */}
             {files.map((file) => (
               <li
                 key={file.id}
-                className={`${
-                  selectedFolder === file.id ? "active" : ""
-                } folder-list-item`}
+                className={`${selectedFolder.id === file.id ? "active" : ""
+                  } folder-list-item`}
                 onClick={() => handleFolderSelection(file)}
               >
                 <img

@@ -11,11 +11,7 @@
   visibility: visible;
 }
 
-h2 {
-  border-bottom: 1px solid #ccc;
-  padding: 1rem;
-  margin: 0;
-}
+
 .content {
   padding: 1rem;
 }
