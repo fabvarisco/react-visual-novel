@@ -1,0 +1,24 @@
+{
+    "buttons": {
+      "back": "Back",
+      "next": "Next",
+      "viewCode": "Ver código do Jarvis"
+    },
+    "labels": {
+      "choices": "Escolhas",
+      "tip": "Dica"
+    },
+    "dialog": {
+      "marin": {
+        "welcome": "Bem-vindo, aventureiro!"
+      },
+      "jarvis": {
+        "hint": "Tente inspecionar o elemento..."
+      }
+    },
+    "characters": {
+      "Marin": { "name": "Marin" },
+      "Jarvis": { "name": "Jarvis" }
+    }
+  }
+  
