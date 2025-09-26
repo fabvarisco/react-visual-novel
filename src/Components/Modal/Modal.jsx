@@ -12,7 +12,7 @@ export default function Modal({
   return (
     <>
       {showModal && (
-        <div className="container">
+        <div>
           <div className="modal" id="modal">
             <h2>{modalConfig?.modalTitle}</h2>
             <div className="content">{modalConfig?.modalText}</div>

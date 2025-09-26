@@ -6,7 +6,7 @@ import {
   selectCompilation,
 } from "../../Redux/compilationSlice";
 import { useSelector } from "react-redux";
-import CodeView from "../CodeView";
+import CodeView from "../CodeView/CodeView";
 
 
 

@@ -5,6 +5,7 @@ import { selectBackground } from "../../Redux/backgroundSlice";
 export default function CanvasImage({ width, height }) {
   const ref = useRef();
   const { background } = useSelector(selectBackground);
+  
   useEffect(() => {
     const ctx = ref.current.getContext("2d");
     const image = new window.Image();

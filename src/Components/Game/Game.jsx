@@ -9,10 +9,8 @@ function Game() {
 
   return (
     <main>
-      <section className="container">
         <CanvasImage width={75} height={61} />
         <DialogBox dialogs={data[id]?.dialogs} choices={data[id]?.choices} />
-      </section>
     </main>
   );
 }

@@ -40,6 +40,9 @@ button {
   font-size: 0.8rem;
   line-height: 1;
   background-color: #78f89f;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 2px;
 }
 
 button:hover {
@@ -53,19 +56,6 @@ footer {
   margin-top: 60px;
   color: #777;
   border-top: 1px solid #eaeaea;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  display: centerblock;
-  transform: translate(-0%, -0%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
 }
 
 .canvas {
