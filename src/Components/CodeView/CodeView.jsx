@@ -3,12 +3,16 @@ import "./style.css";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { VscDebugStart } from "react-icons/vsc";
+import CustomCssEditor from "../CustomCssEditor";
 
 export default function CodeView({ selectedFolder }) {
-  const [code, setCode] = useState("");
+  const [code, setCode] = useState(selectedFolder.code);
   const dispatch = useDispatch();
 
   const execute = () => {
+    console.log("code", code);
+    console.log("selectedFolder", selectedFolder);
+
     dispatch(selectedFolder.saveCode(code));
   };
 
@@ -19,12 +23,7 @@ export default function CodeView({ selectedFolder }) {
         <button className="play-icon" onClick={() => execute()}><VscDebugStart /></button>
       </div>
       <div className="code-view">
-        <Editor
-          value={selectedFolder.code}
-          defaultLanguage="css"
-          theme="vs-dark"
-          onChange={(e) => setCode(e)}
-        />
+        <CustomCssEditor />
       </div>
     </>
   );

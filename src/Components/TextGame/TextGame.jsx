@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { selectModal } from "../../Redux/modalSlice";
 import { useParams } from "react-router-dom";
 import { selectCompilation } from "../../Redux/compilationSlice";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import JarvisVisualCode from "../JarvisVisualCode";
 
 export default function TextGame() {
@@ -17,6 +17,10 @@ export default function TextGame() {
   useLayoutEffect(() => {
     console.log("center_game_screen", center_game_screen);
     if (elRef.current) {
+      console.log("elRef.current", elRef.current);
+      console.log("csstext", elRef.current.style.cssText);
+            console.log("center_game_screen",center_game_screen);
+
       elRef.current.style.cssText = center_game_screen;
     }
   }, [center_game_screen]);
@@ -37,7 +41,8 @@ export default function TextGame() {
 
   return (
     <main
-     ref={elRef} className="container" >
+    className="container"
+     ref={elRef}>
       <section >
         {Textgame()}
       </section>
