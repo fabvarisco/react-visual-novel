@@ -1,5 +1,6 @@
 import "./style.css";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { changeBackground } from "../../Redux/backgroundSlice";
 import { changeCodeButtons } from "../../Redux/phaserSlice";
@@ -22,6 +23,7 @@ const getCharacterProps = {
 };
 
 export default function DialogBox({ dialogs, choices, codeChallenge }) {
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const { id } = useParams();
   const { dialog, tip, goToChallengeCode } = useSelector(selectDialogBox);
@@ -76,10 +78,12 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
     return (
       <div className="buttonContainer">
         <div className="buttonItem">
-          {dialog > 0 && <button onClick={() => backDialog()}>Voltar</button>}
+          {dialog > 0 && (
+            <button onClick={() => backDialog()}>{t("ui.back")}</button>
+          )}
         </div>
         <div>
-          <button onClick={() => nextDialog()}>Próximo</button>
+          <button onClick={() => nextDialog()}>{t("ui.next")}</button>
         </div>
       </div>
     );
@@ -88,7 +92,7 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
   function renderGoToChallengeCodeButton() {
     return (
       <div className="buttonContainer">
-        <button onClick={() => {}}>Ver codigo do Jarvis</button>
+        <button onClick={() => {}}>{t("ui.viewCode")}</button>
       </div>
     );
   }
@@ -98,14 +102,14 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
       <>
         <div>
           <p>
-            <b>Escolhas</b>
+            <b>{t("ui.choices")}</b>
           </p>
         </div>
         {choices.choiceDialog?.map(({ choiceText, choiceGoTo }) => (
           <div key={choiceGoTo}>
             <li>
               <Link onClick={() => dispatch(changeDialog(0))} to={choiceGoTo}>
-                {choiceText}
+                {t(choiceText)}
               </Link>
             </li>
           </div>
@@ -118,9 +122,9 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
     return (
       <div>
         <p>
-          <b>Dica</b>
+          <b>{t("ui.tip")}</b>
         </p>
-        <p>{codeChallenge?.codeTip}</p>
+        <p>{t(codeChallenge?.codeTip)}</p>
       </div>
     );
   }
@@ -150,7 +154,7 @@ export default function DialogBox({ dialogs, choices, codeChallenge }) {
             </p>
           </div>
         </div>
-        <p>{dialogs[dialog]?.characterDialog}</p>
+        <p>{t(dialogs[dialog]?.characterDialog)}</p>
       </>
     );
   }

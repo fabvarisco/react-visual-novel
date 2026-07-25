@@ -9,34 +9,34 @@
         {
           "characterName": "Tommy",
           "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "Credo jarvis! Foi assim que você fez pra centralizar a tela?",
+          "characterDialog": "challenge.0.dialogs.0",
           "nextBackground": false
         }
       ],
       "codeChallenge": {
-        "codeTip": "É melhor pedir ajuda pra Marin, mas vamos ver se eu consigo resolver."
+        "codeTip": "challenge.0.codeTip"
       },
       "errorChoices": [
         {
-          "choiceText": "Ir para o proximo erro",
+          "choiceText": "challenge.0.errorChoices.0",
           "choiceGoTo": "/textgame/1",
           "continueFrom": ""
         }
       ],
       "successChoices": [
         {
-          "choiceText": "Ir para o proximo erro",
+          "choiceText": "challenge.0.successChoices.0",
           "choiceGoTo": "/textgame/1",
           "continueFrom": ""
         }
       ],
       "modalConfigOnError": {
-        "modalTitle": "ERRO!",
-        "modalText": "Sabia que isso ia acontecer..."
+        "modalTitle": "challenge.0.modalError.title",
+        "modalText": "challenge.0.modalError.text"
       },
       "modalConfigOnSuccess": {
-        "modalTitle": "Compilado!",
-        "modalText": "Uhuuuuul! Consegui!"
+        "modalTitle": "challenge.0.modalSuccess.title",
+        "modalText": "challenge.0.modalSuccess.text"
       }
     },
     {
@@ -48,12 +48,12 @@
         {
           "characterName": "Tommy",
           "characterImage": "/faces/tommy_face.png",
-          "characterDialog": "Isso ta uma bagunça.",
+          "characterDialog": "challenge.1.dialogs.0",
           "nextBackground": false
         }
       ],
       "codeChallenge": {
-        "codeTip": "Parece que ta faltando alguma coisa aqui"
+        "codeTip": "challenge.1.codeTip"
       }
     },
     {
@@ -65,31 +65,31 @@
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Esse primeiro problema está relacionado com a tela, ela parece não estar centralizada.",
+          "characterDialog": "challenge.2.dialogs.0",
           "nextBackground": false
         }
       ],
       "codeChallenge": {
-        "codeTip": "Acho que aqui é apenas um erro de pontuação na linha 3 e 8."
+        "codeTip": "challenge.2.codeTip"
       },
       "modalConfigOnError": {
-        "modalTitle": "ERROR!",
-        "modalText": "Droga! Eu errei!"
+        "modalTitle": "challenge.2.modalError.title",
+        "modalText": "challenge.2.modalError.text"
       },
       "modalConfigOnSuccess": {
-        "modalTitle": "Compilado!",
-        "modalText": "Yeah! Agora falta só mais um!"
+        "modalTitle": "challenge.2.modalSuccess.title",
+        "modalText": "challenge.2.modalSuccess.text"
       },
       "errorChoices": [
         {
-          "choiceText": "Proximo!",
+          "choiceText": "challenge.2.errorChoices.0",
           "choiceGoTo": "/textgame/3",
           "continueFrom": ""
         }
       ],
       "successChoices": [
         {
-          "choiceText": "Proximo!",
+          "choiceText": "challenge.2.successChoices.0",
           "choiceGoTo": "/textgame/3",
           "continueFrom": ""
         }
@@ -104,31 +104,31 @@
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Agora esse esta relacionado com o timer do spawn dos inimigos.",
+          "characterDialog": "challenge.3.dialogs.0",
           "nextBackground": false
         }
       ],
       "codeChallenge": {
-        "codeTip": "Acho que aqui é apenas um erro de pontuação na linha 2,3,5 e 6."
+        "codeTip": "challenge.3.codeTip"
       },
       "modalConfigOnError": {
-        "modalTitle": "ERROR!",
-        "modalText": "Droga! Eu errei!"
+        "modalTitle": "challenge.3.modalError.title",
+        "modalText": "challenge.3.modalError.text"
       },
       "modalConfigOnSuccess": {
-        "modalTitle": "Compilado!",
-        "modalText": "YEAH! CONSEGUIMOS! ARRUMAMOS SEU JOGUINHO JARVIS!"
+        "modalTitle": "challenge.3.modalSuccess.title",
+        "modalText": "challenge.3.modalSuccess.text"
       },
       "errorChoices": [
         {
-          "choiceText": "Testar jogo.",
+          "choiceText": "challenge.3.errorChoices.0",
           "choiceGoTo": "/Minigame",
           "continueFrom": ""
         }
       ],
       "successChoices": [
         {
-          "choiceText": "Testar jogo.",
+          "choiceText": "challenge.3.successChoices.0",
           "choiceGoTo": "/Minigame",
           "continueFrom": ""
         }

@@ -1,24 +1,353 @@
 {
-    "buttons": {
-      "back": "Back",
-      "next": "Next",
-      "viewCode": "Ver código do Jarvis"
-    },
-    "labels": {
-      "choices": "Escolhas",
-      "tip": "Dica"
-    },
-    "dialog": {
-      "marin": {
-        "welcome": "Bem-vindo, aventureiro!"
+  "ui": {
+    "back": "Back",
+    "next": "Next",
+    "viewCode": "View Jarvis's code",
+    "choices": "Choices",
+    "tip": "Hint",
+    "startGame": "Start Game",
+    "files": "Files"
+  },
+  "game": {
+    "0": {
+      "title": "Start",
+      "dialogs": {
+        "0": "TOMMY! TOMMY!",
+        "1": "What's up, Jarvis?",
+        "2": "SOMEONE MESSED WITH IT!",
+        "3": "SOMEONE MESSED WITH IIIIIIIIT!!!",
+        "4": "I went to run it today and it wasn't working!",
+        "5": "I didn't change anything in the code!",
+        "6": "What is your friend talking about?",
+        "7": "Oh, it's about the game he's programming... ",
+        "8": "You know how robot stuff is, haha.",
+        "9": "Ohh! Omoshiroi...",
+        "10": "Don't laugh, Tommy! I don't know what to do ;_;",
+        "11": "You could try fixing your own code, you know? haha",
+        "12": "No way, Tommy!",
+        "13": "IT'S TOTAL SPAGHETTI!",
+        "14": "And are you sure someone actually messed with it?",
+        "15": "...",
+        "16": "Hehe...",
+        "17": "Possibly... Jarvis's party was packed last night...",
+        "18": "Maybe Jarvis invited someone who doesn't like him.",
+        "19": "SUSPICIOUS, HUH >.>",
+        "20": "Hehe",
+        "21": "Temaki just smart.",
+        "22": "TOMMY, HELP ME! LET'S FIND OUT WHO DID IT!",
+        "23": "Ugh...",
+        "24": "Not like I have much of a choice anyway."
       },
-      "jarvis": {
-        "hint": "Tente inspecionar o elemento..."
+      "choices": {
+        "0": "Keep talking to Temaki",
+        "1": "Go check Jarvis's code",
+        "2": "Talk to Marin"
       }
     },
-    "characters": {
-      "Marin": { "name": "Marin" },
-      "Jarvis": { "name": "Jarvis" }
+    "1": {
+      "title": "Keep talking to Temaki",
+      "dialogs": {
+        "0": "So...",
+        "1": "Tell me more about what you saw yesterday.",
+        "2": "Hmmm...",
+        "3": "Nothing much...",
+        "4": "I mean...",
+        "5": "Geraldo, he was acting a little weird.",
+        "6": "But Geraldo is my friend.",
+        "7": "Yeah, and he was even programmed by Marin.",
+        "8": "He wouldn't be capable of something like that.",
+        "9": "Just telling you what I saw.",
+        "10": "Alright, maybe we'll go after him."
+      },
+      "choices": {
+        "0": "Go after Geraldo (Not written yet)",
+        "1": "Check Jarvis's code",
+        "2": "Talk to Marin"
+      }
+    },
+    "2": {
+      "title": "Analyzing Jarvis's Code",
+      "dialogs": {
+        "0": "It really is...",
+        "1": "Your code is a mess",
+        "2": "I wouldn't even know where to start.",
+        "3": "I think only Marin could help you with this.",
+        "4": "Tommy! ;-;",
+        "5": "Well...",
+        "6": "Looks like this first error is related to some CSS, right?",
+        "7": "Yeah, the game isn't centered anymore ;-;",
+        "8": "hmmm...",
+        "9": "You used flexbox for everything, right? No grids or hacky workarounds, right? ",
+        "10": "Flexbox?",
+        "11": "I didn't use grids because I think they're too complicated.",
+        "12": "There's no way to help you like this...",
+        "13": "That's because you haven't seen the rest.",
+        "14": "I can't even imagine",
+        "15": "I can try to fix it, but I'm not promising anything.",
+        "16": "What do you think?"
+      },
+      "choices": {
+        "0": "Try to fix the code",
+        "1": "Give up and go ask Marin for help"
+      }
+    },
+    "3": {
+      "title": "Asking Marin for help",
+      "dialogs": {
+        "0": "MAAAARIIIIN!!!",
+        "1": "Hey Jarvis!",
+        "2": "Wow, you're pretty electric today, huh.",
+        "3": "Yeah, there's a reason for that.",
+        "4": "THEY RUINED MY GAME, MARIN! ;-;",
+        "5": "Aww, poor thing...",
+        "6": "I can go over there and take a look for you guys.",
+        "7": "But you'd have to do me a favor first. u.u",
+        "8": "But Marin ;--;",
+        "9": "There's no way, I already told you it's total spaghetti",
+        "10": "It's okay Jarvis, everything has a solution.",
+        "11": "So then, what do you need?",
+        "12": "I lost my screwdriver.",
+        "13": "I'd like you to go look for it for me.",
+        "14": "Are you serious...",
+        "15": "And do you have any idea where it might be?",
+        "16": "Nope, hihi.",
+        "17": "...",
+        "18": "Maybe it's near the market, I fixed a robot there yesterday.",
+        "19": "Okay...",
+        "20": "I'm not promising I'll go after it, but if I find it I'll bring it.",
+        "21": "Thankies."
+      },
+      "choices": {
+        "0": "Go to the market"
+      }
+    },
+    "4": {
+      "title": "Talk to Geraldo",
+      "dialogs": {
+        "0": ""
+      }
+    },
+    "5": {
+      "title": "Market",
+      "dialogs": {
+        "0": "Tommy!",
+        "1": "We've been here for hours and we still haven't found the screwdriver!",
+        "2": "Marin is never going to help us like this.",
+        "3": "Relax Jarvis, we'll find it.",
+        "4": "Hey everyone!",
+        "5": "Hey Geraldo",
+        "6": "What are you two doing around here?",
+        "7": "Marin said she lost a screwdriver around here.",
+        "8": "Do you know anything about it?",
+        "9": "Hmmm...",
+        "10": "I haven't seen anything around here.",
+        "11": "Did something happen, by any chance?",
+        "12": "Yesterday at Jarvis's party.",
+        "13": "It seems someone messed up the code of his game.",
+        "14": "What?",
+        "15": "But why would anyone do that?",
+        "16": "That's what we're trying to find out.",
+        "17": "Don't you remember anything suspicious at the party yesterday?",
+        "18": "...",
+        "19": "I'm running a bit late, I have to go.",
+        "20": "That was very suspicious.",
+        "21": "Yeah, I've never seen him act like that."
+      },
+      "choices": {
+        "0": "Keep looking for the screwdriver"
+      }
+    },
+    "6": {
+      "title": "Finding the screwdriver",
+      "dialogs": {
+        "0": "Well, never mind, let's keep looking",
+        "1": "I think we could go into the market and take a look inside",
+        "2": "We can talk to the Green Bot.",
+        "3": "Hello Tommy.",
+        "4": "Hello Jarvis.",
+        "5": "Are you looking for something today?",
+        "6": "We are, but nothing to buy.",
+        "7": "Marin said she lost a screwdriver around here the other day.",
+        "8": "Do you know anything?",
+        "9": "Yes, she came to help me with some little problems in my circuit.",
+        "10": "Feel free to look around, but I'm closing up soon.",
+        "11": "Alright, I promise we'll be quick."
+      },
+      "choices": {
+        "0": "Search the shelves.",
+        "1": "Search the boxes",
+        "2": "Search the arcade machines."
+      }
+    },
+    "7": {
+      "title": "Searching the Shelves",
+      "dialogs": {
+        "0": "Could it be around here?",
+        "1": "I'd better look carefully."
+      },
+      "choices": {
+        "0": "Search the boxes",
+        "1": "Search the arcade machines.",
+        "2": "Search Here"
+      }
+    },
+    "8": {
+      "title": "Searching the Boxes",
+      "dialogs": {
+        "0": "Could it be around here?",
+        "1": "I'd better look carefully."
+      },
+      "choices": {
+        "0": "Search the arcade machines.",
+        "1": "Search the shelves.",
+        "2": "Search Here"
+      }
+    },
+    "9": {
+      "title": "Searching near the Arcade Machines",
+      "dialogs": {
+        "0": "Could it be around here?",
+        "1": "I'd better look carefully."
+      },
+      "choices": {
+        "0": "Search the shelves.",
+        "1": "Search the boxes.",
+        "2": "Search Here"
+      }
+    },
+    "10": {
+      "title": "Screwdriver found",
+      "dialogs": {
+        "0": "It's up here!",
+        "1": "YEAH! Now we've got Marin's help!"
+      },
+      "choices": {
+        "0": "Talk to Marin"
+      }
+    },
+    "11": {
+      "title": "Screwdriver not found",
+      "dialogs": {
+        "0": "Where could it be?",
+        "1": "I'm losing hope ;-;",
+        "2": "Relax Jarvis, everything will be fine.",
+        "3": "Guys!",
+        "4": "I'm closing the shop, you need to go now.",
+        "5": "What now, Tommy! ;-;",
+        "6": "It's okay, we can still go after Geraldo."
+      },
+      "choices": {
+        "0": "Go after Geraldo (not written yet)",
+        "1": "Search the Boxes. (Temporary)",
+        "2": "Search the shelves. (Temporary)"
+      }
+    },
+    "12": {
+      "title": "Handing the screwdriver to Marin",
+      "dialogs": {
+        "0": "Hey guys! Did you find it?",
+        "1": "YES!!!",
+        "2": "It was on one of the market shelves.",
+        "3": "How did I make that mistake... -_-",
+        "4": "It happens, seems nobody had seen it.",
+        "5": "Well, at least now I've got my screwdriver back.",
+        "6": "I'm free to help you now."
+      },
+      "choices": {
+        "0": "Go to Jarvis's house"
+      }
+    },
+    "13": {
+      "title": "Marin and Jarvis's code",
+      "dialogs": {
+        "0": "Let's see...",
+        "1": "Hmmm... Looks like the language Jarvis used is JavaScript.",
+        "2": "CSS was used too.",
+        "3": "Looks like the game has small problems, but they're pretty simple to fix",
+        "4": "The screen needs to be centered.",
+        "5": "Adjust the way the enemies spawn",
+        "6": "Well... That's it for now.",
+        "7": "Your code is pretty messy.",
+        "8": "Did you save your code to git?",
+        "9": "Affirmative!",
+        "10": "Ah, there's an earlier version here but it's not complete yet.",
+        "11": "Now, let's see how this IDE works.",
+        "12": "The 'View Code' button lets me view the text as code.",
+        "13": "The 'Edit Code' button lets me edit.",
+        "14": "Compiling the code is the final step; after editing the code I can compile.",
+        "15": "Okay! Let's get started!"
+      },
+      "choices": {
+        "0": "Start"
+      }
+    }
+  },
+  "challenge": {
+    "0": {
+      "dialogs": {
+        "0": "Geez, Jarvis! Is this how you centered the screen?"
+      },
+      "codeTip": "Better ask Marin for help, but let's see if I can solve it.",
+      "errorChoices": {
+        "0": "Go to the next error"
+      },
+      "successChoices": {
+        "0": "Go to the next error"
+      },
+      "modalError": {
+        "title": "ERROR!",
+        "text": "I knew this was going to happen..."
+      },
+      "modalSuccess": {
+        "title": "Compiled!",
+        "text": "Woohoo! I did it!"
+      }
+    },
+    "1": {
+      "dialogs": {
+        "0": "This is a mess."
+      },
+      "codeTip": "Looks like something is missing here"
+    },
+    "2": {
+      "dialogs": {
+        "0": "This first problem is related to the screen, it doesn't seem to be centered."
+      },
+      "codeTip": "I think this is just a punctuation error on lines 3 and 8.",
+      "errorChoices": {
+        "0": "Next!"
+      },
+      "successChoices": {
+        "0": "Next!"
+      },
+      "modalError": {
+        "title": "ERROR!",
+        "text": "Darn! I got it wrong!"
+      },
+      "modalSuccess": {
+        "title": "Compiled!",
+        "text": "Yeah! Just one more to go!"
+      }
+    },
+    "3": {
+      "dialogs": {
+        "0": "Now this one is related to the enemy spawn timer."
+      },
+      "codeTip": "I think this is just a punctuation error on lines 2, 3, 5 and 6.",
+      "errorChoices": {
+        "0": "Test the game."
+      },
+      "successChoices": {
+        "0": "Test the game."
+      },
+      "modalError": {
+        "title": "ERROR!",
+        "text": "Darn! I got it wrong!"
+      },
+      "modalSuccess": {
+        "title": "Compiled!",
+        "text": "YEAH! WE DID IT! WE FIXED YOUR LITTLE GAME, JARVIS!"
+      }
     }
   }
-  
+}

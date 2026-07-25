@@ -6,12 +6,14 @@ import {
   selectCompilation,
 } from "../../Redux/compilationSlice";
 import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 import CodeView from "../CodeView/CodeView";
 
 
 
 
 export default function JarvisVisualCode(props) {
+  const { t } = useTranslation();
   const { center_game_screen } = useSelector(selectCompilation);
 
   const files = [
@@ -49,7 +51,7 @@ export default function JarvisVisualCode(props) {
       </div>
       <div className="file-window">
         <div className="sidebar">
-          <h2>Files</h2>
+          <h2>{t("ui.files")}</h2>
           <ul>
             {files.map((file) => (
               <li
