@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import * as monaco from "monaco-editor";
 
-export default function CustomCssEditor() {
+export default function CustomCssEditor({ value = "", onChange }) {
   const editorRef = useRef(null);
   const monacoInstance = useRef(null);
 
@@ -25,19 +25,23 @@ export default function CustomCssEditor() {
 
     if (editorRef.current) {
       monacoInstance.current = monaco.editor.create(editorRef.current, {
-        value: `color: red;\nbackground-color: blue;\nwidth: 100%;`,
+        value,
         language: "simpleCss",
         theme: "vs-light",
         automaticLayout: true,
       });
+
+      if (onChange) {
+        monacoInstance.current.onDidChangeModelContent(() => {
+          onChange(monacoInstance.current.getValue());
+        });
+      }
     }
 
     return () => {
-      if (monacoInstance.current) {
-        monacoInstance.current.dispose();
-      }
+      monacoInstance.current?.dispose();
     };
   }, []);
 
-  return <div ref={editorRef} style={{ width: "600px", height: "300px", border: "1px solid #ccc" }} />;
+  return <div ref={editorRef} style={{ width: "100%", height: "300px" }} />;
 }
