@@ -2,161 +2,155 @@
   "data": [
     {
       "id": 0,
-      "title": "Start",
+      "title": "game.0.title",
       "dialogs": [
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "TOMMY! TOMMY!",
+          "characterDialog": "game.0.dialogs.0",
           "nextBackground": true,
           "background": "/images/start/0.png"
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "O que foi jarvis?",
+          "characterDialog": "game.0.dialogs.1",
           "nextBackground": true,
           "background": "/images/start/1.png"
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "ALGUEM TOCOU NELE!",
+          "characterDialog": "game.0.dialogs.2",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-          "characterDialog": "ALGUEM TOCOU NELEEEEEEEEEE!!!",
+          "characterDialog": "game.0.dialogs.3",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-          "characterDialog": "Hoje eu fui rodar ele e não tava funcionando!",
+          "characterDialog": "game.0.dialogs.4",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-          "characterDialog": "Eu não alterei nada no código!",
+          "characterDialog": "game.0.dialogs.5",
           "nextBackground": false
         },
         {
           "characterName": "Temaki",
           "characterImage": "/faces/temaki_face.png",
-          "characterDialog": "Do que seu amigo ta falando?",
+          "characterDialog": "game.0.dialogs.6",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Ah é do jogo que ele ta programando... ",
+          "characterDialog": "game.0.dialogs.7",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Sabe como é coisas de robô haha.",
+          "characterDialog": "game.0.dialogs.8",
           "nextBackground": false
         },
         {
           "characterName": "Temaki",
           "characterImage": "/faces/temaki_face.png",
-          "characterDialog": "Ohh! Omoshiroi...",
+          "characterDialog": "game.0.dialogs.9",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Não ri não Tommy! Eu não sei o que fazer ;_;",
+          "characterDialog": "game.0.dialogs.10",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Podia tentar arrumar seu próprio código sabia? haha",
+          "characterDialog": "game.0.dialogs.11",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Não da Tommy!",
+          "characterDialog": "game.0.dialogs.12",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "AQUILO TA UM SPAGHET!",
+          "characterDialog": "game.0.dialogs.13",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "E você tem certeza que foi alguém que mexeu?",
+          "characterDialog": "game.0.dialogs.14",
           "nextBackground": false
         },
         {
           "characterName": "Temaki",
           "characterImage": "/faces/temaki_face.png",
-          "characterDialog": "...",
+          "characterDialog": "game.0.dialogs.15",
           "nextBackground": false
         },
         {
           "characterName": "Temaki",
           "characterImage": "/faces/temaki_face.png",
-          "characterDialog": "Hehe...",
+          "characterDialog": "game.0.dialogs.16",
           "nextBackground": false
         },
         {
           "characterName": "Temaki",
           "characterImage": "/faces/temaki_face.png",
-          "characterDialog": "Possivelmente... Ontem festa de Jarvis estava lotada...",
+          "characterDialog": "game.0.dialogs.17",
           "nextBackground": false
         },
         {
           "characterName": "Temaki",
           "characterImage": "/faces/temaki_face.png",
-          "characterDialog": "Talvez Jarvis tenha convidado alguém que não goste dele.",
+          "characterDialog": "game.0.dialogs.18",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "SUSPEITO EM >.>",
+          "characterDialog": "game.0.dialogs.19",
           "nextBackground": false
         },
         {
           "characterName": "Temaki",
           "characterImage": "/faces/temaki_face.png",
-          "characterDialog": "Hehe"
+          "characterDialog": "game.0.dialogs.20"
         },
         {
           "characterName": "Temaki",
           "characterImage": "/faces/temaki_face.png",
-          "characterDialog": "Temaki apenas inteligente.",
+          "characterDialog": "game.0.dialogs.21",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "TOMMY ME AJUDA! VAMO DESCOBRIR QUEM FOI!",
+          "characterDialog": "game.0.dialogs.22",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Ai ai...",
+          "characterDialog": "game.0.dialogs.23",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Não tenho muita escolha mesmo.",
+          "characterDialog": "game.0.dialogs.24",
           "nextBackground": false
         }
       ],
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Continuar conversando com Temaki",
+            "choiceText": "game.0.choices.0",
             "choiceGoTo": "/Game/1"
           },
           {
-            "choiceText": "Ir ver o codigo de Jarvis",
+            "choiceText": "game.0.choices.1",
             "choiceGoTo": "/Game/2"
           },
           {
-            "choiceText": "Falar com a Marin",
+            "choiceText": "game.0.choices.2",
             "choiceGoTo": "/Game/3"
           }
         ]
@@ -164,77 +158,76 @@
     },
     {
       "id": 1,
-      "title": "Continuar conversando com Temaki",
+      "title": "game.1.title",
       "dialogs": [
         {
           "characterName": "Tommy",
-          "characterDialog": "Então...",
+          "characterDialog": "game.1.dialogs.0",
           "nextBackground": true,
           "background": "/images/start/2.png"
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Me fala mais sobre o que você viu ontem.",
+          "characterDialog": "game.1.dialogs.1",
           "nextBackground": false,
           "background": ""
         },
         {
           "characterName": "Temaki",
           "characterImage": "/faces/temaki_face.png",
-          "characterDialog": "Hmmm...",
+          "characterDialog": "game.1.dialogs.2",
           "nextBackground": false,
           "background": ""
         },
         {
           "characterName": "Temaki",
           "characterImage": "/faces/temaki_face.png",
-          "characterDialog": "Nada de mais...",
+          "characterDialog": "game.1.dialogs.3",
           "nextBackground": false,
           "background": ""
         },
         {
           "characterName": "Temaki",
           "characterImage": "/faces/temaki_face.png",
-          "characterDialog": "Quer dizer...",
+          "characterDialog": "game.1.dialogs.4",
           "nextBackground": false,
           "background": ""
         },
         {
           "characterName": "Temaki",
           "characterImage": "/faces/temaki_face.png",
-          "characterDialog": "Geraldo, um pouco estranho ele estava.",
+          "characterDialog": "game.1.dialogs.5",
           "nextBackground": false,
           "background": ""
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Mas Geraldo é meu amigo.",
+          "characterDialog": "game.1.dialogs.6",
           "nextBackground": false,
           "background": ""
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Poisé, e ele ainda foi programado pela Marin.",
+          "characterDialog": "game.1.dialogs.7",
           "nextBackground": false,
           "background": ""
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Ele não seria capaz de fazer algo assim.",
+          "characterDialog": "game.1.dialogs.8",
           "nextBackground": false,
           "background": ""
         },
         {
           "characterName": "Temaki",
           "characterImage": "/faces/temaki_face.png",
-          "characterDialog": "Apenas contando o que vi.",
+          "characterDialog": "game.1.dialogs.9",
           "nextBackground": false,
           "background": ""
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Tudo bem, talvez a gente vai atrás dele.",
+          "characterDialog": "game.1.dialogs.10",
           "nextBackground": false,
           "background": ""
         }
@@ -242,15 +235,15 @@
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Ir atrás de Geraldo (Não foi escrito Ainda)",
+            "choiceText": "game.1.choices.0",
             "choiceGoTo": "/Game/1"
           },
           {
-            "choiceText": "Ver codigo de Jarvis",
+            "choiceText": "game.1.choices.1",
             "choiceGoTo": "/Game/2"
           },
           {
-            "choiceText": "Falar com a Marin",
+            "choiceText": "game.1.choices.2",
             "choiceGoTo": "/Game/3"
           }
         ]
@@ -258,109 +251,104 @@
     },
     {
       "id": 2,
-      "title": "Analisando Codigo de jarvis",
+      "title": "game.2.title",
       "dialogs": [
         {
           "characterName": "Tommy",
-          "characterDialog": "É realmente...",
+          "characterDialog": "game.2.dialogs.0",
           "nextBackground": true,
           "background": "/images/JarvisHouse/jarvis_house.png"
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Seu codigo ta uma bagunça",
+          "characterDialog": "game.2.dialogs.1",
           "nextBackground": true,
           "background": "/images/codigo/codigobugado.png"
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Nem saberia por onde começar.",
+          "characterDialog": "game.2.dialogs.2",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Acho que só a Marin poderia te ajudar nisso.",
+          "characterDialog": "game.2.dialogs.3",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Tommy! ;-;",
+          "characterDialog": "game.2.dialogs.4",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Bom...",
+          "characterDialog": "game.2.dialogs.5",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Pelo jeito esse primeiro erro é relacionado a um css, certo?",
+          "characterDialog": "game.2.dialogs.6",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Poisé, o jogo não fica mais centralizado ;-;",
+          "characterDialog": "game.2.dialogs.7",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "hmmm...",
+          "characterDialog": "game.2.dialogs.8",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Você utilizou flexbox pra tudo né? Nada de Grids ou gambiarras certo? ",
+          "characterDialog": "game.2.dialogs.9",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Flexbox?",
+          "characterDialog": "game.2.dialogs.10",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Não usei grids porque acho muito complicado.",
+          "characterDialog": "game.2.dialogs.11",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Assim não tem como te ajudar...",
+          "characterDialog": "game.2.dialogs.12",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "É porque você não viu o resto.",
+          "characterDialog": "game.2.dialogs.13",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Não consigo nem imaginar",
+          "characterDialog": "game.2.dialogs.14",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Eu posso tentar arrumar, mas não garanto nada.",
+          "characterDialog": "game.2.dialogs.15",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "O que você acha?",
+          "characterDialog": "game.2.dialogs.16",
           "nextBackground": false
         }
       ],
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Tentar arrumar codigo",
+            "choiceText": "game.2.choices.0",
             "choiceGoTo": "/textgame/0"
           },
           {
-            "choiceText": "Desistir e ir pedir ajuda para Marin",
+            "choiceText": "game.2.choices.1",
             "choiceGoTo": "/Game/3"
           }
         ]
@@ -368,141 +356,137 @@
     },
     {
       "id": 3,
-      "title": "Pedindo ajuda para Marin",
+      "title": "game.3.title",
       "dialogs": [
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "MAAAARIIIIN!!!",
+          "characterDialog": "game.3.dialogs.0",
           "nextBackground": true,
           "background": "/images/Pedindo ajuda para Marin/maring_part_1.png"
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Eai Jarvis!",
+          "characterDialog": "game.3.dialogs.1",
           "nextBackground": true,
           "background": "/images/Pedindo ajuda para Marin/maring_part_2.png"
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Nossa você ta bem eletrico hoje em.",
+          "characterDialog": "game.3.dialogs.2",
           "nextBackground": true,
           "background": "/images/Pedindo ajuda para Marin/maring_part_3.png"
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "É tem um motivo.",
+          "characterDialog": "game.3.dialogs.3",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "ELES ESTRAGARAM MEU JOGO MARIN! ;-;",
+          "characterDialog": "game.3.dialogs.4",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Tadinho...",
+          "characterDialog": "game.3.dialogs.5",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Eu posso ir la dar uma olhada pra vocês.",
+          "characterDialog": "game.3.dialogs.6",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Mas teriam que me fazer um favor primeiro. u.u",
+          "characterDialog": "game.3.dialogs.7",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Mas Marin ;--;",
+          "characterDialog": "game.3.dialogs.8",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Não tem como eu ja disse que aquilo ta um spaghetti",
+          "characterDialog": "game.3.dialogs.9",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Tudo bem Jarvis, tudo tem uma solução.",
+          "characterDialog": "game.3.dialogs.10",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Mas então, o que você ta precisando?",
+          "characterDialog": "game.3.dialogs.11",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Eu perdi minha chave de fenda.",
+          "characterDialog": "game.3.dialogs.12",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Queria que vocês dessem uma procurada pra mim.",
+          "characterDialog": "game.3.dialogs.13",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Fala serio...",
+          "characterDialog": "game.3.dialogs.14",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "E tem ideia de onde pode estar?",
+          "characterDialog": "game.3.dialogs.15",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Nenhuma hihi.",
+          "characterDialog": "game.3.dialogs.16",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "...",
+          "characterDialog": "game.3.dialogs.17",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Talvez esteja perto do mercado, eu consertei um robo la ontem.",
+          "characterDialog": "game.3.dialogs.18",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Ok...",
+          "characterDialog": "game.3.dialogs.19",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Não garanto que vou ir atrás, mas se achar eu trago.",
+          "characterDialog": "game.3.dialogs.20",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Obrigadinha.",
+          "characterDialog": "game.3.dialogs.21",
           "nextBackground": false
         }
       ],
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Ir ao mercado",
+            "choiceText": "game.3.choices.0",
             "choiceGoTo": "/Game/5"
           }
         ]
@@ -510,12 +494,11 @@
     },
     {
       "id": 4,
-      "title": "Falar com Geraldo",
+      "title": "game.4.title",
       "dialogs": [
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "",
+          "characterDialog": "game.4.dialogs.0",
           "nextBackground": true,
           "background": "/images/Pedindo ajuda para Marin/maring_part_1.png"
         }
@@ -526,150 +509,146 @@
     },
     {
       "id": 5,
-      "title": "Mercado",
+      "title": "game.5.title",
       "dialogs": [
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Tommy!",
+          "characterDialog": "game.5.dialogs.0",
           "nextBackground": true,
           "background": "/images/Mercado/mercado_part_1.png"
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Estamos aqui a horas e ainda não encontramos a chave de fenda!",
+          "characterDialog": "game.5.dialogs.1",
           "nextBackground": false,
           "background": ""
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "A Marin nunca vai ajudar a gente assim.",
+          "characterDialog": "game.5.dialogs.2",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Calma Jarvis, nos vamos encontrar.",
+          "characterDialog": "game.5.dialogs.3",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Geraldo",
           "characterImage": "/faces/geraldo_face.png",
-          "characterDialog": "Eai pessoal!",
+          "characterDialog": "game.5.dialogs.4",
           "nextBackground": true,
           "background": "/images/Mercado/mercado_part_2.png"
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Eai Geraldo",
+          "characterDialog": "game.5.dialogs.5",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Geraldo",
           "characterImage": "/faces/geraldo_face.png",
-          "characterDialog": "O que estão fazendo por aqui?",
+          "characterDialog": "game.5.dialogs.6",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "A Marin disse que perdeu uma chave de fenda por aqui.",
+          "characterDialog": "game.5.dialogs.7",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Sabe de alguma coisa?",
+          "characterDialog": "game.5.dialogs.8",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Geraldo",
           "characterImage": "/faces/geraldo_face.png",
-          "characterDialog": "Hmmm...",
+          "characterDialog": "game.5.dialogs.9",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Geraldo",
           "characterImage": "/faces/geraldo_face.png",
-          "characterDialog": "Não vi nada por aqui.",
+          "characterDialog": "game.5.dialogs.10",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Geraldo",
           "characterImage": "/faces/geraldo_face.png",
-          "characterDialog": "Aconteceu alguma coisa por acaso?",
+          "characterDialog": "game.5.dialogs.11",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Ontem na festa do Jarvis.",
+          "characterDialog": "game.5.dialogs.12",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Parece que estragaram o código do jogo dele.",
+          "characterDialog": "game.5.dialogs.13",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Geraldo",
           "characterImage": "/faces/geraldo_face.png",
-          "characterDialog": "O que?",
+          "characterDialog": "game.5.dialogs.14",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Geraldo",
           "characterImage": "/faces/geraldo_face.png",
-          "characterDialog": "Mas porque alguem faria isso?",
+          "characterDialog": "game.5.dialogs.15",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "É o que estamos tentando descobrir.",
+          "characterDialog": "game.5.dialogs.16",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Não lembra de nada de suspeito ontem na festa?",
+          "characterDialog": "game.5.dialogs.17",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Geraldo",
           "characterImage": "/faces/geraldo_face.png",
-          "characterDialog": "...",
+          "characterDialog": "game.5.dialogs.18",
           "background": "/images/Mercado/mercado_part_3.png",
           "nextBackground": true
         },
         {
           "characterName": "Geraldo",
           "characterImage": "/faces/geraldo_face.png",
-          "characterDialog": "To meio atrasado, tenho que ir.",
+          "characterDialog": "game.5.dialogs.19",
           "background": "/images/Mercado/mercado_part_4.png",
           "nextBackground": true
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Isso foi muito suspeito.",
+          "characterDialog": "game.5.dialogs.20",
           "background": "",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Poise nunca vi ele agir assim.",
+          "characterDialog": "game.5.dialogs.21",
           "background": "",
           "nextBackground": false
         }
@@ -678,7 +657,7 @@
         "choiceId": 0,
         "choiceDialog": [
           {
-            "choiceText": "Continuar procurando pela chave de fenda",
+            "choiceText": "game.5.choices.0",
             "choiceGoTo": "/Game/6"
           }
         ]
@@ -686,89 +665,89 @@
     },
     {
       "id": 6,
-      "title": "Encontrando chave de fenda",
+      "title": "game.6.title",
       "dialogs": [
         {
           "characterName": "Tommy",
-          "characterDialog": "Bom deixa pra lá, vamos continuar procurando",
+          "characterDialog": "game.6.dialogs.0",
           "background": "/images/Mercado/mercado_part_4.png",
           "nextBackground": true
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Acho que poderiamos entrar no mercado e dar uma olhada la dentro",
+          "characterDialog": "game.6.dialogs.1",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-          "characterDialog": "Podemos conversar com o Green Bot.",
+          "characterDialog": "game.6.dialogs.2",
           "nextBackground": false
         },
         {
           "characterName": "Green Bot",
           "characterImage": "/faces/greenbot_face.png",
-          "characterDialog": "Olá Tommy.",
+          "characterDialog": "game.6.dialogs.3",
           "nextBackground": true,
           "background": "/images/Mercado/mercado_dentro.png"
         },
         {
           "characterName": "Green Bot",
           "characterImage": "/faces/greenbot_face.png",
-          "characterDialog": "Olá Jarvis.",
+          "characterDialog": "game.6.dialogs.4",
           "nextBackground": false
         },
         {
           "characterName": "Green Bot",
           "characterImage": "/faces/greenbot_face.png",
-          "characterDialog": "Estão procurando algo hoje?",
+          "characterDialog": "game.6.dialogs.5",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Estamos sim, mas nada pra comprar.",
+          "characterDialog": "game.6.dialogs.6",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "A Marin disse que perdeu uma chave de fenda por aqui esses dias.",
+          "characterDialog": "game.6.dialogs.7",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Sabe de algo?",
+          "characterDialog": "game.6.dialogs.8",
           "nextBackground": false
         },
         {
           "characterName": "Green Bot",
           "characterImage": "/faces/greenbot_face.png",
-          "characterDialog": "Sim, ela veio me ajudar com uns probleminhas no meu circuito.",
+          "characterDialog": "game.6.dialogs.9",
           "nextBackground": false
         },
         {
           "characterName": "Green Bot",
           "characterImage": "/faces/greenbot_face.png",
-          "characterDialog": "Podem procurar a vontade, mas estou fechando daqui a pouco.",
+          "characterDialog": "game.6.dialogs.10",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
           "characterImage": "/faces/greenbot_face.png",
-          "characterDialog": "Tudo bem, prometo que seremos rápidos.",
+          "characterDialog": "game.6.dialogs.11",
           "nextBackground": false
         }
       ],
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Procurar nas prateleiras.",
+            "choiceText": "game.6.choices.0",
             "choiceGoTo": "/Game/7"
           },
           {
-            "choiceText": "Procurar nas caixas",
+            "choiceText": "game.6.choices.1",
             "choiceGoTo": "/Game/8"
           },
           {
-            "choiceText": "Procurar nos game arcade.",
+            "choiceText": "game.6.choices.2",
             "choiceGoTo": "/Game/9"
           }
         ]
@@ -776,31 +755,31 @@
     },
     {
       "id": 7,
-      "title": "Procurando nas Prateleiras",
+      "title": "game.7.title",
       "dialogs": [
         {
           "characterName": "Tommy",
-          "characterDialog": "Será que esta por aqui?",
+          "characterDialog": "game.7.dialogs.0",
           "nextBackground": true,
           "background": "/images/Mercado/mercado_p.png"
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "É bom eu olhar com cuidado."
+          "characterDialog": "game.7.dialogs.1"
         }
       ],
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Procurar nas caixas",
+            "choiceText": "game.7.choices.0",
             "choiceGoTo": "/Game/8"
           },
           {
-            "choiceText": "Procurar nos game arcade.",
+            "choiceText": "game.7.choices.1",
             "choiceGoTo": "/Game/9"
           },
           {
-            "choiceText": "Procurar Aqui",
+            "choiceText": "game.7.choices.2",
             "choiceGoTo": "/Game/10"
           }
         ]
@@ -808,31 +787,31 @@
     },
     {
       "id": 8,
-      "title": "Procurando nas Caixas",
+      "title": "game.8.title",
       "dialogs": [
         {
           "characterName": "Tommy",
-          "characterDialog": "Será que esta por aqui?",
+          "characterDialog": "game.8.dialogs.0",
           "nextBackground": true,
           "background": "/images/Mercado/mercado_caixas.png"
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "É bom eu olhar com cuidado."
+          "characterDialog": "game.8.dialogs.1"
         }
       ],
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Procurar nos game arcade.",
+            "choiceText": "game.8.choices.0",
             "choiceGoTo": "/Game/9"
           },
           {
-            "choiceText": "Procurar nas prateleiras.",
+            "choiceText": "game.8.choices.1",
             "choiceGoTo": "/Game/7"
           },
           {
-            "choiceText": "Procurar Aqui",
+            "choiceText": "game.8.choices.2",
             "choiceGoTo": "/Game/11"
           }
         ]
@@ -840,31 +819,31 @@
     },
     {
       "id": 9,
-      "title": "Procurando perto dos Game Arcade",
+      "title": "game.9.title",
       "dialogs": [
         {
           "characterName": "Tommy",
-          "characterDialog": "Será que esta por aqui?",
+          "characterDialog": "game.9.dialogs.0",
           "nextBackground": true,
           "background": "/images/Mercado/mercado_game_arcade.png"
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "É bom eu olhar com cuidado."
+          "characterDialog": "game.9.dialogs.1"
         }
       ],
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Procurar nas prateleiras.",
+            "choiceText": "game.9.choices.0",
             "choiceGoTo": "/Game/7"
           },
           {
-            "choiceText": "Procurar nas caixas.",
+            "choiceText": "game.9.choices.1",
             "choiceGoTo": "/Game/8"
           },
           {
-            "choiceText": "Procurar Aqui",
+            "choiceText": "game.9.choices.2",
             "choiceGoTo": "/Game/11"
           }
         ]
@@ -872,24 +851,24 @@
     },
     {
       "id": 10,
-      "title": "Chave de fenda encontrada",
+      "title": "game.10.title",
       "dialogs": [
         {
           "characterName": "Tommy",
-          "characterDialog": "Ela está aqui em cima!",
+          "characterDialog": "game.10.dialogs.0",
           "nextBackground": true,
           "background": "/images/Mercado/mercado_p_encontrada.png"
         },
         {
           "characterName": "Jarvis",
-          "characterDialog": "YEAH! Agora temos a ajuda da Marin!",
+          "characterDialog": "game.10.dialogs.1",
           "background": ""
         }
       ],
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Falar com Marin",
+            "choiceText": "game.10.choices.0",
             "choiceGoTo": "/Game/12"
           }
         ]
@@ -897,55 +876,55 @@
     },
     {
       "id": 11,
-      "title": "Chave de fenda não encontrada",
+      "title": "game.11.title",
       "dialogs": [
         {
           "characterName": "Tommy",
-          "characterDialog": "Onde será que ela ta?"
+          "characterDialog": "game.11.dialogs.0"
         },
         {
           "characterName": "Jarvis",
-          "characterDialog": "Estou perdendo as esperanças ;-;",
+          "characterDialog": "game.11.dialogs.1",
           "background": ""
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Calma Jarvis, vai dar tudo certo.",
+          "characterDialog": "game.11.dialogs.2",
           "background": ""
         },
         {
           "characterName": "Green Bot",
-          "characterDialog": "Pessoal!",
+          "characterDialog": "game.11.dialogs.3",
           "background": ""
         },
         {
           "characterName": "Green Bot",
-          "characterDialog": "Estou fechando a loja, vocês precisam ir agora.",
+          "characterDialog": "game.11.dialogs.4",
           "background": ""
         },
         {
           "characterName": "Jarvis",
-          "characterDialog": "E agora Tommy! ;-;",
+          "characterDialog": "game.11.dialogs.5",
           "background": ""
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Tudo bem, a gente ainda pode ir atrás do Geraldo.",
+          "characterDialog": "game.11.dialogs.6",
           "background": ""
         }
       ],
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Ir atrás do Geraldo (ainda não escrito)",
+            "choiceText": "game.11.choices.0",
             "choiceGoTo": "/Game/0"
           },
           {
-            "choiceText": "Procurar nas Caixas. (Temporario)",
+            "choiceText": "game.11.choices.1",
             "choiceGoTo": "/Game/8"
           },
           {
-            "choiceText": "Procurar nas prateleiras. (Temporario)",
+            "choiceText": "game.11.choices.2",
             "choiceGoTo": "/Game/7"
           }
         ]
@@ -953,56 +932,53 @@
     },
     {
       "id": 12,
-      "title": "Entregando a chave para Marin",
+      "title": "game.12.title",
       "dialogs": [
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Eai pessoal! Encontraram?",
+          "characterDialog": "game.12.dialogs.0",
           "nextBackground": true,
           "background": "/images/Pedindo ajuda para Marin/maring_part_3.png"
-          
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "SIM!!!",
+          "characterDialog": "game.12.dialogs.1",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Ela estava em uma das prateleiras do mercado.",
+          "characterDialog": "game.12.dialogs.2",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Como eu cometi esse erro... -_-",
+          "characterDialog": "game.12.dialogs.3",
           "nextBackground": false
         },
         {
           "characterName": "Tommy",
-          "characterDialog": "Acontece, parece que ninguém tinha visto.",
+          "characterDialog": "game.12.dialogs.4",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Bom menos mal, agora que eu tenho minha chave de fenda de volta.",
+          "characterDialog": "game.12.dialogs.5",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Estou livre para ajudar vocês.",
+          "characterDialog": "game.12.dialogs.6",
           "nextBackground": false
         }
       ],
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Ir para casa de Jarvis",
+            "choiceText": "game.12.choices.0",
             "choiceGoTo": "/Game/13"
           }
         ]
@@ -1010,116 +986,114 @@
     },
     {
       "id": 13,
-      "title": "Marin e o codigo de Jarvis",
+      "title": "game.13.title",
       "dialogs": [
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Vamos ver...",
+          "characterDialog": "game.13.dialogs.0",
           "nextBackground": true,
           "background": "/images/JarvisHouse/jarvis_house_marin.png"
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Hmmm... Parece que a linguagem que Jarvis utilizou é JavaScript.",
+          "characterDialog": "game.13.dialogs.1",
           "nextBackground": false,
           "background": ""
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "CSS também foi utilizado.",
+          "characterDialog": "game.13.dialogs.2",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Parece que o jogo tem pequenos problemas, mas são bem simples de resolver",
+          "characterDialog": "game.13.dialogs.3",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Falta centralizar a tela.",
+          "characterDialog": "game.13.dialogs.4",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Ajustar o surgimento dos inimigos",
+          "characterDialog": "game.13.dialogs.5",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Bom... Por enquanto é isso.",
+          "characterDialog": "game.13.dialogs.6",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Seu codigo ta bem bagunçado.",
+          "characterDialog": "game.13.dialogs.7",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Você salvou seu codigo no git?",
+          "characterDialog": "game.13.dialogs.8",
           "nextBackground": false
         },
         {
           "characterName": "Jarvis",
-
-          "characterDialog": "Positivo!",
+          "characterDialog": "game.13.dialogs.9",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Ah tem uma versão anterior aqui mas ainda não ta completa.",
+          "characterDialog": "game.13.dialogs.10",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Agora, Vamos ver como essa IDE funciona.",
+          "characterDialog": "game.13.dialogs.11",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "O botão de 'Vizualizar Codigo' me permite vizualizar o texto como codigo.",
+          "characterDialog": "game.13.dialogs.12",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "O botão de 'Editar Codigo' me permite editar.",
+          "characterDialog": "game.13.dialogs.13",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Compilar o codigo é a etapa final, depois de editar o codigo eu posso compilar.",
+          "characterDialog": "game.13.dialogs.14",
           "nextBackground": false
         },
         {
           "characterName": "Marin",
           "characterImage": "/faces/marin_face.png",
-          "characterDialog": "Ok! Vamos começar!",
+          "characterDialog": "game.13.dialogs.15",
           "nextBackground": false
         }
       ],
       "choices": {
         "choiceDialog": [
           {
-            "choiceText": "Começar",
+            "choiceText": "game.13.choices.0",
             "choiceGoTo": "/textgame/2"
           }
         ]
       }
     }
-
   ]
 }

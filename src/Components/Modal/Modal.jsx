@@ -1,4 +1,5 @@
 import { useDispatch } from "react-redux";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { changeDialog } from "../../Redux/dialogBoxSlice";
 import { changeContinueFrom } from "../../Redux/gameSlice";
@@ -7,6 +8,7 @@ import "./style.css";
 export default function Modal({
   modal: { showModal, choices, modalConfig, continueFrom },
 }) {
+  const { t } = useTranslation();
   const dispatch = useDispatch();
 
   return (
@@ -14,8 +16,8 @@ export default function Modal({
       {showModal && (
         <div>
           <div className="modal" id="modal">
-            <h2>{modalConfig?.modalTitle}</h2>
-            <div className="content">{modalConfig?.modalText}</div>
+            <h2>{t(modalConfig?.modalTitle)}</h2>
+            <div className="content">{t(modalConfig?.modalText)}</div>
             <div className="actions">
               {choices.map(({ choiceText, choiceGoTo }) => {
                 return (
@@ -34,7 +36,7 @@ export default function Modal({
                       );
                     }}
                   >
-                    <button className="toggle-button">{choiceText}</button>
+                    <button className="toggle-button">{t(choiceText)}</button>
                   </Link>
                 );
               })}

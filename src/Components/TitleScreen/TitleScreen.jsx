@@ -1,10 +1,12 @@
 import { useDispatch } from "react-redux";
+import { useTranslation } from "react-i18next";
 import { changeBackground } from "../../Redux/backgroundSlice";
 import { Link } from "react-router-dom";
 import CanvasImage from "../CanvasImage/CanvasImage";
 
 export default function TitleScreen() {
   const dispatch = useDispatch();
+  const { t, i18n } = useTranslation();
 
   return (
     <main>
@@ -15,8 +17,22 @@ export default function TitleScreen() {
             dispatch(changeBackground("/startgame/startscreen.png"))
           }
         >
-          <button>Start Game</button>
+          <button>{t("ui.startGame")}</button>
         </Link>
+        <div className="language-switcher">
+          <button
+            onClick={() => i18n.changeLanguage("pt")}
+            disabled={i18n.resolvedLanguage === "pt"}
+          >
+            PT
+          </button>
+          <button
+            onClick={() => i18n.changeLanguage("en")}
+            disabled={i18n.resolvedLanguage === "en"}
+          >
+            EN
+          </button>
+        </div>
     </main>
   );
 }

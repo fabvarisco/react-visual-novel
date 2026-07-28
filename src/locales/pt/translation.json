@@ -1,24 +1,353 @@
 {
-    "buttons": {
-      "back": "Voltar",
-      "next": "Próximo",
-      "viewCode": "Ver código do Jarvis"
-    },
-    "labels": {
-      "choices": "Escolhas",
-      "tip": "Dica"
-    },
-    "dialog": {
-      "marin": {
-        "welcome": "Bem-vindo, aventureiro!"
+  "ui": {
+    "back": "Voltar",
+    "next": "Próximo",
+    "viewCode": "Ver código do Jarvis",
+    "choices": "Escolhas",
+    "tip": "Dica",
+    "startGame": "Iniciar Jogo",
+    "files": "Arquivos"
+  },
+  "game": {
+    "0": {
+      "title": "Start",
+      "dialogs": {
+        "0": "TOMMY! TOMMY!",
+        "1": "O que foi jarvis?",
+        "2": "ALGUEM TOCOU NELE!",
+        "3": "ALGUEM TOCOU NELEEEEEEEEEE!!!",
+        "4": "Hoje eu fui rodar ele e não tava funcionando!",
+        "5": "Eu não alterei nada no código!",
+        "6": "Do que seu amigo ta falando?",
+        "7": "Ah é do jogo que ele ta programando... ",
+        "8": "Sabe como é coisas de robô haha.",
+        "9": "Ohh! Omoshiroi...",
+        "10": "Não ri não Tommy! Eu não sei o que fazer ;_;",
+        "11": "Podia tentar arrumar seu próprio código sabia? haha",
+        "12": "Não da Tommy!",
+        "13": "AQUILO TA UM SPAGHET!",
+        "14": "E você tem certeza que foi alguém que mexeu?",
+        "15": "...",
+        "16": "Hehe...",
+        "17": "Possivelmente... Ontem festa de Jarvis estava lotada...",
+        "18": "Talvez Jarvis tenha convidado alguém que não goste dele.",
+        "19": "SUSPEITO EM >.>",
+        "20": "Hehe",
+        "21": "Temaki apenas inteligente.",
+        "22": "TOMMY ME AJUDA! VAMO DESCOBRIR QUEM FOI!",
+        "23": "Ai ai...",
+        "24": "Não tenho muita escolha mesmo."
       },
-      "jarvis": {
-        "hint": "Tente inspecionar o elemento..."
+      "choices": {
+        "0": "Continuar conversando com Temaki",
+        "1": "Ir ver o codigo de Jarvis",
+        "2": "Falar com a Marin"
       }
     },
-    "characters": {
-      "Marin": { "name": "Marin" },
-      "Jarvis": { "name": "Jarvis" }
+    "1": {
+      "title": "Continuar conversando com Temaki",
+      "dialogs": {
+        "0": "Então...",
+        "1": "Me fala mais sobre o que você viu ontem.",
+        "2": "Hmmm...",
+        "3": "Nada de mais...",
+        "4": "Quer dizer...",
+        "5": "Geraldo, um pouco estranho ele estava.",
+        "6": "Mas Geraldo é meu amigo.",
+        "7": "Poisé, e ele ainda foi programado pela Marin.",
+        "8": "Ele não seria capaz de fazer algo assim.",
+        "9": "Apenas contando o que vi.",
+        "10": "Tudo bem, talvez a gente vai atrás dele."
+      },
+      "choices": {
+        "0": "Ir atrás de Geraldo (Não foi escrito Ainda)",
+        "1": "Ver codigo de Jarvis",
+        "2": "Falar com a Marin"
+      }
+    },
+    "2": {
+      "title": "Analisando Codigo de jarvis",
+      "dialogs": {
+        "0": "É realmente...",
+        "1": "Seu codigo ta uma bagunça",
+        "2": "Nem saberia por onde começar.",
+        "3": "Acho que só a Marin poderia te ajudar nisso.",
+        "4": "Tommy! ;-;",
+        "5": "Bom...",
+        "6": "Pelo jeito esse primeiro erro é relacionado a um css, certo?",
+        "7": "Poisé, o jogo não fica mais centralizado ;-;",
+        "8": "hmmm...",
+        "9": "Você utilizou flexbox pra tudo né? Nada de Grids ou gambiarras certo? ",
+        "10": "Flexbox?",
+        "11": "Não usei grids porque acho muito complicado.",
+        "12": "Assim não tem como te ajudar...",
+        "13": "É porque você não viu o resto.",
+        "14": "Não consigo nem imaginar",
+        "15": "Eu posso tentar arrumar, mas não garanto nada.",
+        "16": "O que você acha?"
+      },
+      "choices": {
+        "0": "Tentar arrumar codigo",
+        "1": "Desistir e ir pedir ajuda para Marin"
+      }
+    },
+    "3": {
+      "title": "Pedindo ajuda para Marin",
+      "dialogs": {
+        "0": "MAAAARIIIIN!!!",
+        "1": "Eai Jarvis!",
+        "2": "Nossa você ta bem eletrico hoje em.",
+        "3": "É tem um motivo.",
+        "4": "ELES ESTRAGARAM MEU JOGO MARIN! ;-;",
+        "5": "Tadinho...",
+        "6": "Eu posso ir la dar uma olhada pra vocês.",
+        "7": "Mas teriam que me fazer um favor primeiro. u.u",
+        "8": "Mas Marin ;--;",
+        "9": "Não tem como eu ja disse que aquilo ta um spaghetti",
+        "10": "Tudo bem Jarvis, tudo tem uma solução.",
+        "11": "Mas então, o que você ta precisando?",
+        "12": "Eu perdi minha chave de fenda.",
+        "13": "Queria que vocês dessem uma procurada pra mim.",
+        "14": "Fala serio...",
+        "15": "E tem ideia de onde pode estar?",
+        "16": "Nenhuma hihi.",
+        "17": "...",
+        "18": "Talvez esteja perto do mercado, eu consertei um robo la ontem.",
+        "19": "Ok...",
+        "20": "Não garanto que vou ir atrás, mas se achar eu trago.",
+        "21": "Obrigadinha."
+      },
+      "choices": {
+        "0": "Ir ao mercado"
+      }
+    },
+    "4": {
+      "title": "Falar com Geraldo",
+      "dialogs": {
+        "0": ""
+      }
+    },
+    "5": {
+      "title": "Mercado",
+      "dialogs": {
+        "0": "Tommy!",
+        "1": "Estamos aqui a horas e ainda não encontramos a chave de fenda!",
+        "2": "A Marin nunca vai ajudar a gente assim.",
+        "3": "Calma Jarvis, nos vamos encontrar.",
+        "4": "Eai pessoal!",
+        "5": "Eai Geraldo",
+        "6": "O que estão fazendo por aqui?",
+        "7": "A Marin disse que perdeu uma chave de fenda por aqui.",
+        "8": "Sabe de alguma coisa?",
+        "9": "Hmmm...",
+        "10": "Não vi nada por aqui.",
+        "11": "Aconteceu alguma coisa por acaso?",
+        "12": "Ontem na festa do Jarvis.",
+        "13": "Parece que estragaram o código do jogo dele.",
+        "14": "O que?",
+        "15": "Mas porque alguem faria isso?",
+        "16": "É o que estamos tentando descobrir.",
+        "17": "Não lembra de nada de suspeito ontem na festa?",
+        "18": "...",
+        "19": "To meio atrasado, tenho que ir.",
+        "20": "Isso foi muito suspeito.",
+        "21": "Poise nunca vi ele agir assim."
+      },
+      "choices": {
+        "0": "Continuar procurando pela chave de fenda"
+      }
+    },
+    "6": {
+      "title": "Encontrando chave de fenda",
+      "dialogs": {
+        "0": "Bom deixa pra lá, vamos continuar procurando",
+        "1": "Acho que poderiamos entrar no mercado e dar uma olhada la dentro",
+        "2": "Podemos conversar com o Green Bot.",
+        "3": "Olá Tommy.",
+        "4": "Olá Jarvis.",
+        "5": "Estão procurando algo hoje?",
+        "6": "Estamos sim, mas nada pra comprar.",
+        "7": "A Marin disse que perdeu uma chave de fenda por aqui esses dias.",
+        "8": "Sabe de algo?",
+        "9": "Sim, ela veio me ajudar com uns probleminhas no meu circuito.",
+        "10": "Podem procurar a vontade, mas estou fechando daqui a pouco.",
+        "11": "Tudo bem, prometo que seremos rápidos."
+      },
+      "choices": {
+        "0": "Procurar nas prateleiras.",
+        "1": "Procurar nas caixas",
+        "2": "Procurar nos game arcade."
+      }
+    },
+    "7": {
+      "title": "Procurando nas Prateleiras",
+      "dialogs": {
+        "0": "Será que esta por aqui?",
+        "1": "É bom eu olhar com cuidado."
+      },
+      "choices": {
+        "0": "Procurar nas caixas",
+        "1": "Procurar nos game arcade.",
+        "2": "Procurar Aqui"
+      }
+    },
+    "8": {
+      "title": "Procurando nas Caixas",
+      "dialogs": {
+        "0": "Será que esta por aqui?",
+        "1": "É bom eu olhar com cuidado."
+      },
+      "choices": {
+        "0": "Procurar nos game arcade.",
+        "1": "Procurar nas prateleiras.",
+        "2": "Procurar Aqui"
+      }
+    },
+    "9": {
+      "title": "Procurando perto dos Game Arcade",
+      "dialogs": {
+        "0": "Será que esta por aqui?",
+        "1": "É bom eu olhar com cuidado."
+      },
+      "choices": {
+        "0": "Procurar nas prateleiras.",
+        "1": "Procurar nas caixas.",
+        "2": "Procurar Aqui"
+      }
+    },
+    "10": {
+      "title": "Chave de fenda encontrada",
+      "dialogs": {
+        "0": "Ela está aqui em cima!",
+        "1": "YEAH! Agora temos a ajuda da Marin!"
+      },
+      "choices": {
+        "0": "Falar com Marin"
+      }
+    },
+    "11": {
+      "title": "Chave de fenda não encontrada",
+      "dialogs": {
+        "0": "Onde será que ela ta?",
+        "1": "Estou perdendo as esperanças ;-;",
+        "2": "Calma Jarvis, vai dar tudo certo.",
+        "3": "Pessoal!",
+        "4": "Estou fechando a loja, vocês precisam ir agora.",
+        "5": "E agora Tommy! ;-;",
+        "6": "Tudo bem, a gente ainda pode ir atrás do Geraldo."
+      },
+      "choices": {
+        "0": "Ir atrás do Geraldo (ainda não escrito)",
+        "1": "Procurar nas Caixas. (Temporario)",
+        "2": "Procurar nas prateleiras. (Temporario)"
+      }
+    },
+    "12": {
+      "title": "Entregando a chave para Marin",
+      "dialogs": {
+        "0": "Eai pessoal! Encontraram?",
+        "1": "SIM!!!",
+        "2": "Ela estava em uma das prateleiras do mercado.",
+        "3": "Como eu cometi esse erro... -_-",
+        "4": "Acontece, parece que ninguém tinha visto.",
+        "5": "Bom menos mal, agora que eu tenho minha chave de fenda de volta.",
+        "6": "Estou livre para ajudar vocês."
+      },
+      "choices": {
+        "0": "Ir para casa de Jarvis"
+      }
+    },
+    "13": {
+      "title": "Marin e o codigo de Jarvis",
+      "dialogs": {
+        "0": "Vamos ver...",
+        "1": "Hmmm... Parece que a linguagem que Jarvis utilizou é JavaScript.",
+        "2": "CSS também foi utilizado.",
+        "3": "Parece que o jogo tem pequenos problemas, mas são bem simples de resolver",
+        "4": "Falta centralizar a tela.",
+        "5": "Ajustar o surgimento dos inimigos",
+        "6": "Bom... Por enquanto é isso.",
+        "7": "Seu codigo ta bem bagunçado.",
+        "8": "Você salvou seu codigo no git?",
+        "9": "Positivo!",
+        "10": "Ah tem uma versão anterior aqui mas ainda não ta completa.",
+        "11": "Agora, Vamos ver como essa IDE funciona.",
+        "12": "O botão de 'Vizualizar Codigo' me permite vizualizar o texto como codigo.",
+        "13": "O botão de 'Editar Codigo' me permite editar.",
+        "14": "Compilar o codigo é a etapa final, depois de editar o codigo eu posso compilar.",
+        "15": "Ok! Vamos começar!"
+      },
+      "choices": {
+        "0": "Começar"
+      }
+    }
+  },
+  "challenge": {
+    "0": {
+      "dialogs": {
+        "0": "Credo jarvis! Foi assim que você fez pra centralizar a tela?"
+      },
+      "codeTip": "É melhor pedir ajuda pra Marin, mas vamos ver se eu consigo resolver.",
+      "errorChoices": {
+        "0": "Ir para o proximo erro"
+      },
+      "successChoices": {
+        "0": "Ir para o proximo erro"
+      },
+      "modalError": {
+        "title": "ERRO!",
+        "text": "Sabia que isso ia acontecer..."
+      },
+      "modalSuccess": {
+        "title": "Compilado!",
+        "text": "Uhuuuuul! Consegui!"
+      }
+    },
+    "1": {
+      "dialogs": {
+        "0": "Isso ta uma bagunça."
+      },
+      "codeTip": "Parece que ta faltando alguma coisa aqui"
+    },
+    "2": {
+      "dialogs": {
+        "0": "Esse primeiro problema está relacionado com a tela, ela parece não estar centralizada."
+      },
+      "codeTip": "Acho que aqui é apenas um erro de pontuação na linha 3 e 8.",
+      "errorChoices": {
+        "0": "Proximo!"
+      },
+      "successChoices": {
+        "0": "Proximo!"
+      },
+      "modalError": {
+        "title": "ERROR!",
+        "text": "Droga! Eu errei!"
+      },
+      "modalSuccess": {
+        "title": "Compilado!",
+        "text": "Yeah! Agora falta só mais um!"
+      }
+    },
+    "3": {
+      "dialogs": {
+        "0": "Agora esse esta relacionado com o timer do spawn dos inimigos."
+      },
+      "codeTip": "Acho que aqui é apenas um erro de pontuação na linha 2,3,5 e 6.",
+      "errorChoices": {
+        "0": "Testar jogo."
+      },
+      "successChoices": {
+        "0": "Testar jogo."
+      },
+      "modalError": {
+        "title": "ERROR!",
+        "text": "Droga! Eu errei!"
+      },
+      "modalSuccess": {
+        "title": "Compilado!",
+        "text": "YEAH! CONSEGUIMOS! ARRUMAMOS SEU JOGUINHO JARVIS!"
+      }
     }
   }
-  
+}
