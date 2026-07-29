@@ -1,47 +1,21 @@
-import React, { useRef, useEffect } from "react";
-import * as monaco from "monaco-editor";
+import Editor from "react-simple-code-editor";
+import Prism from "prismjs";
+import "prismjs/components/prism-css";
+import "prismjs/themes/prism.css";
 
 export default function CustomCssEditor({ value = "", onChange }) {
-  const editorRef = useRef(null);
-  const monacoInstance = useRef(null);
-
-  useEffect(() => {
-    monaco.languages.register({ id: "simpleCss" });
-
-    monaco.languages.setMonarchTokensProvider("simpleCss", {
-      tokenizer: {
-        root: [
-          [/[a-zA-Z\-]+(?=\s*:)/, "keyword"],
-          [/:/, "delimiter"],
-          [/[a-zA-Z0-9#\.\%\(\)\s\-]+(?=;|$)/, "string"],
-          [/;/, "delimiter"],
-        ],
-      },
-    });
-
-    monaco.languages.setLanguageConfiguration("simpleCss", {
-      comments: { lineComment: "//", blockComment: ["/*", "*/"] },
-    });
-
-    if (editorRef.current) {
-      monacoInstance.current = monaco.editor.create(editorRef.current, {
-        value,
-        language: "simpleCss",
-        theme: "vs-light",
-        automaticLayout: true,
-      });
-
-      if (onChange) {
-        monacoInstance.current.onDidChangeModelContent(() => {
-          onChange(monacoInstance.current.getValue());
-        });
-      }
-    }
-
-    return () => {
-      monacoInstance.current?.dispose();
-    };
-  }, []);
-
-  return <div ref={editorRef} style={{ width: "100%", height: "300px" }} />;
+  return (
+    <Editor
+      value={value}
+      onValueChange={(code) => onChange && onChange(code)}
+      highlight={(code) => Prism.highlight(code, Prism.languages.css, "css")}
+      padding={12}
+      className="custom-css-editor"
+      style={{
+        fontFamily: "Consolas, Monaco, 'Ubuntu Mono', monospace",
+        fontSize: 14,
+        minHeight: "100%",
+      }}
+    />
+  );
 }

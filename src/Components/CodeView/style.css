@@ -1,5 +1,5 @@
 .code-view {
-  overflow: hidden;
+  overflow: auto;
   height: 240px;
 }
 
