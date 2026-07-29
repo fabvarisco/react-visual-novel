@@ -2,7 +2,9 @@ import { useState } from "react";
 import "./style.css";
 import folderIcon from "/public/images/Others/css.svg";
 import {
-  changeCenterGame,
+  changeGameCss,
+  changeStylesCss,
+  changeMoreStylesCss,
   selectCompilation,
 } from "../../Redux/compilationSlice";
 import { useSelector } from "react-redux";
@@ -14,26 +16,27 @@ import CodeView from "../CodeView/CodeView";
 
 export default function JarvisVisualCode(props) {
   const { t } = useTranslation();
-  const { center_game_screen } = useSelector(selectCompilation);
+  const { game_css, styles_css, more_styles_css } =
+    useSelector(selectCompilation);
 
   const files = [
     {
       id: 1,
       name: "Game.css",
-      code: center_game_screen,
-      saveCode: changeCenterGame,
+      code: game_css,
+      saveCode: changeGameCss,
     },
     {
       id: 2,
       name: "Styles.css",
-      code: "sadasdsdsda",
-      saveCode: changeCenterGame,
+      code: styles_css,
+      saveCode: changeStylesCss,
     },
     {
       id: 3,
       name: "MoreStylis.css",
-      code: "dasdasdas",
-      saveCode: changeCenterGame,
+      code: more_styles_css,
+      saveCode: changeMoreStylesCss,
     },
   ];
 
@@ -66,7 +69,7 @@ export default function JarvisVisualCode(props) {
                   className="icon"
                   width={64}
                 />
-                {file.name}
+                <span className="file-name">{file.name}</span>
               </li>
             ))}
           </ul>

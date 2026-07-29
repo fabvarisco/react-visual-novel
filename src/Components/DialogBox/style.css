@@ -10,6 +10,8 @@
   width: 100%;
   max-width: 520px;
   text-align: left;
+  position: relative;
+  left: 120px; 
   color: inherit;
   background-color: whitesmoke;
   text-decoration: none;
@@ -29,6 +31,7 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
+  text-align: right; /* BUG (MoreStylis.css): o texto do diálogo está grudado à direita */
 }
 
 .buttonItem {
@@ -38,4 +41,5 @@
 .card img {
   border: solid;
   background: var(--jarvis_color);
+  transform: rotate(12deg) scale(1.4, 0.75) skewX(-10deg); /* BUG (MoreStylis.css): a foto do personagem está torta e distorcida */
 }

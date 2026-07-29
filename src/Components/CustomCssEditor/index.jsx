@@ -1,5 +1,6 @@
-import Editor from "react-simple-code-editor";
+import EditorImport from "react-simple-code-editor";
 import Prism from "prismjs";
+const Editor = EditorImport.default ?? EditorImport;
 import "prismjs/components/prism-css";
 import "prismjs/themes/prism.css";
 

@@ -1,30 +1,32 @@
 import { createSlice } from "@reduxjs/toolkit";
+import {
+  GAME_CSS_DEFAULT,
+  STYLES_CSS_DEFAULT,
+  MORE_STYLES_CSS_DEFAULT,
+} from "../Components/InjectedStyles/defaults";
 
 export const slice = createSlice({
   name: "compilationController",
   initialState: {
-    center_game_screen: `
-  width: 100%;
-  height: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  display: centerblock;
-  transform: translate(-0%, -0%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-`,
+    game_css: GAME_CSS_DEFAULT,
+    styles_css: STYLES_CSS_DEFAULT,
+    more_styles_css: MORE_STYLES_CSS_DEFAULT,
   },
   reducers: {
-    changeCenterGame(state, { payload }) {
-      console.log("payload", payload);
-      return { ...state, center_game_screen: payload };
+    changeGameCss(state, { payload }) {
+      return { ...state, game_css: payload };
+    },
+    changeStylesCss(state, { payload }) {
+      return { ...state, styles_css: payload };
+    },
+    changeMoreStylesCss(state, { payload }) {
+      return { ...state, more_styles_css: payload };
     },
   },
 });
 
-export const { changeCenterGame } = slice.actions;
+export const { changeGameCss, changeStylesCss, changeMoreStylesCss } =
+  slice.actions;
 
 export const selectCompilation = (state) => state.compilationController;
 
