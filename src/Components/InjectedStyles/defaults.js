@@ -3,10 +3,6 @@ export const GAME_CSS_DEFAULT = `.container {
   width: 100%;
   margin-left: 150px;
 }
-
-.canvas {
-  transform: rotate(-4deg);
-}
 `;
 
 export const STYLES_CSS_DEFAULT = `button {
@@ -18,6 +14,7 @@ export const STYLES_CSS_DEFAULT = `button {
 export const MORE_STYLES_CSS_DEFAULT = `.card {
   position: relative;
   left: 120px;
+  transform: rotate(-3deg);
 }
 
 .card p {

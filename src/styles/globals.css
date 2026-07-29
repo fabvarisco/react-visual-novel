@@ -37,7 +37,7 @@ nav .logo {
 
 button {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   border: 0;
   color: #000000;
   cursor: pointer;
@@ -47,7 +47,6 @@ button {
   padding: 8px;
   border-radius: 4px;
   margin: 2px;
-  margin-left: 60px;
 }
 
 button:hover {
@@ -68,7 +67,6 @@ footer {
   width: 520px;
   height: 380px;
   image-rendering: pixelated;
-  transform: rotate(-4deg);
 }
 
 .textGame {
@@ -97,5 +95,4 @@ main {
 
 .container {
   width: 100%;
-  margin-left: 150px;
 }

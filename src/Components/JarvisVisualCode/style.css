@@ -1,41 +1,69 @@
-/* styles.css */
+/* JVCode — paleta extraída de public/faces/jarvis_face.png
+   laranja #E66F14 · dourado #F1BA37 · creme #F0EEEC · quase-preto #141414 */
+
+.jvc-container {
+    --jvc-bg: #1b1712;
+    --jvc-bg-dark: #131009;
+    --jvc-sidebar: #221b13;
+    --jvc-text: #f0eeec;
+    --jvc-text-dim: #b8a891;
+    --jvc-orange: #e66f14;
+    --jvc-gold: #f1ba37;
+    --jvc-border: #3a2a18;
+    --jvc-active: #33261a;
+
+    margin-bottom: 20px;
+    max-width: 720px;
+    border: 1px solid var(--jvc-border);
+    border-top: 3px solid var(--jvc-orange);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+.header {
+    background-color: var(--jvc-bg-dark);
+    color: var(--jvc-text);
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--jvc-border);
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--jvc-gold);
+}
 
 .file-window {
-    background-color: #1e1e1e;
-    color: #abb2bf;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    background-color: var(--jvc-bg);
+    color: var(--jvc-text);
+    font-family: inherit;
     display: flex;
     flex-direction: row;
     align-items: stretch;
 }
 
-.header {
-    background-color: #1e1e1e;
-    color: #abb2bf;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title {
-    font-size: 16px;
-}
-
-
 .sidebar {
-    background-color: #282c34;
+    background-color: var(--jvc-sidebar);
     padding: 10px;
     width: 160px;
     flex-shrink: 0;
-    border-right: 1px solid #3a3f4b;
+    border-right: 1px solid var(--jvc-border);
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .sidebar h2 {
-    font-size: 14px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     margin-bottom: 10px;
+    color: var(--jvc-orange);
 }
 
 .sidebar ul {
@@ -45,45 +73,41 @@
 }
 
 .sidebar li {
-    padding: 5px 0;
+    padding: 6px 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 4px;
+    color: var(--jvc-text-dim);
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .sidebar li:hover {
-    background-color: #3a3f4b;
+    background-color: var(--jvc-active);
+    color: var(--jvc-text);
+}
+
+.sidebar li.active {
+    background-color: var(--jvc-active);
+    color: var(--jvc-text);
+    box-shadow: inset 3px 0 0 var(--jvc-orange);
 }
 
 .icon {
     width: 20px;
     height: 20px;
-    margin-right: 5px;
+    margin-right: 8px;
     flex-shrink: 0;
 }
 
 .main-content {
     flex: 1;
     min-width: 0;
+    background-color: var(--jvc-bg);
 }
 
 .main-content h2 {
-    font-size: 16px;
-}
-
-.main-content ul {
-    list-style: none;
-    padding: 0;
+    font-size: 14px;
     margin: 0;
-}
-
-.main-content li {
-    padding: 5px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.main-content li:hover {
-    background-color: #3a3f4b;
+    color: var(--jvc-gold);
 }
 
 .folder-list-item {
@@ -98,30 +122,19 @@
     font-size: 13px;
 }
 
-.active {
-    background-color: #3a3f4b;
-}
-
-.jvc-container {
-    margin-bottom: 20px;
-    max-width: 720px;
-}
-
-
 .button-jvc {
-    background-color: #61afef;
-    color: #fff;
+    background-color: var(--jvc-orange);
+    color: var(--jvc-bg-dark);
     border: none;
     padding: 8px 16px;
     font-size: 14px;
+    font-weight: 700;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.2s, color 0.2s;
+}
 
-    &:hover {
-        background-color: #4c8ee2;
-        color: #fff;
-    }
-
-
+.button-jvc:hover {
+    background-color: var(--jvc-gold);
+    color: var(--jvc-bg-dark);
 }
