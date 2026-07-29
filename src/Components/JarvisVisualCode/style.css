@@ -122,19 +122,30 @@
     font-size: 13px;
 }
 
-.button-jvc {
-    background-color: var(--jvc-orange);
-    color: var(--jvc-bg-dark);
-    border: none;
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.2s, color 0.2s;
+/* Barra de ações abaixo da caixa de diálogo (TextGame).
+   Os botões usam o estilo verde padrão (globals.css button), igual ao next/back. */
+.jvc-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    max-width: 520px;
 }
 
-.button-jvc:hover {
-    background-color: var(--jvc-gold);
-    color: var(--jvc-bg-dark);
+/* não herdar o bug global de button (Styles.css injeta margin-left) */
+.jvc-actions button {
+    margin: 0;
+}
+
+.jvc-action-link {
+    text-decoration: none;
+}
+
+.jvc-actions button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.jvc-actions button:disabled:hover {
+    background-color: #78f89f;
 }

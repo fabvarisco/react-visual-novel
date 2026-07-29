@@ -6,7 +6,9 @@
     "choices": "Choices",
     "tip": "Hint",
     "startGame": "Start Game",
-    "files": "Files"
+    "files": "Files",
+    "askMarin": "Go ask Marin for help",
+    "validateSolution": "Validate solution"
   },
   "game": {
     "0": {

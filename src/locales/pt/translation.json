@@ -6,7 +6,9 @@
     "choices": "Escolhas",
     "tip": "Dica",
     "startGame": "Iniciar Jogo",
-    "files": "Arquivos"
+    "files": "Arquivos",
+    "askMarin": "Ir pedir ajuda pra Marin",
+    "validateSolution": "Validar solução"
   },
   "game": {
     "0": {
