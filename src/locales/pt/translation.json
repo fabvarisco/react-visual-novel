@@ -8,7 +8,9 @@
     "startGame": "Iniciar Jogo",
     "files": "Arquivos",
     "askMarin": "Ir pedir ajuda pra Marin",
-    "validateSolution": "Validar solução"
+    "validateSolution": "Validar solução",
+    "mobileWarningTitle": "Melhor no Desktop",
+    "mobileWarningMessage": "Esta experiência foi feita para ser jogada no computador. Abra o jogo em um Desktop para ter a melhor experiência."
   },
   "game": {
     "0": {

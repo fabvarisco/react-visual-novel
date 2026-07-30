@@ -8,7 +8,9 @@
     "startGame": "Start Game",
     "files": "Files",
     "askMarin": "Go ask Marin for help",
-    "validateSolution": "Validate solution"
+    "validateSolution": "Validate solution",
+    "mobileWarningTitle": "Best on Desktop",
+    "mobileWarningMessage": "This experience was made to be played on a computer. Open the game on a Desktop for the best experience."
   },
   "game": {
     "0": {
